@@ -6,6 +6,8 @@ import Loader from "react-loaders";
 import Box from "../Box";
 import Boxtwo from "../Boxtwo";
 import Sphere from "../AnimatedSphere";
+// import Waterfall from "../WaterfallDraco";
+import Computer from "../Computer";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -18,7 +20,7 @@ const Home = () => {
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.7} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
-        <Suspense fallback={<span>Loading. . .</span>}>
+        <Suspense fallback={null}>
           <Box />
         </Suspense>
       </Canvas>
@@ -26,7 +28,7 @@ const Home = () => {
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.7} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
-        <Suspense fallback={<span>Loading. . .</span>}>
+        <Suspense fallback={null}>
           <Boxtwo />
         </Suspense>
       </Canvas>
@@ -34,15 +36,15 @@ const Home = () => {
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.7} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
-        <Suspense fallback={<span>Loading. . .</span>}>
-          <Sphere />
+        <Suspense fallback={null}>
+          <Computer />
         </Suspense>
       </Canvas>
       <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.7} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
-        <Suspense fallback={<span>Loading. . .</span>}>
+        <Suspense fallback={null}>
           <Sphere />
         </Suspense>
       </Canvas>
