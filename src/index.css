@@ -5,7 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #282c34;
-  overflow: scroll;
+  overflow: auto;
   display: block;
 }
 

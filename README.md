@@ -36,3 +36,9 @@
 - npm i three ✅
 - npm i @react-three/fiber ✅
 - npm i @react-three/drei ✅
+
+- npm install -g gltf-pipeline ✅
+- convert gltf to draco.gltf: in file location -
+- gltf-pipeline -i model.gltf -o modelDraco.gltf -d
+- then - https://github.com/pmndrs/gltfjsx - npx gltfjsx model.gltf
+- the gltf file to public folder, js file to component folder
