@@ -1,7 +1,7 @@
 import {
   faEnvelopesBulk,
-  faHammer,
   faHouseChimneyWindow,
+  faKitchenSet,
   faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
@@ -42,7 +42,7 @@ const Navbar = () => {
           className="portfolio-link"
           to="/portfolio"
         >
-          <FontAwesomeIcon icon={faHammer} color="lightblue" />
+          <FontAwesomeIcon icon={faKitchenSet} color="lightblue" />
         </NavLink>
       </nav>
     </div>
