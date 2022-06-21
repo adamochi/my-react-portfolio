@@ -6,12 +6,7 @@
   border: 0;
   cursor: pointer;
   padding: 4px;
-  background: linear-gradient(
-    90deg,
-    rgb(239, 207, 240),
-    var(--main-purple-colour),
-    #0e2964
-  );
+  background: var(--light-mode-gradient);
   font-size: 20px;
   background-size: 300%;
   background-position: left;
@@ -26,7 +21,4 @@
       transition: 0.5s;
     }
   }
-}
-.dark {
-  background-color: var(--dark-background-colour);
 }

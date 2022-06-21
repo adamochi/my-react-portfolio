@@ -51,3 +51,13 @@ textarea {
   animation-fill-mode: forwards;
   transform: scale(150%);
 }
+.dark {
+  --main-background-colour: #0e2964;
+  --dark-blue-colour: whitesmoke;
+  --light-mode-gradient: linear-gradient(
+    90deg,
+    rgb(239, 207, 240),
+    var(--main-purple-colour),
+    #0e2964
+  );
+}

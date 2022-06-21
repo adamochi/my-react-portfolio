@@ -4,19 +4,28 @@ import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LightModeButton = () => {
-  const [lightMode, setLightMode] = useState(false);
-  const checkLight = localStorage.getItem("light");
+  const checkLight = localStorage.getItem("dark mode");
+  const saved = JSON.parse(checkLight);
+  const [lightMode, setLightMode] = useState(saved);
 
+  if (saved === null) {
+    localStorage.setItem("dark mode", false);
+  }
+
+  if (saved === true) {
+    document.body.classList = "dark";
+  }
   const lightButton = () => {
     setLightMode((current) => !current);
-    console.log(lightMode);
-    if (lightMode === false || checkLight === null) {
-      localStorage.setItem("light", true);
+    if (lightMode === false) {
+      localStorage.setItem("dark mode", true);
       document.body.classList = "dark";
+      console.log(lightMode);
     }
     if (lightMode === true) {
-      localStorage.setItem("light", false);
+      localStorage.setItem("dark mode", false);
       document.body.classList = "";
+      console.log(lightMode);
     }
   };
 
@@ -26,7 +35,11 @@ const LightModeButton = () => {
       aria-label="toggle dark mode"
       id="light-mode-button"
     >
-      <FontAwesomeIcon className="moon-icon" icon={faMoon} color="#0e2964" />
+      <FontAwesomeIcon
+        className="moon-icon"
+        icon={faMoon}
+        color="var(--main-background-colour)"
+      />
     </button>
   );
 };
