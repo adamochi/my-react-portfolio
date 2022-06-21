@@ -14,33 +14,52 @@
   animation: dropDown 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1s;
   height: 50px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  a {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
+  .my-name {
+    width: fit-content;
+  }
+  .hamburger {
+    height: fit-content;
+    width: fit-content;
+    font-size: 30px;
     color: var(--dark-blue-colour);
-    font-size: 20px;
+    padding-right: 15px;
+  }
+  .source-n-light {
+    width: 33%;
+    display: inline-flex;
+    justify-content: center;
 
-    &:hover {
-      transform: scale(120%);
-      transition: 0.07s;
-      .github-icon {
-        animation-duration: 2s;
-      }
-    }
-
-    .github-icon {
+    a {
+      width: fit-content;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-decoration: none;
       color: var(--dark-blue-colour);
-      animation-duration: 7s;
-    }
+      font-size: 20px;
 
-    span {
-      transform: translatey(1px);
-      margin-left: 5px;
+      &:hover {
+        transition: 0.07s;
+        text-decoration: underline;
+        .github-icon {
+          animation-duration: 2s;
+        }
+      }
+
+      .github-icon {
+        color: var(--dark-blue-colour);
+        animation-duration: 7s;
+      }
+
+      span {
+        transform: translatey(1px);
+        margin-left: 5px;
+      }
     }
   }
 }

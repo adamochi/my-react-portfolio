@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.scss";
 import Loader from "react-loaders";
-
 /* 3D stuff */
 // import Boxtwo from "../Boxtwo";
 
