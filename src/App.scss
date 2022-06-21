@@ -1,4 +1,5 @@
-$primary-color: #8352fd;
+@import "./variables.css";
+$primary-color: var(--main-text-colour);
 
 @import "animate.css";
 @import "~loaders.css/src/animations/pacman.scss";
@@ -48,5 +49,5 @@ textarea {
   height: 1px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
-  transform: scale(200%);
+  transform: scale(150%);
 }

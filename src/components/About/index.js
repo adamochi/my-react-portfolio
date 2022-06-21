@@ -4,8 +4,9 @@ import Loader from "react-loaders";
 
 const About = () => {
   return (
-    <div>
-      <Loader type="pacman" />
+    <div className="about-page">
+      <h1>About</h1>
+      <Loader type="ball-clip-rotate-multiple" />
     </div>
   );
 };

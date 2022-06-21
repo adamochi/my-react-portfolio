@@ -3,7 +3,7 @@ import { Sphere, MeshDistortMaterial } from "@react-three/drei/core";
 
 const AnimatedSphere = () => {
   return (
-    <Sphere visible args={[1, 100, 200]} scale={2}>
+    <Sphere visible args={[1, 100, 200]} scale={1}>
       <MeshDistortMaterial
         color="#8352FD"
         attach="material"

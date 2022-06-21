@@ -1,10 +1,12 @@
+@import "./variables.css";
+
 body {
   margin: 0;
   font: 300 11px/1.4 "Helvetica Neue", sans-serif;
-  color: #8352fd;
+  color: var(--main-purple-colour);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #4b465a;
+  background: var(--main-background-colour);
   overflow: auto;
   display: block;
 }

@@ -1,0 +1,75 @@
+@keyframes dropDown {
+  0% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+.top-navbar {
+  animation: dropDown 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark-blue-colour);
+    font-size: 20px;
+
+    &:hover {
+      transform: scale(120%);
+      transition: 0.07s;
+      .github-icon {
+        animation-duration: 2s;
+      }
+    }
+
+    .github-icon {
+      color: #0e2964;
+      animation-duration: 7s;
+    }
+
+    span {
+      transform: translatey(1px);
+      margin-left: 5px;
+    }
+  }
+}
+#light-mode-button {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(239, 207, 240),
+    var(--main-purple-colour),
+    #0e2964
+  );
+  font-size: 20px;
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 0.3s ease-in-out;
+  border-radius: 100vmax;
+  &:hover {
+    background-position: right;
+    color: black;
+    transition: 0.3s;
+    .moon-icon {
+      color: var(--main-background-colour);
+      transition: 0.5s;
+    }
+  }
+}

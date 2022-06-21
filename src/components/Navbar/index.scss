@@ -1,16 +1,18 @@
 .nav-bar {
-  background: rgba(255, 255, 255, 0);
-  width: 70px;
+  // background: rgba(255, 255, 255, 0);
+  width: 80px;
   height: 100%;
   position: fixed;
   bottom: 0;
   left: 10px;
   z-index: 3;
   min-height: 70px;
+  display: flex;
+  align-items: center;
+
   nav {
     display: block;
     text-align: center;
-    position: absolute;
     height: 210px;
     top: 50%;
     margin-top: -120px;
@@ -18,7 +20,6 @@
 
     a {
       font-size: 22px;
-      color: #4d4d4e;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -30,7 +31,7 @@
       }
 
       &:hover {
-        color: #01f7a5;
+        color: var(--main-text-colour);
 
         svg {
           opacity: 0;
@@ -43,7 +44,8 @@
 
       &:after {
         content: "";
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 600;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -76,13 +78,93 @@
 
     a.portfolio-link {
       &:after {
-        content: "EXPLORE";
+        content: "PORTFOLIO";
       }
     }
 
     a.active {
       svg {
-        color: #8352fd;
+        color: var(--main-text-colour);
+      }
+    }
+  }
+}
+@media screen and (orientation: portrait) {
+  .nav-bar {
+    width: 100vw;
+    height: 200px;
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: fit-content;
+      position: fixed;
+      bottom: 0;
+      top: 100vh;
+
+      a {
+        font-size: 28px;
+        color: #4d4d4e;
+        display: block;
+        line-height: 0;
+        height: fit-content;
+        position: relative;
+        text-decoration: none;
+
+        i {
+          transition: all 0.3s ease-out;
+        }
+
+        &:hover {
+          color: #01f7a5;
+
+          svg {
+            opacity: 1;
+          }
+
+          &:after {
+            opacity: 1;
+          }
+        }
+
+        &:after {
+          content: "";
+          font-size: 12px;
+          letter-spacing: 2px;
+          position: absolute;
+          bottom: 0;
+          display: block;
+          width: 100%;
+          text-align: center;
+          opacity: 0;
+          -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+        }
+
+        &:first-child {
+          &:after {
+            content: "";
+          }
+        }
+      }
+
+      a.about-link {
+        &:after {
+          content: "";
+        }
+      }
+
+      a.contact-link {
+        &:after {
+          content: "";
+        }
+      }
+
+      a.portfolio-link {
+        &:after {
+          content: "";
+        }
       }
     }
   }

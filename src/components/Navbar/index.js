@@ -7,18 +7,21 @@ import {
 import React from "react";
 import "./index.scss";
 import { NavLink, Link } from "react-router-dom";
-import logo from "../../assets/images/space.png";
+// import logo from "../../assets/images/space.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
-        <img src={logo} alt="space" />
+        {/* <img src={logo} alt="space" /> */}
       </Link>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
-          <FontAwesomeIcon icon={faHouseChimneyWindow} color="lightblue" />
+          <FontAwesomeIcon
+            icon={faHouseChimneyWindow}
+            color="var(--main-icon-colour)"
+          />
         </NavLink>
         <NavLink
           exact="true"
@@ -26,7 +29,10 @@ const Navbar = () => {
           className="about-link"
           to="/about"
         >
-          <FontAwesomeIcon icon={faUserAstronaut} color="lightblue" />
+          <FontAwesomeIcon
+            icon={faUserAstronaut}
+            color="var(--main-icon-colour)"
+          />
         </NavLink>
         <NavLink
           exact="true"
@@ -34,7 +40,10 @@ const Navbar = () => {
           className="contact-link"
           to="/contact"
         >
-          <FontAwesomeIcon icon={faEnvelopesBulk} color="lightblue" />
+          <FontAwesomeIcon
+            icon={faEnvelopesBulk}
+            color="var(--main-icon-colour)"
+          />
         </NavLink>
         <NavLink
           exact="true"
@@ -42,7 +51,10 @@ const Navbar = () => {
           className="portfolio-link"
           to="/portfolio"
         >
-          <FontAwesomeIcon icon={faKitchenSet} color="lightblue" />
+          <FontAwesomeIcon
+            icon={faKitchenSet}
+            color="var(--main-icon-colour)"
+          />
         </NavLink>
       </nav>
     </div>

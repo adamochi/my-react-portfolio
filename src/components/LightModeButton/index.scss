@@ -1,0 +1,32 @@
+#light-mode-button {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(239, 207, 240),
+    var(--main-purple-colour),
+    #0e2964
+  );
+  font-size: 20px;
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 0.3s ease-in-out;
+  border-radius: 100vmax;
+  &:hover {
+    background-position: right;
+    color: black;
+    transition: 0.3s;
+    .moon-icon {
+      color: var(--main-background-colour);
+      transition: 0.5s;
+    }
+  }
+}
+.dark {
+  background-color: var(--dark-background-colour);
+}

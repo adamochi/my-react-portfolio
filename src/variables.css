@@ -1,0 +1,9 @@
+:root {
+  --main-background-colour: whitesmoke;
+  --main-text-colour: #00a2ff;
+  --dark-blue-colour: #0e2964;
+  --main-purple-colour: #8352fd;
+  --main-icon-colour: #02d6f1;
+  /* Dark Mode Colours */
+  --dark-background-colour: rgb(19, 13, 102);
+}

@@ -1,13 +1,16 @@
 .homepage {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  h1 {
-    text-align: center;
-    padding: 20px;
-    color: #8352fd;
-  }
   canvas {
-    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+    max-width: 500px;
+    background-color: pink;
   }
 }
