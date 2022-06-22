@@ -52,6 +52,7 @@ textarea {
   transform: scale(150%);
 }
 .dark {
+  transition: 1s;
   --main-background-colour: #0e2964;
   --dark-blue-colour: whitesmoke;
   --light-mode-gradient: linear-gradient(

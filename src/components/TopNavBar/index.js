@@ -1,9 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faCat, faPaw } from "@fortawesome/free-solid-svg-icons";
+import { faCat, faPaw } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 import LightModeButton from "../LightModeButton";
+import DropdownMenu from "../DropdownMenu";
 
 const TopNavBar = () => {
   return (
@@ -24,9 +25,7 @@ const TopNavBar = () => {
         </a>
         <LightModeButton />
       </div>
-      <div className="hamburger">
-        <FontAwesomeIcon icon={faBars} />
-      </div>
+      <DropdownMenu />
     </div>
   );
 };

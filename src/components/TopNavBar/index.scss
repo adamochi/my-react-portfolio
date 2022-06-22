@@ -11,24 +11,25 @@
   }
 }
 .top-navbar {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.041);
   animation: dropDown 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1s;
   height: 50px;
   width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  top: 0;
   .my-name {
     width: fit-content;
+    opacity: 0;
   }
-  .hamburger {
-    height: fit-content;
-    width: fit-content;
-    font-size: 30px;
-    color: var(--dark-blue-colour);
-    padding-right: 15px;
-  }
+
   .source-n-light {
     width: 33%;
     display: inline-flex;
