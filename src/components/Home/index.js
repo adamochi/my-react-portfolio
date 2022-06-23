@@ -6,6 +6,7 @@ import profile from "../../assets/images/nexen.png";
 import Boxtwo from "../Boxtwo";
 // import Cheflaptop from "../Cheflaptop";
 // import Oldpc from "../Oldpc";
+import AnimatedChef from "../Animatedchef";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -19,6 +20,14 @@ const Home = () => {
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
           <Boxtwo />
+        </Suspense>
+      </Canvas>
+      <Canvas>
+        <OrbitControls enableZoom={true} />
+        <ambientLight intensity={0.9} />
+        <directionalLight position={[1, 4, 2]} intensity={1} />
+        <Suspense fallback={null}>
+          <AnimatedChef />
         </Suspense>
       </Canvas>
 
