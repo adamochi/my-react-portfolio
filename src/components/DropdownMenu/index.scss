@@ -28,6 +28,8 @@
   }
 
   .dropdown-menu-div {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     border-radius: 4px;
     transform: none;
     transition: 0.2s;
@@ -38,25 +40,26 @@
     right: 10px;
     background-color: var(--menu-colour-one);
     h5 {
+      color: rgba(0, 0, 0, 0.733);
       padding: 5px 20px;
       margin: 0;
       width: fit-content;
+      font-size: 20px;
     }
 
-    .dropdown-menu-ul {
+    .dropdown-menu-list {
       background-color: var(--menu-colour-two);
-      margin: 15px;
+      margin: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: fit-content;
-      height: fit-content;
       padding: 5px 20px;
       border-radius: 4px;
       &:first-child {
         list-style: none;
       }
       li {
+        color: rgb(0, 0, 0);
         text-align: right;
         font-size: 20px;
         list-style: none;

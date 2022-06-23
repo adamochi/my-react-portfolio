@@ -1,9 +1,11 @@
 import React, { Suspense } from "react";
 import "./index.scss";
 import Loader from "react-loaders";
+import profile from "../../assets/images/nexen.png";
 /* 3D stuff */
-// import Boxtwo from "../Boxtwo";
-import Oldpc from "../Oldpc";
+import Boxtwo from "../Boxtwo";
+// import Cheflaptop from "../Cheflaptop";
+// import Oldpc from "../Oldpc";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -16,12 +18,13 @@ const Home = () => {
         <ambientLight intensity={0.7} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
-          <Oldpc />
+          <Boxtwo />
         </Suspense>
       </Canvas>
 
-      <h1>Hello, I'm an aspiring Web Developer based in Australia!</h1>
-
+      <h4>Hello, I'm an aspiring Web Developer based in Australia!</h4>
+      <h1>Adam Sullivan</h1>
+      <img className="profile-pic" src={profile} alt="Adam Sullivan" />
       <Loader type="ball-clip-rotate-multiple" />
     </div>
   );

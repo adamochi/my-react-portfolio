@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 const DropdownMenu = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menu = document.querySelector(".dropdown-menu-div");
@@ -20,7 +21,7 @@ const DropdownMenu = () => {
       </div>
       <div className="dropdown-menu-div hidden">
         <h5>Menu</h5>
-        <ul className="dropdown-menu-ul">
+        <ul className="dropdown-menu-list">
           <li>About Me</li>
           <li>Works</li>
           <li>Contact</li>
