@@ -14,7 +14,7 @@ import { OrbitControls } from "@react-three/drei";
 
 const Home = () => {
   return (
-    <div className="homepage">
+    <div className="homepage container">
       {/* <Canvas className="canvas">
         <OrbitControls enableZoom={true} />
         <ambientLight intensity={0.7} />
