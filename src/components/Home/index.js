@@ -3,7 +3,7 @@ import "./index.scss";
 import Loader from "react-loaders";
 import profile from "../../assets/images/nexen.png";
 /* 3D stuff */
-import Boxtwo from "../Boxtwo";
+// import Boxtwo from "../Boxtwo";
 // import Cheflaptop from "../Cheflaptop";
 // import Oldpc from "../Oldpc";
 import AnimatedChef from "../Animatedchef";
@@ -14,14 +14,14 @@ import { OrbitControls } from "@react-three/drei";
 const Home = () => {
   return (
     <div className="homepage">
-      <Canvas className="canvas">
+      {/* <Canvas className="canvas">
         <OrbitControls enableZoom={true} />
         <ambientLight intensity={0.7} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
           <Boxtwo />
         </Suspense>
-      </Canvas>
+      </Canvas> */}
       <Canvas>
         <OrbitControls enableZoom={true} />
         <ambientLight intensity={0.9} />
