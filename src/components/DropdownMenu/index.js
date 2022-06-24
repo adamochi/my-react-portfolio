@@ -8,7 +8,6 @@ const DropdownMenu = () => {
   useEffect(() => {
     const closeDropdown = (e) => {
       if (e.path[0] !== btnRef.current) {
-        console.dir(btnRef.current);
         setMenuMode(true);
       }
     };
