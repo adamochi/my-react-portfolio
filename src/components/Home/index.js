@@ -3,10 +3,11 @@ import "./index.scss";
 import Loader from "react-loaders";
 import profile from "../../assets/images/nexen.png";
 /* 3D stuff */
+import Box from "../Box";
 // import Boxtwo from "../Boxtwo";
 // import Cheflaptop from "../Cheflaptop";
 // import Oldpc from "../Oldpc";
-import AnimatedChef from "../Animatedchef";
+// import AnimatedChef from "../Animatedchef";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -27,7 +28,7 @@ const Home = () => {
         <ambientLight intensity={0.9} />
         <directionalLight position={[1, 4, 2]} intensity={1} />
         <Suspense fallback={null}>
-          <AnimatedChef />
+          <Box rotation={[90, 0, 20]} />
         </Suspense>
       </Canvas>
 

@@ -8,6 +8,7 @@
   color: var(--dark-blue-colour);
 
   .burger {
+    z-index: 5;
     font-size: 18px;
     display: flex;
     justify-content: center;

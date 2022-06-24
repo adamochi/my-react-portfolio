@@ -4,21 +4,42 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const DropdownMenu = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-  const menu = document.querySelector(".dropdown-menu-div");
+  const checkMenu = localStorage.getItem("menu");
+  const menuState = JSON.parse(checkMenu);
+  const [menuMode, setMenuMode] = useState(menuState);
+  document.body.addEventListener("mouseup", function (event) {
+    const menuParty = document.querySelector(".dropdown-menu-div");
+    if (event.tartet !== menuParty && event.target.parentNode !== menuParty) {
+      console.dir(event.target);
+    }
+  });
 
-  const MenuClick = () => {
-    setOpenMenu((current) => !current);
+  if (menuState === null) {
+    localStorage.setItem("menu", false);
+  }
 
-    menu.classList.toggle("hidden");
-    console.log(openMenu);
+  if (menuState === true) {
+    localStorage.setItem("menu", true);
+  }
+  const menuClick = () => {
+    const menu = document.querySelector(".dropdown-menu-div");
+    setMenuMode((current) => !current);
+    if (menuMode === false) {
+      localStorage.setItem("menu", true);
+      menu.classList.add("hidden");
+      console.log("menu close");
+    }
+    if (menuMode === true) {
+      menu.classList.remove("hidden");
+      console.log("menu open");
+    }
   };
 
   return (
     <div className="hamburger">
-      <div className="burger" onClick={MenuClick}>
+      <button className="burger" onClick={menuClick}>
         <FontAwesomeIcon icon={faBars} />
-      </div>
+      </button>
       <div className="dropdown-menu-div hidden">
         <h5>Menu</h5>
         <ul className="dropdown-menu-list">

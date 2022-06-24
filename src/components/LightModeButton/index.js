@@ -20,12 +20,12 @@ const LightModeButton = () => {
     if (lightMode === false) {
       localStorage.setItem("dark mode", true);
       document.body.classList = "dark";
-      console.log(lightMode);
+      console.log("lights off!");
     }
     if (lightMode === true) {
       localStorage.setItem("dark mode", false);
       document.body.classList = "";
-      console.log(lightMode);
+      console.log("lights on!");
     }
   };
 

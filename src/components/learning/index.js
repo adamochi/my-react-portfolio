@@ -7,12 +7,12 @@ import Box from "../Box";
 import Boxtwo from "../Boxtwo";
 import Sphere from "../AnimatedSphere";
 // import Waterfall from "../WaterfallDraco";
-import Computer from "../Computer";
+// import Computer from "../Computer";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
-const Home = () => {
+const Learning = () => {
   return (
     <div className="homepage">
       <h1>Homepage</h1>
@@ -32,14 +32,14 @@ const Home = () => {
           <Boxtwo />
         </Suspense>
       </Canvas>
-      <Canvas className="canvas">
+      {/* <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.7} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
           <Computer />
         </Suspense>
-      </Canvas>
+      </Canvas> */}
       <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.7} />
@@ -54,4 +54,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Learning;
