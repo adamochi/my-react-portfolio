@@ -7,12 +7,6 @@ const DropdownMenu = () => {
   const checkMenu = localStorage.getItem("menu");
   const menuState = JSON.parse(checkMenu);
   const [menuMode, setMenuMode] = useState(menuState);
-  document.body.addEventListener("mouseup", function (event) {
-    const menuParty = document.querySelector(".dropdown-menu-div");
-    if (event.tartet !== menuParty && event.target.parentNode !== menuParty) {
-      console.dir(event.target);
-    }
-  });
 
   if (menuState === null) {
     localStorage.setItem("menu", false);
@@ -22,8 +16,8 @@ const DropdownMenu = () => {
     localStorage.setItem("menu", true);
   }
   const menuClick = () => {
-    const menu = document.querySelector(".dropdown-menu-div");
     setMenuMode((current) => !current);
+    const menu = document.querySelector(".dropdown-menu-div");
     if (menuMode === false) {
       localStorage.setItem("menu", true);
       menu.classList.add("hidden");

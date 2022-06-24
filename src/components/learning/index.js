@@ -32,14 +32,14 @@ const Learning = () => {
           <Boxtwo />
         </Suspense>
       </Canvas>
-      {/* <Canvas className="canvas">
+      <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.7} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
-          <Computer />
+          <Sphere />
         </Suspense>
-      </Canvas> */}
+      </Canvas>
       <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.7} />
