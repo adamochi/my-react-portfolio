@@ -8,6 +8,7 @@
   color: var(--dark-blue-colour);
 
   .burger {
+    background-color: var(--menu-colour-one);
     font-size: 24px;
     display: flex;
     justify-content: center;
@@ -38,7 +39,7 @@
     position: fixed;
     top: 50px;
     right: 10px;
-    background-color: var(--menu-colour-one);
+    background-color: var(--menu-colour-three);
     h5 {
       color: rgba(0, 0, 0, 0.733);
       padding: 5px 20px;

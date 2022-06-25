@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="homepage container">
       <Canvas className="canvas">
-        <OrbitControls enableZoom={true} />
+        <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.7} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>

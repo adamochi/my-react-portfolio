@@ -1,8 +1,10 @@
 :root {
   --main-background-colour: rgb(236, 222, 202);
   --main-text-colour: #00a2ff;
+  --nav-bar-colour: rgba(0, 0, 0, 0.041);
   --menu-colour-one: rgba(211, 211, 211, 0.521);
-  --menu-colour-two: rgb(245, 245, 245);
+  --menu-colour-two: rgb(136, 226, 248);
+  --menu-colour-three: rgb(164, 252, 240);
   --dark-blue-colour: #0e2964;
   --main-purple-colour: #8352fd;
   --main-icon-colour: #02d6f1;
