@@ -18,7 +18,7 @@ export default function Model({ ...props }) {
         scale={0.45}
         geometry={nodes.chef.geometry}
         material={materials.palette}
-        position={[0.3, -2, 0]}
+        position={[0.3, -2.5, 0]}
         rotation={[1.55, 0, 3.5]}
       />
     </group>
