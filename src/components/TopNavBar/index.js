@@ -26,9 +26,11 @@ const TopNavBar = () => {
           <nav>
             <NavLink exact="true" activeclassname="active" to="/">
               <FontAwesomeIcon
+                className="more-awesome-icon"
                 icon={faHouseChimneyWindow}
                 color="var(--main-icon-colour)"
-              />
+              />{" "}
+              <span>Home</span>
             </NavLink>
             <NavLink
               exact="true"
@@ -37,9 +39,11 @@ const TopNavBar = () => {
               to="/about"
             >
               <FontAwesomeIcon
+                className="more-awesome-icon"
                 icon={faUserAstronaut}
                 color="var(--main-icon-colour)"
-              />
+              />{" "}
+              <span>About</span>
             </NavLink>
             <NavLink
               exact="true"
@@ -48,9 +52,11 @@ const TopNavBar = () => {
               to="/contact"
             >
               <FontAwesomeIcon
+                className="more-awesome-icon"
                 icon={faEnvelopesBulk}
                 color="var(--main-icon-colour)"
-              />
+              />{" "}
+              <span>Contact</span>
             </NavLink>
             <NavLink
               exact="true"
@@ -59,15 +65,17 @@ const TopNavBar = () => {
               to="/portfolio"
             >
               <FontAwesomeIcon
+                className="more-awesome-icon"
                 icon={faKitchenSet}
                 color="var(--main-icon-colour)"
-              />
+              />{" "}
+              <span>Portfolio</span>
             </NavLink>
           </nav>
         </div>
         <a className="top-nav-icon" href="https://github.com/adamochi">
           <FontAwesomeIcon
-            className="github-icon"
+            className="awesome-icon"
             icon={faGithub}
             shake={true}
           />
