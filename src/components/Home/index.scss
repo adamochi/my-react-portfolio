@@ -5,6 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  canvas {
+    height: 450px;
+  }
+
   h4 {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);

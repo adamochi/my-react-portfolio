@@ -5,7 +5,6 @@ import { useFrame } from "@react-three/fiber";
 export default function Model({ ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/cheflaptop.glb");
-
   useFrame(() => {
     if (!group.current) {
       return;
@@ -16,14 +15,16 @@ export default function Model({ ...props }) {
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
-        scale={0.5}
+        scale={0.45}
         geometry={nodes.chef.geometry}
         material={materials.palette}
-        position={[0.4, -2.5, 0]}
-        rotation={[1.6, 0, 0]}
+        position={[0.3, -2, 0]}
+        rotation={[1.55, 0, 3.5]}
       />
     </group>
   );
 }
 
 useGLTF.preload("/cheflaptop.glb");
+// position={[0.3, -2.2, 0]}
+// rotation={[1.55, 0, 3.5]}
