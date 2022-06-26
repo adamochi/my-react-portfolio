@@ -1,37 +1,37 @@
 # Installs
 
-# for contact form -
+- for contact form -
 
 - npm i @emailjs/browser ✅
 
-# for icons
+- for icons
 
 - npm i @fortawesome/free-brands-svg-icons ✅
 - npm i @fortawesome/free-solid-svg-icons ✅
 - npm i @fortawesome/react-fontawesome ✅
 
-# styles
+- styles
 
 - npm i animate.css ✅
 - npm i loaders.css ✅
 
-# map
+- map
 
 - npm i react-leaflet
 
-# react integration
+- react integration
 
 - npm i react-loaders ✅
 
-# router
+- router
 
 - npm i react-router-dom@5.3.0 ✅
 
-# styling - helps to write less code
+- styling - helps to write less code
 
 - npm i sass ✅
 
-# 3D
+- 3D
 
 - npm i three ✅
 - npm i @react-three/fiber ✅
