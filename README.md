@@ -2,7 +2,7 @@
 
 https://lambent-web-developer.netlify.app/
 
-# Installs
+# Dependencies
 
 - for contact form -
 
