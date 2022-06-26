@@ -1,3 +1,7 @@
+# Check out my portfolio!
+
+https://lambent-web-developer.netlify.app/
+
 # Installs
 
 - for contact form -
