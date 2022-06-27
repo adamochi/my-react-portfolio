@@ -9,12 +9,14 @@ import { useFrame } from "@react-three/fiber";
 export default function Model({ ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/final-chef.glb");
+
   useFrame(() => {
     if (!group.current) {
       return;
     }
     group.current.rotation.y += 0.005;
   });
+
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh

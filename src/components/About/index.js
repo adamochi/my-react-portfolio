@@ -4,10 +4,12 @@ import Loader from "react-loaders";
 
 const About = () => {
   return (
-    <div className="about-page">
-      <h1>About</h1>
+    <>
+      <div className="about-page container">
+        <h1>About</h1>
+      </div>
       <Loader type="ball-clip-rotate-multiple" />
-    </div>
+    </>
   );
 };
 
