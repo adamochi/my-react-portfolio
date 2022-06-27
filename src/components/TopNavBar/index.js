@@ -58,7 +58,12 @@ const TopNavBar = () => {
             </NavLink>
           </nav>
         </div>
-        <a className="top-nav-icon" href="https://github.com/adamochi">
+        <a
+          className="top-nav-icon"
+          target={"_blank"}
+          rel="noreferrer"
+          href="https://github.com/adamochi/my-react-portfolio"
+        >
           <FontAwesomeIcon
             className="awesome-icon"
             icon={faGithub}

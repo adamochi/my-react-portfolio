@@ -42,8 +42,8 @@ const Home = () => {
           <div className="text-section">
             <span>2009</span>
             <p>
-              Completed my Chef apprenticeship, and continued cooking in dynamic
-              and fast paced environments for many years to come
+              Completed my Chef apprenticeship in Cairns, and continued cooking
+              in dynamic and fast paced environments for many years to come
             </p>
           </div>
           <div className="text-section">
