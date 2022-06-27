@@ -57,19 +57,6 @@ const TopNavBar = () => {
               />{" "}
               <span>Contact</span>
             </NavLink>
-            <NavLink
-              exact="true"
-              activeclassname="active"
-              className="portfolio-link"
-              to="/portfolio"
-            >
-              <FontAwesomeIcon
-                className="more-awesome-icon"
-                icon={faKitchenSet}
-                color="var(--main-icon-colour)"
-              />{" "}
-              <span>Portfolio</span>
-            </NavLink>
           </nav>
         </div>
         <a className="top-nav-icon" href="https://github.com/adamochi">

@@ -3,6 +3,7 @@ import "./index.scss";
 import Loader from "react-loaders";
 import profile from "../../assets/images/nexen.png";
 import Computer from "../Computer";
+import ButtonPortfolio from "../Links/ButtonPortfolio";
 
 const Home = () => {
   return (
@@ -20,7 +21,42 @@ const Home = () => {
             <img src={profile} alt="Adam Sullivan" />
           </div>
         </div>
+        <div className="text-container">
+          <h3>Work</h3>
+          <p>
+            This year I have eagerly started to learn something which not only
+            motivates me but also has my full interest. And that happens to be
+            coding. Over the past few months, I have undertaken 3 courses and 2
+            bootcamps.
+          </p>
+        </div>
+
+        <ButtonPortfolio />
+
+        <div className="text-container">
+          <h3>Bio</h3>
+          <div className="text-section">
+            <span>1987</span>
+            <p>Born in Ipswich Australia</p>
+          </div>
+          <div className="text-section">
+            <span>2009</span>
+            <p>
+              Completed my Chef apprenticeship, and continued cooking in dynamic
+              and fast paced environments for many years to come
+            </p>
+          </div>
+          <div className="text-section">
+            <span>2022</span>
+            <p>
+              a leap into something I have truly become passionate about
+              remaining essentially unchanged. It was popularised in the 1960s
+              with the release of Letraset sheets
+            </p>
+          </div>
+        </div>
       </div>
+
       <Loader type="ball-clip-rotate-multiple" />
     </>
   );

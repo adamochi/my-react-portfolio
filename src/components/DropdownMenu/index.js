@@ -27,9 +27,9 @@ const DropdownMenu = () => {
         <h5>Menu</h5>
         <ul className="dropdown-menu-list">
           <li>About Me</li>
-          <li>Works</li>
-          <li>Contact</li>
-          <li>Old Website</li>
+          <li>Portfolio</li>
+          <li>Contact Me</li>
+          <li>My First Website</li>
         </ul>
       </div>
     </div>
