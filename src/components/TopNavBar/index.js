@@ -4,7 +4,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelopesBulk,
   faHouseChimneyWindow,
-  faKitchenSet,
   faPaw,
   faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons";
