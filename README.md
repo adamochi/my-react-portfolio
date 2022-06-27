@@ -4,7 +4,7 @@ https://lambent-web-developer.netlify.app/
 
 # Dependencies
 
-- for contact form -
+- for contact form:
 
 - npm i @emailjs/browser ✅
 
@@ -14,12 +14,12 @@ https://lambent-web-developer.netlify.app/
 - npm i @fortawesome/free-solid-svg-icons ✅
 - npm i @fortawesome/react-fontawesome ✅
 
-- styles
+- styles:
 
 - npm i animate.css ✅
 - npm i loaders.css ✅
 
-- map
+- map:
 
 - npm i react-leaflet
 
@@ -27,7 +27,7 @@ https://lambent-web-developer.netlify.app/
 
 - npm i react-loaders ✅
 
-- router
+- router:
 
 - npm i react-router-dom@5.3.0 ✅
 
@@ -35,7 +35,7 @@ https://lambent-web-developer.netlify.app/
 
 - npm i sass ✅
 
-- 3D
+- 3D:
 
 - npm i three ✅
 - npm i @react-three/fiber ✅
