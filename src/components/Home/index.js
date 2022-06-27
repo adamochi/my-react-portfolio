@@ -22,7 +22,7 @@ const Home = () => {
           </div>
         </div>
         <div className="text-container">
-          <h3>Work</h3>
+          <h3>Latest</h3>
           <p>
             This year I have eagerly started to learn something which not only
             motivates me but also has my full interest. And that happens to be
