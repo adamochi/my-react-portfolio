@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
 import Loader from "react-loaders";
 import portfolioData from "../../data/portfolio.json";
+import AnimatedLetters from "../AnimatedLetters";
 
 const Portfolio = () => {
+  const [letterClass, setLetterClass] = useState("text-animate");
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  });
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
@@ -30,9 +42,19 @@ const Portfolio = () => {
   };
   return (
     <>
+      <header className="page-title">
+        <h1>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={"On the Web".split("")}
+            idx={15}
+          />
+        </h1>
+      </header>
       <div className="portfolio-page container">
-        <h1>On the Web</h1>
-        <div>{renderPortfolio(portfolioData.portfolio)}</div>
+        <div className="portfolio-images-container">
+          {renderPortfolio(portfolioData.portfolio)}
+        </div>
       </div>
       <Loader type="ball-clip-rotate-multiple" />
     </>

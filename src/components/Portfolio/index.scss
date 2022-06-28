@@ -1,12 +1,10 @@
 .portfolio-page {
   width: 100%;
   height: 100%;
-  h1 {
-    text-align: center;
-    padding: 50px;
-    color: #8352fd;
-  }
 
+  .portfolio-images-container {
+    margin-top: 150px;
+  }
   .images-container {
     margin: 0 20px;
     display: flex;
