@@ -1,11 +1,9 @@
 .hamburger {
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1px;
   margin-right: 10px;
-  color: var(--dark-blue-colour);
 
   .burger {
     background-color: var(--menu-colour-one);
@@ -39,9 +37,9 @@
     position: fixed;
     top: 50px;
     right: 10px;
-    background-color: var(--menu-colour-three);
+    background-color: var(--menu-colour-two);
     h5 {
-      color: rgba(0, 0, 0, 0.733);
+      color: rgba(0, 0, 0, 0.877);
       padding: 5px 20px;
       margin: 0;
       width: fit-content;
@@ -50,7 +48,7 @@
 
     .dropdown-links {
       width: 150px;
-      background-color: var(--menu-colour-two);
+      background-color: var(--clear-menu-colour);
       margin: 10px 1px;
       display: flex;
       flex-direction: column;
@@ -77,13 +75,15 @@
           border-radius: 4px;
           cursor: pointer;
         }
+
         svg {
-          transform: rotate(0);
-          transition: 0.5s;
+          transform: scale(100%) rotate(0);
+          transition: 0.4s;
         }
         &:hover svg {
-          transform: rotate(360deg);
-          transition: 0.5s;
+          will-change: transform;
+          transform: scale(125%) rotate(360deg);
+          transition: 0.4s;
         }
       }
     }

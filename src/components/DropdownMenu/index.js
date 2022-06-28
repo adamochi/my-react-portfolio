@@ -1,7 +1,7 @@
 import {
+  faComments,
   faInfinity,
   faPanorama,
-  faPaw,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
@@ -49,7 +49,7 @@ const DropdownMenu = () => {
             className="dropdown-link-item"
             to="/contact"
           >
-            <FontAwesomeIcon icon={faPaw} />
+            <FontAwesomeIcon icon={faComments} />
             <span>Contact me</span>
           </Link>{" "}
           <Link

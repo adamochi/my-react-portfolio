@@ -2,7 +2,6 @@
 $primary-color: var(--main-text-colour);
 
 @import "animate.css";
-@import "~loaders.css/src/animations/pacman.scss";
 @import "~loaders.css/src/animations/ball-clip-rotate-multiple.scss";
 
 @font-face {
@@ -40,7 +39,7 @@ textarea {
 
 .page-title {
   animation: dropDown 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  z-index: 3;
+  z-index: -1;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -48,6 +47,7 @@ textarea {
   align-items: center;
   width: 100%;
   height: fit-content;
+
   h1 {
     width: fit-content;
     text-align: center;

@@ -9,7 +9,7 @@ const ButtonPortfolio = () => {
   return (
     <>
       <NavLink onClick={scrollToTop} to={"/portfolio"}>
-        <button>My Portfolio ↵</button>
+        <button className="portfolio-btn">My Portfolio ↵</button>
       </NavLink>
     </>
   );
