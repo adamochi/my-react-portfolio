@@ -35,7 +35,6 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-family: monospace;
     .awesome-icon {
       color: var(--dark-blue-colour);
       animation-duration: 7s;
@@ -53,7 +52,9 @@
       align-items: center;
       text-decoration: none;
       color: var(--dark-blue-colour);
-      font-size: 20px;
+      font-size: 16px;
+
+      font-family: monospace;
 
       &:hover {
         transition: 0.07s;
@@ -81,8 +82,6 @@
     width: 100%;
     justify-content: space-evenly;
     a {
-      font-size: 12px;
-      font-family: monospace;
       display: block;
       height: 100%;
       position: relative;

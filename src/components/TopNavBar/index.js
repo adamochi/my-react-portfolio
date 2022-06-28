@@ -13,16 +13,24 @@ import DropdownMenu from "../DropdownMenu";
 import { NavLink, Link } from "react-router-dom";
 
 const TopNavBar = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="top-navbar">
-      <Link className="name-nav" to="/">
+      <Link onClick={scrollToTop} className="name-nav" to="/">
         <FontAwesomeIcon icon={faPaw} />
         <span>Adam Sullivan</span>
       </Link>
       <div className="source-n-light">
         <div className="nav-bar">
           <nav>
-            <NavLink exact="true" activeclassname="active" to="/">
+            <NavLink
+              onClick={scrollToTop}
+              exact="true"
+              activeclassname="active"
+              to="/"
+            >
               <FontAwesomeIcon
                 className="more-awesome-icon"
                 icon={faHouseChimneyWindow}
@@ -31,6 +39,7 @@ const TopNavBar = () => {
               <span>Home</span>
             </NavLink>
             <NavLink
+              onClick={scrollToTop}
               exact="true"
               activeclassname="active"
               className="top-nav-icon"
@@ -44,6 +53,7 @@ const TopNavBar = () => {
               <span>About</span>
             </NavLink>
             <NavLink
+              onClick={scrollToTop}
               exact="true"
               activeclassname="active"
               className="contact-link"
@@ -55,6 +65,20 @@ const TopNavBar = () => {
                 color="var(--main-icon-colour)"
               />{" "}
               <span>Contact</span>
+            </NavLink>
+            <NavLink
+              onClick={scrollToTop}
+              exact="true"
+              activeclassname="active"
+              className="contact-link"
+              to="/portfolio"
+            >
+              <FontAwesomeIcon
+                className="more-awesome-icon"
+                icon={faEnvelopesBulk}
+                color="var(--main-icon-colour)"
+              />{" "}
+              <span>Portfolio</span>
             </NavLink>
           </nav>
         </div>

@@ -48,25 +48,42 @@
       font-size: 20px;
     }
 
-    .dropdown-menu-list {
+    .dropdown-links {
+      width: 150px;
       background-color: var(--menu-colour-two);
-      margin: 10px;
+      margin: 10px 1px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 5px 20px;
+      margin: 0;
       border-radius: 4px;
       &:first-child {
         list-style: none;
       }
-      li {
+      .dropdown-link-item {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         color: rgb(0, 0, 0);
         text-align: right;
         font-size: 20px;
         list-style: none;
+        text-decoration: none;
+        width: 100%;
         &:hover {
-          text-decoration: underline;
+          transform: translateY(-1px);
+          border: 2px solid rgb(117, 126, 255);
+          border-radius: 4px;
           cursor: pointer;
+        }
+        svg {
+          transform: rotate(0);
+          transition: 0.5s;
+        }
+        &:hover svg {
+          transform: rotate(360deg);
+          transition: 0.5s;
         }
       }
     }

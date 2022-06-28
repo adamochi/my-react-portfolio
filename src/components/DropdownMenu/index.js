@@ -1,4 +1,11 @@
+import {
+  faInfinity,
+  faPanorama,
+  faPaw,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "./index.scss";
 
 const DropdownMenu = () => {
@@ -13,6 +20,9 @@ const DropdownMenu = () => {
     };
     document.body.addEventListener("click", closeDropdown);
   }, []);
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="hamburger">
@@ -25,12 +35,32 @@ const DropdownMenu = () => {
       </button>
       <div className={"dropdown-menu-div hidden" + (menuMode ? "" : "hidden")}>
         <h5>Menu</h5>
-        <ul className="dropdown-menu-list">
-          <li>About Me</li>
-          <li>Portfolio</li>
-          <li>Contact Me</li>
-          <li>My First Website</li>
-        </ul>
+        <div className="dropdown-links">
+          <Link
+            onClick={scrollToTop}
+            className="dropdown-link-item"
+            to="/about"
+          >
+            <FontAwesomeIcon icon={faInfinity} />
+            <span>About me</span>
+          </Link>{" "}
+          <Link
+            onClick={scrollToTop}
+            className="dropdown-link-item"
+            to="/contact"
+          >
+            <FontAwesomeIcon icon={faPaw} />
+            <span>Contact me</span>
+          </Link>{" "}
+          <Link
+            onClick={scrollToTop}
+            className="dropdown-link-item"
+            to="/portfolio"
+          >
+            <FontAwesomeIcon icon={faPanorama} />
+            <span>Portfolio</span>
+          </Link>{" "}
+        </div>
       </div>
     </div>
   );

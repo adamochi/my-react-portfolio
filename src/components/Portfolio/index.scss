@@ -56,8 +56,10 @@
 
     .description {
       font-size: 14px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-weight: 400;
       margin-bottom: 5px;
-      color: #fff;
+      color: rgb(35, 226, 169);
       font-weight: 700;
     }
 
@@ -85,7 +87,12 @@
 
     &:after {
       content: "";
-      background: linear-gradient(180deg, #01f7a5, #000);
+      background: linear-gradient(
+        180deg,
+        #009ee7,
+        rgb(85, 42, 243),
+        rgb(223, 0, 0)
+      );
       position: absolute;
       left: 0;
       right: 0;
@@ -99,20 +106,32 @@
     }
 
     &:hover:after {
-      opacity: 0.3;
+      opacity: 0.55;
     }
-
+    &:hover .description {
+      color: rgb(243, 243, 243);
+    }
     &:hover .content {
       bottom: 0;
       background: transparent;
     }
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (min-width: 2400px) {
+    .image-box {
+      height: 40vh;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .image-box {
+      min-width: calc(33% - 20px);
+    }
+  }
+  @media screen and (max-width: 720px) {
     .image-box {
       min-width: calc(50% - 20px);
     }
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 540px) {
     .image-box {
       min-width: 100%;
     }
