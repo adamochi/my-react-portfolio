@@ -4,6 +4,7 @@ import Loader from "react-loaders";
 import profile from "../../assets/images/nexen.png";
 import Computer from "../Computer";
 import ButtonPortfolio from "../Links/ButtonPortfolio";
+import ButtonAbout from "../Links/ButtonAbout";
 
 const Home = () => {
   return (
@@ -57,6 +58,7 @@ const Home = () => {
             </p>
           </div>
         </div>
+        <ButtonAbout />
       </div>
 
       <Loader type="ball-clip-rotate-multiple" />
