@@ -6,6 +6,7 @@ import {
   faHouseChimneyWindow,
   faPaw,
   faUserAstronaut,
+  faIcons,
 } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 import LightModeButton from "../LightModeButton";
@@ -71,14 +72,14 @@ const TopNavBar = () => {
               exact="true"
               activeclassname="active"
               className="contact-link"
-              to="/portfolio"
+              to="/works"
             >
               <FontAwesomeIcon
                 className="more-awesome-icon"
-                icon={faEnvelopesBulk}
+                icon={faIcons}
                 color="var(--main-icon-colour)"
               />{" "}
-              <span>Portfolio</span>
+              <span>Works</span>
             </NavLink>
           </nav>
         </div>

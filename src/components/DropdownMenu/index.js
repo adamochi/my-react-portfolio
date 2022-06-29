@@ -55,10 +55,10 @@ const DropdownMenu = () => {
           <Link
             onClick={scrollToTop}
             className="dropdown-link-item"
-            to="/portfolio"
+            to="/works"
           >
             <FontAwesomeIcon icon={faPanorama} />
-            <span>Portfolio</span>
+            <span>Works</span>
           </Link>{" "}
         </div>
       </div>

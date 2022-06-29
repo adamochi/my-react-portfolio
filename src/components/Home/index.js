@@ -11,7 +11,9 @@ const Home = () => {
       <div className="homepage container">
         <Computer />
 
-        <h4>Hello, I'm an aspiring Web Developer based in Australia!</h4>
+        <h4>
+          Hello, I'm an aspiring Web Developer based in Brisbane, Australia!
+        </h4>
         <div className="title-home">
           <div className="title">
             <h1>Adam Sullivan</h1>
@@ -24,10 +26,10 @@ const Home = () => {
         <div className="text-container">
           <h3>Latest</h3>
           <p>
-            This year I have eagerly started to learn something which not only
-            motivates me but also has my full interest. And that happens to be
-            coding. Over the past few months, I have undertaken 3 courses and 2
-            bootcamps.
+            This year has been a turning point in my life as I have been
+            completely focused on the career path I wish I had been able to
+            choose earlier in my life. And that happens to be coding. Over the
+            past few months, I have undertaken 3 courses and 2 bootcamps.
           </p>
         </div>
 
