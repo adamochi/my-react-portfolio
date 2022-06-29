@@ -25,12 +25,18 @@ const Home = () => {
           </div>
         </div>
         <div className="text-container">
-          <h3>Latest</h3>
+          <h3>The Front End</h3>
           <p>
-            This year has been a turning point in my life as I have been
-            completely focused on the career path I wish I had been able to
-            choose earlier in my life. And that happens to be coding. Over the
-            past few months, I have undertaken 3 courses and 2 bootcamps.
+            This year has been a turning point in my life as I have completely
+            dedicated my time into becoming a Web Developer. Since starting this
+            journey into learning how to code, I found myself enjoying it more
+            and more as I learnt new things and solved problems. I became
+            addicted to coding!
+            <br />
+            With an average of 10 hours per day studying over the course of this
+            year, I have undertaken 3 courses and 2 bootcamps. Gaining
+            understanding of HTML, CSS, basic JavaScript as well as the React JS
+            framework which I have built this website on!
           </p>
         </div>
 
@@ -52,9 +58,14 @@ const Home = () => {
           <div className="text-section">
             <span>2022</span>
             <p>
-              a leap into something I have truly become passionate about
+              A leap into something I have truly become more passionate about
               remaining essentially unchanged. It was popularised in the 1960s
               with the release of Letraset sheets
+            </p>
+            <p>
+              If there is one thing i have learnt form working in the kitchen,
+              it's communication and organisatinoal skills. skills from kitchen
+              i can use
             </p>
           </div>
         </div>

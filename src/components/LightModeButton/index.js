@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./index.scss";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LightModeButton = () => {
   const checkLight = localStorage.getItem("dark mode");
   const saved = JSON.parse(checkLight);
   const [lightMode, setLightMode] = useState(saved);
+  const light = useRef();
 
   if (saved === null) {
     localStorage.setItem("dark mode", false);
@@ -15,29 +14,38 @@ const LightModeButton = () => {
   if (saved === true) {
     document.body.classList = "dark";
   }
+
+  const changeIcon = () => {
+    console.log(light.current.firstChild);
+    if (light.current.innerText === "💡") {
+      light.current.innerText = "🌙";
+    } else {
+      light.current.innerText = "💡";
+    }
+  };
+
   const lightButton = () => {
     setLightMode((current) => !current);
     if (lightMode === false) {
       localStorage.setItem("dark mode", true);
       document.body.classList = "dark";
+      changeIcon();
     }
     if (lightMode === true) {
       localStorage.setItem("dark mode", false);
       document.body.classList = "";
+      changeIcon();
     }
   };
 
   return (
     <button
+      ref={light}
       onClick={lightButton}
       aria-label="toggle dark mode"
       id="light-mode-button"
     >
-      <FontAwesomeIcon
-        className="moon-icon"
-        icon={faMoon}
-        color="var(--main-background-colour)"
-      />
+      💡
     </button>
   );
 };

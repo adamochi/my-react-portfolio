@@ -59,9 +59,10 @@ const About = () => {
             playing music, playing games or even modding them. I was always
             resourceful at solving my computer needs either by finding
             information online or at the library. If I couldn't find a way, I
-            would troubleshoot through trial and error. Editing code and adding
-            mods to games and applications bacame a 2nd hobby along with the
-            dozen computers I had built and repaired over the following years.
+            would troubleshoot through trial and error until something finally
+            worked. Editing code and adding mods to games and applications
+            bacame a 2nd hobby along with the dozen computers I would build and
+            repair over the following years.
           </p>
           <p>
             Since starting my journey to become a programmer, I have found
@@ -69,9 +70,8 @@ const About = () => {
             faced in taking this journey
           </p>
           <p>
-            So here I am, over a decade has passed from the most influential
-            moment in my life and I have built over a dozen PCs for not just
-            myself, but also the family and friends around me.
+            I continue to study and practice writing code everyday and hope to
+            find the right job to kickstart my career asap!
           </p>
         </div>
         <div className="nexen-img-div">

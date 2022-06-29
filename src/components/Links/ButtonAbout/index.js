@@ -9,7 +9,7 @@ const ButtonAbout = () => {
   return (
     <>
       <NavLink onClick={scrollToTop} to={"/about"}>
-        <button className="portfolio-btn">More about me ↵</button>
+        <button className="portfolio-btn">More About Me ↵</button>
       </NavLink>
     </>
   );
