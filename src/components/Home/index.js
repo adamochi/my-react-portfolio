@@ -28,22 +28,26 @@ const Home = () => {
           <h3>The Front End</h3>
           <p>
             This year has been a turning point in my life as I have completely
-            dedicated my time into becoming a Web Developer. Since starting this
+            dedicated my time into becoming a Web Developer. Since starting my
             journey into learning how to code, I found myself enjoying it more
-            and more as I learnt new things and solved problems. I became
-            addicted to coding!
+            and more the deeper I went.
             <br />
-            With an average of 10 hours per day studying over the course of this
-            year, I have undertaken 3 courses and 2 bootcamps. Gaining
-            understanding of HTML, CSS, basic JavaScript as well as the React JS
-            framework which I have built this website on!
+            Within weeks, it became a habit to start my day by going over what i
+            had been studying and what I had been working on to start my day,
+            and whenever I had a blocker, I saw an opportunity to learn by
+            problem solving the challenge presented. It was obvious how powerful
+            JavaScript is and I became addicted to coding!
+            <br />
+            With 800+ hours of studying over the course of this year, I have
+            gained a solid understanding of HTML, CSS, basic JavaScript as well
+            as the React JS framework which I have built this website on!
           </p>
         </div>
 
         <ButtonPortfolio />
 
         <div className="text-container">
-          <h3>Bio</h3>
+          <h3>XP self learning</h3>
           <div className="text-section">
             <span>1987</span>
             <p>Born in Ipswich Australia</p>
@@ -57,16 +61,19 @@ const Home = () => {
           </div>
           <div className="text-section">
             <span>2022</span>
-            <p>
-              A leap into something I have truly become more passionate about
-              remaining essentially unchanged. It was popularised in the 1960s
-              with the release of Letraset sheets
-            </p>
-            <p>
-              If there is one thing i have learnt form working in the kitchen,
-              it's communication and organisatinoal skills. skills from kitchen
-              i can use
-            </p>
+            <div>
+              <p>undertaken 3 courses and 2 bootcamps. </p>
+              <p>
+                A leap into something I have truly become more passionate about
+                remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets
+              </p>
+              <p>
+                If there is one thing i have learnt form working in the kitchen,
+                it's communication and organisatinoal skills. skills from
+                kitchen i can use
+              </p>
+            </div>
           </div>
         </div>
         <ButtonAbout />

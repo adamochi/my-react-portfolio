@@ -18,10 +18,10 @@
     background-position: right;
     color: black;
     transition: 0.3s;
-    .moon-icon {
-      color: var(--main-background-colour);
-      transition: 0.5s;
-    }
+    // .moon-icon {
+    //   color: var(--main-background-colour);
+    //   transition: 0.5s;
+    // }
   }
   &:active {
     transform: rotate(360deg);

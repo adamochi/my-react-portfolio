@@ -16,7 +16,6 @@ const LightModeButton = () => {
   }
 
   const changeIcon = () => {
-    console.log(light.current.firstChild);
     if (light.current.innerText === "💡") {
       light.current.innerText = "🌙";
     } else {

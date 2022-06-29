@@ -1,28 +1,28 @@
 {
-    "portfolio": [
-        {
-            "cover": "https://i.imgur.com/21pUJbQ.png",
-            "title": "First Portfolio",
-            "description": "After beginning my coding studies just one month prior, I decided that I needed to start my own project and get some practice in!",
-            "url": "https://eloquent-kashata-64e9a1.netlify.app"
-        },
-        {
-            "cover": "https://i.imgur.com/2kReWam.png",
-            "title": "JavaScript Number Game",
-            "description": "Go head to head with my AI and guess the right number",
-            "url": "https://eloquent-kashata-64e9a1.netlify.app/numbergame/index.html"
-        },
-        {
-            "cover": "https://i.imgur.com/vKdazGg.png",
-            "title": "Momentum App",
-            "description": "Based on Javascript. The first course i took challenged me to build my own browser app that can tell you current time, weather, randomised inspirational quotes and keep track of your own To Do List",
-            "url": "https://www.instagram.com/p/B4ZbmgUJYZCghIUTS8OzdHIfaL6FSBQTlIZBco0/"
-        },
-        {
-            "cover": "https://i.imgur.com/ASceTFq.png",
-            "title": "React Website",
-            "description": "Within two months, I had started to feel confident with my skills in HTML, CSS, and basic JavaScript. So I began to pick-up the React framework and put together a project that would accelerate my learning",
-            "url": "https://greenbean-woodsmith.netlify.app/"
-        }
-    ]
+  "portfolio": [
+    {
+      "cover": "https://i.imgur.com/21pUJbQ.png",
+      "title": "First Portfolio",
+      "description": "After beginning my coding studies just one month prior, I decided that I needed to start my own project and get some practice in!",
+      "url": "https://eloquent-kashata-64e9a1.netlify.app"
+    },
+    {
+      "cover": "https://i.imgur.com/2kReWam.png",
+      "title": "JavaScript Number Game",
+      "description": "Go head to head with my AI and guess the right number",
+      "url": "https://eloquent-kashata-64e9a1.netlify.app/numbergame/index.html"
+    },
+    {
+      "cover": "https://i.imgur.com/vKdazGg.png",
+      "title": "Momentum App",
+      "description": "Based on Javascript. The first course i took challenged me to build my own browser app that can tell you current time, weather, randomised inspirational quotes and keep track of your own To Do List",
+      "url": "https://adamochi.github.io/vanilla-js-2022/"
+    },
+    {
+      "cover": "https://i.imgur.com/bQeuPlm.png",
+      "title": "React Website",
+      "description": "Within two months, I had started to feel confident with my skills in HTML, CSS, and basic JavaScript. So I began to pick-up the React framework and put together a project that would accelerate my learning",
+      "url": "https://greenbean-woodsmith.netlify.app/"
+    }
+  ]
 }
