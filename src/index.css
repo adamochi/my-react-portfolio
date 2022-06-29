@@ -10,7 +10,7 @@ body {
   background: var(--main-background-colour);
   overflow: auto;
   display: block;
-  height: 5000px;
+  height: calc(100% + 100px);
 }
 
 code {

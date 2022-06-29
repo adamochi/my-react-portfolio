@@ -10,7 +10,7 @@ import { OrbitControls } from "@react-three/drei";
 
 const Computer = () => {
   return (
-    <div className="homepage container">
+    <div className="homepage">
       <Canvas camera={{ fov: 45, position: [18, 8, 3] }} className="canvas">
         <OrbitControls enableZoom={true} />
         <ambientLight intensity={1.45} />
