@@ -7,6 +7,7 @@ import {
   faPaw,
   faUserAstronaut,
   faIcons,
+  faFileLines,
 } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 import LightModeButton from "../LightModeButton";
@@ -81,6 +82,16 @@ const TopNavBar = () => {
               />{" "}
               <span>Works</span>
             </NavLink>
+            <NavLink
+              onClick={scrollToTop}
+              exact="true"
+              activeclassname="active"
+              className="contact-link"
+              to="/resume"
+            >
+              <FontAwesomeIcon icon={faFileLines} />
+              <span>Resume</span>
+            </NavLink>{" "}
           </nav>
         </div>
         <a

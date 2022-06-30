@@ -6,8 +6,9 @@ import {
   faHtml5,
   faCss3,
   faSass,
+  faJsSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+// import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
   return (
@@ -47,7 +48,7 @@ const Resume = () => {
               <h3>Programming Language</h3>
               <ul>
                 <li>
-                  <FontAwesomeIcon icon={faCode} /> JavaScript
+                  <FontAwesomeIcon icon={faJsSquare} /> JavaScript
                 </li>
               </ul>
             </div>
@@ -66,7 +67,7 @@ const Resume = () => {
           <span>education</span>
           <span>personal</span>
           <span>
-            For furthering my Front End skills, I chose to learn React JS
+            For furthering my Front End skills, I chose to learn the React JS
             framework based on it's maintainability
           </span>
         </div>
