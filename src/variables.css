@@ -17,4 +17,5 @@
     var(--main-purple-colour),
     rgb(239, 207, 240)
   );
+  --resume-paper: rgb(235, 234, 233);
 }

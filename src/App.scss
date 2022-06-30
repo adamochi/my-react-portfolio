@@ -82,7 +82,7 @@ textarea {
 .dark {
   transition: 0.3s ease-out;
   --main-background-colour: #0e2964;
-  --page-title-colour: whitesmoke;
+  --page-title-colour: rgb(217, 223, 221);
   --dark-blue-colour: rgb(217, 223, 221);
   --light-mode-gradient: linear-gradient(
     90deg,
@@ -90,4 +90,5 @@ textarea {
     var(--main-purple-colour),
     #0e2964
   );
+  --resume-paper: rgba(48, 48, 48, 0.747);
 }

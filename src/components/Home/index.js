@@ -36,7 +36,7 @@ const Home = () => {
               and more each day.
             </p>
             <p>
-              With 800+ hours of studying &amp; practicing writing code over the
+              With 600+ hours of studying &amp; practicing writing code over the
               course of this year, I have gained a solid understanding of HTML,
               CSS, basic JavaScript. As well as the React JS framework which I
               have built this website on!
@@ -47,16 +47,18 @@ const Home = () => {
         <ButtonPortfolio />
 
         <div className="text-container ">
-          <h3>Education and How I Learned</h3>
           <div className="text-section text-section-with-border">
-            <span>2022</span>
-            <p>
-              <strong>How did I make it this far by Self study?</strong>
-              <br /> For the majority of the time I have been studying, I have
-              undertaken online courses at Nomad Coders.
-              <br />
-              Here you can see the formal studying I've completed
-            </p>
+            <h3>Education and How I Learned</h3>
+            <div className="inner-xp-learn-div">
+              <span>2022</span>
+              <p>
+                <strong>How did I make it this far by Self study?</strong>
+                <br /> I have undertaken online courses at Nomad Coders For the
+                majority of the time I have been studying.
+                <br />
+                Here you can see the formal studying I've completed
+              </p>
+            </div>
           </div>
           <div className="nomad-div">
             <a

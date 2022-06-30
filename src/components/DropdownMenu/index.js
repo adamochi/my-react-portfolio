@@ -1,5 +1,6 @@
 import {
   faComments,
+  faFileLines,
   faInfinity,
   faPanorama,
 } from "@fortawesome/free-solid-svg-icons";
@@ -59,6 +60,14 @@ const DropdownMenu = () => {
           >
             <FontAwesomeIcon icon={faPanorama} />
             <span>Works</span>
+          </Link>{" "}
+          <Link
+            onClick={scrollToTop}
+            className="dropdown-link-item"
+            to="/resume"
+          >
+            <FontAwesomeIcon icon={faFileLines} />
+            <span>Resume</span>
           </Link>{" "}
         </div>
       </div>
