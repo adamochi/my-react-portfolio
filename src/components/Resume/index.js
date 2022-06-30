@@ -1,5 +1,13 @@
 import React from "react";
 import "./index.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faReact,
+  faHtml5,
+  faCss3,
+  faSass,
+} from "@fortawesome/free-brands-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
   return (
@@ -7,7 +15,7 @@ const Resume = () => {
       <div className="contact-page container">
         <div className="paper">
           <h1>Adam Sullivan</h1>
-          <h4>Brisbane QLD 4000</h4>
+          <h4>Spring Hill QLD 4000</h4>
           <h4>Ph: 0409 051 595</h4>
           <h4>E-mail: sullivanadam@bigpond.com</h4>
           <h4>
@@ -24,21 +32,31 @@ const Resume = () => {
             <div className="bordered-box_inner-box one">
               <h3>Coding Languages</h3>
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SCSS</li>
+                <li>
+                  <FontAwesomeIcon icon={faHtml5} /> HTML
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCss3} /> CSS
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faSass} /> SCSS
+                </li>
               </ul>
             </div>
             <div className="bordered-box_inner-box two">
               <h3>Programming Language</h3>
               <ul>
-                <li>JavaScript</li>
+                <li>
+                  <FontAwesomeIcon icon={faCode} /> JavaScript
+                </li>
               </ul>
             </div>
             <div className="bordered-box_inner-box one">
               <h3>Framework</h3>
               <ul>
-                <li>React JS</li>
+                <li>
+                  <FontAwesomeIcon icon={faReact} /> React JS
+                </li>
               </ul>
             </div>
           </div>
