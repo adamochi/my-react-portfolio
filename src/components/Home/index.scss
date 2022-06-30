@@ -43,6 +43,7 @@
     width: 60vw;
     max-width: 500px;
     height: 150px;
+    margin-bottom: 30px;
     .title {
       padding: 0 10px;
       display: flex;
@@ -61,17 +62,14 @@
       }
     }
     .profile-pic {
-      background-color: palevioletred;
-      border-radius: 100vmax;
       display: flex;
       align-items: center;
-      width: 127px;
-      height: 127px;
-      margin: 0 10px;
+      width: 150px;
+      height: 150px;
+      margin: 0;
       img {
         border: 1.5px solid whitesmoke;
-        border-radius: 100vmax;
-        width: 100%;
+        border-radius: 10px;
         height: 100%;
       }
     }
@@ -115,7 +113,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid rgb(129, 129, 129);
     border-radius: 10px;
     margin: 20px 0 20px 0;
     h3 {
@@ -123,21 +121,6 @@
     }
     .inner-xp-learn-div {
       display: flex;
-    }
-  }
-  .nomad-coders-link {
-    font-family: "Coolvetica", monospace, Courier, "Courier New";
-    font-size: 16px;
-    letter-spacing: 1px;
-    padding: 7px 15px;
-    cursor: pointer;
-    border: 2px solid rgb(148, 216, 243);
-    border-radius: 4px;
-    background-color: rgb(206, 224, 216);
-    transition: 0.1s;
-    &:hover {
-      animation: rubberBand 0.7s;
-      transition: 0.1s;
     }
   }
 }

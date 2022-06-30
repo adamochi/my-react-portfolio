@@ -7,10 +7,11 @@
   cursor: pointer;
   border: 2px solid rgb(148, 216, 243);
   border-radius: 4px;
-  background-color: rgb(206, 224, 216);
+  background-color: rgb(107, 255, 188);
   transition: 0.1s;
   &:hover {
+    background-color: yellow;
     animation: rubberBand 0.7s;
-    transition: 0.1s;
+    transition: 0.3s;
   }
 }

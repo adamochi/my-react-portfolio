@@ -6,13 +6,15 @@
   justify-content: center;
   color: rgb(42, 48, 46);
   .paper {
+    opacity: 0;
+    animation: jackInTheBox 1s forwards;
+    animation-delay: 1s;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 95%;
     max-width: 900px;
     height: 1300px;
-
     background-color: var(--resume-paper);
     box-shadow: 0 0 10px 2px rgba(140, 118, 192, 0.5);
     margin-top: 70px;

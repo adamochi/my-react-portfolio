@@ -1,13 +1,11 @@
 import React from "react";
 import "./index.scss";
 import Loader from "react-loaders";
-import profile from "../../assets/images/nexen.png";
+import profile from "../../assets/images/jeju.png";
 import Computer from "../Computer";
 import ButtonPortfolio from "../Links/ButtonPortfolio";
 import ButtonAbout from "../Links/ButtonAbout";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-
+import Nomad from "../Links/Nomad";
 const Home = () => {
   return (
     <>
@@ -62,15 +60,7 @@ const Home = () => {
               </div>
             </div>
             <div className="nomad-div">
-              <a
-                target={"_blank"}
-                rel="noreferrer"
-                href="https://nomadcoders.co/users/honeyrumballs"
-              >
-                <button className="nomad-coders-link">
-                  <FontAwesomeIcon icon={faLaptopCode} /> Nomad Coders ↵
-                </button>
-              </a>
+              <Nomad />
             </div>
             <h3>The Back End</h3>
             <div className="text-section">
@@ -89,12 +79,7 @@ const Home = () => {
                 <br />
                 In 2009 I Completed my Chef apprenticeship in Cairns, and
                 continued cooking in dynamic and fast paced environments for
-                many years to come undertaken 3 courses and 2 bootcamps. A leap
-                into something I have truly become more passionate about
-                remaining essentially unchanged. It was popularised in the 1960s
-                with the release of Letraset sheets If there is one thing i have
-                learnt form working in the kitchen, it's communication and
-                organisatinoal skills. skills from kitchen i can use
+                many years to come.
               </p>
             </div>
           </div>

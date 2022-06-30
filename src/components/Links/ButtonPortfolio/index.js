@@ -6,6 +6,7 @@ const ButtonPortfolio = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
+
   return (
     <>
       <NavLink onClick={scrollToTop} to={"/works"}>
