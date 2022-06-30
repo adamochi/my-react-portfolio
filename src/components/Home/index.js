@@ -22,6 +22,7 @@ const Home = () => {
           </div>
           <div className="profile-pic">
             <img src={profile} alt="Adam Sullivan" />
+            <span>It's time to change!</span>
           </div>
         </div>
         <div className="paper-home">

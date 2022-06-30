@@ -10,7 +10,7 @@
     background-color: var(--resume-paper);
     box-shadow: 0 0 10px 2px rgba(140, 118, 192, 0.5);
     border-radius: 2px;
-    margin-top: 20px;
+    margin-top: 40px;
     padding-bottom: 50px;
   }
   width: 100%;
@@ -45,6 +45,7 @@
     height: 150px;
     margin-bottom: 30px;
     .title {
+      margin-bottom: 20px;
       padding: 0 10px;
       display: flex;
       flex-direction: column;
@@ -62,15 +63,30 @@
       }
     }
     .profile-pic {
+      position: relative;
       display: flex;
       align-items: center;
+      justify-content: center;
       width: 150px;
       height: 150px;
-      margin: 0;
+      margin: 0 5px 0 10px;
       img {
         border: 1.5px solid whitesmoke;
         border-radius: 10px;
         height: 100%;
+      }
+      span {
+        width: 100%;
+        text-align: center;
+        font-family: monospace, "courier";
+        font-size: 12px;
+        letter-spacing: -0.5px;
+        padding: 3px 0;
+        position: absolute;
+        color: rgb(241, 241, 241);
+        background-color: rgb(44, 44, 44);
+        top: -12px;
+        border-radius: 7px;
       }
     }
   }
