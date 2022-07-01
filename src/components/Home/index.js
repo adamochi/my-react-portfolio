@@ -48,20 +48,21 @@ const Home = () => {
 
           <div className="text-container ">
             <div className="text-section text-section-with-border">
-              <h3>Education and How I Learned</h3>
+              <h3>How did I make it this far by Self study?</h3>
               <div className="inner-xp-learn-div">
                 <span>2022</span>
                 <p>
-                  <strong>How did I make it this far by Self study?</strong>
+                  <strong>Online Courses and self-motivation</strong>
                   <br /> I have undertaken online courses at Nomad Coders For
                   the majority of the time I have been studying.
                   <br />
                   Here you can see the formal courses I've completed
                 </p>
+                <Nomad />
               </div>
             </div>
             <div className="nomad-div">
-              <Nomad />
+              <h2>completed courses link goes here</h2>
             </div>
             <h3>The Back End</h3>
             <div className="text-section">
