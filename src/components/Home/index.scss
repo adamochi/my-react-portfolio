@@ -63,6 +63,7 @@
         font-size: 36px;
         margin: 0;
         letter-spacing: 1px;
+        cursor: default;
       }
       h5 {
         font-size: 14px;
@@ -90,12 +91,14 @@
       font-size: 26px;
       width: fit-content;
       border-bottom: 1px solid grey;
+      cursor: default;
     }
     h3 {
       font-family: "Courier New", Courier, monospace;
       font-size: 26px;
       width: fit-content;
       border-bottom: 1px solid grey;
+      cursor: default;
     }
     .the-front-end-p {
       display: flex;
