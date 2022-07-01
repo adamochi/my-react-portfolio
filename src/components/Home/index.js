@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
+import AnimatedLetters from "../AnimatedLetters";
 import Loader from "react-loaders";
 import Chef from "../../assets/images/time.png";
 import profile from "../../assets/images/jeju.png";
@@ -7,11 +8,21 @@ import Computer from "../Computer";
 import ButtonPortfolio from "../Links/ButtonPortfolio";
 import ButtonAbout from "../Links/ButtonAbout";
 import Nomad from "../Links/Nomad";
-import Splash from "../../assets/images/splash.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
+  const [letterClass, setLetterClass] = useState("text-animate");
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 4000);
+    return () => {
+      clearTimeout(timer);
+    };
+  });
+
   return (
     <>
       <div className="homepage container">
@@ -22,7 +33,13 @@ const Home = () => {
         </h4>
         <div className="title-home">
           <div className="title">
-            <h1>Adam Sullivan</h1>
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={"Adam Sullivan".split("")}
+                idx={15}
+              />
+            </h1>
             <h5>Front-End Web Developer / Designer</h5>
           </div>
           <div className="profile-pic">
@@ -31,7 +48,13 @@ const Home = () => {
         </div>
         <div className="paper-home">
           <div className="text-container">
-            <h3>The Front End</h3>
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={"The Front End".split("")}
+                idx={20}
+              />
+            </h1>
             <div className="the-front-end-p">
               <p>
                 This year has been a turning point in my life as I have
@@ -50,11 +73,11 @@ const Home = () => {
 
           <ButtonPortfolio />
 
-          <div className="text-container ">
+          <div className="text-container">
             <div className="text-section text-section-with-border">
               <h3>How did I make it this far by Self study?</h3>
               <div className="inner-xp-learn-div">
-                <span>2022</span>
+                <span className="year-span">2022</span>
                 <p>
                   <strong>Online Courses and self-motivation</strong>
                   <br /> I have undertaken online courses at Nomad Coders For
@@ -65,11 +88,17 @@ const Home = () => {
               </div>
               <div className="nomad-link-div">
                 <Nomad />
-                <span>completed curriculum link goes here</span>
+                {/* <span>completed curriculum link goes here</span> */}
               </div>
             </div>
 
-            <h3>The Back End</h3>
+            <h3>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={"The Back End".split("")}
+                idx={25}
+              />
+            </h3>
             <div className="text-section">
               <p>
                 <strong>Things I like:</strong>

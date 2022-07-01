@@ -5,12 +5,13 @@
   padding: 7px 15px;
   margin-top: 20px;
   cursor: pointer;
-  border: 2px solid rgb(148, 216, 243);
+  border: 1px solid rgb(107, 255, 188);
   border-radius: 4px;
   background-color: rgb(107, 255, 188);
   transition: 0.1s;
   &:hover {
-    background-color: yellow;
+    background-color: rgba(160, 255, 250, 0.877);
+    border: 1px solid rgb(107, 255, 188);
     animation: rubberBand 0.7s;
     transition: 0.3s;
   }

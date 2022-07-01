@@ -32,7 +32,7 @@
     transform: translateY(-32px);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    background-color: rgba(163, 218, 233, 0.596);
+    background-color: var(--clear-hfour);
     font-size: 16px;
     font-weight: 500;
     padding: 5px 20px;
@@ -40,14 +40,17 @@
     margin: 0;
   }
   .title-home {
+    color: rgb(46, 46, 46);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 60vw;
-    max-width: 500px;
+    max-width: 510px;
     height: 150px;
     margin-bottom: 30px;
+    background-color: var(--resume-paper);
+    border-radius: 15px;
     .title {
       margin-bottom: 20px;
       padding: 0 10px;
@@ -73,18 +76,26 @@
       justify-content: center;
       width: 150px;
       height: 150px;
-      margin: 0 5px 0 10px;
+      margin: 0 0 0 10px;
       img {
-        border: 2px solid whitesmoke;
-        border-radius: 10px;
-        height: 100%;
+        margin-right: 30px;
+        border-radius: 15px;
+        height: 90%;
       }
     }
   }
   .text-container {
+    h1 {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 26px;
+      width: fit-content;
+      border-bottom: 1px solid grey;
+    }
     h3 {
-      text-decoration: underline;
-      font-size: 18px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 26px;
+      width: fit-content;
+      border-bottom: 1px solid grey;
     }
     .the-front-end-p {
       display: flex;
@@ -101,10 +112,11 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;
-    span {
+    .year-span {
       font-size: 16px;
       font-weight: 600;
     }
+
     p {
       margin: 0 0 0 20px;
       font-size: 16px;
@@ -119,6 +131,10 @@
     margin: 20px 0 20px 0;
 
     h3 {
+      font-family: "Coolvetica";
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-size: 20px;
       margin: 0 0 20px 0;
     }
     .inner-xp-learn-div {
@@ -201,7 +217,12 @@
     .title-home {
       transform: translateY(-40px);
       width: 100%;
+      align-items: center;
       justify-content: center;
+      max-width: 95%;
+      .title {
+        margin-right: 30px;
+      }
       .profile-pic {
         margin: 0;
       }

@@ -50,19 +50,19 @@ const About = () => {
           <p>
             After attending a dozen different schools and graduating year 12, I
             started cooking, I had grown up loving to cook, I think that is
-            because I come from a large family. And although I would go on to
-            work as a chef for 17 years, I also had my first real experience
-            with computers at the age of 18. My friend from school helped me
-            build a custom PC for my dad. It became the household PC and that is
-            when I really got into computers. If I wasn't out skateboarding on
-            my day off work, I was messing around with the computer. Either
-            playing music, playing games or even modding them. I was always
-            resourceful at solving my computer needs either by finding
-            information online or at the library. If I couldn't find a way, I
-            would troubleshoot through trial and error until something finally
-            worked. Editing code and adding mods to games and applications
-            bacame a 2nd hobby along with the dozen computers I would build and
-            repair over the following years.
+            because I come from a large family. At the age of 18 (and although I
+            would go on to work as a chef for 17 years), I had my first real
+            experience with computers . My friend from school helped me build a
+            custom PC for my dad. It became the household PC and that is when I
+            really got into computers. If I wasn't out skateboarding on my day
+            off work, I was messing around with the computer. Either playing
+            music, playing games or even modding them. I was always resourceful
+            at solving my computer needs either by finding information online or
+            at the library. If I couldn't find a way, I would troubleshoot
+            through trial and error until something finally worked. Editing code
+            and adding mods to games and applications bacame a 2nd hobby along
+            with the dozen computers I would build and repair over the following
+            years.
           </p>
           <p>
             Since starting my journey to become a programmer, I have found
