@@ -33,6 +33,7 @@
       color: rgb(83, 133, 226);
       font-size: 14px;
     }
+
     @keyframes customFade {
       0% {
         transform: translateY(-2000px);
@@ -43,6 +44,7 @@
         opacity: 1;
       }
     }
+
     .bordered-box {
       opacity: 0;
       margin: 20px 0 20px 0;
@@ -52,7 +54,7 @@
       width: 92%;
       max-width: 833px;
       justify-content: space-evenly;
-      animation: fadeIn 0.3s forwards;
+      animation: fadeInDown 0.3s forwards;
       animation-delay: 1.8s;
       .one {
         opacity: 0;

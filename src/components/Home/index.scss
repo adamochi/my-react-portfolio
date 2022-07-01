@@ -1,5 +1,14 @@
 .homepage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .paper-home {
+    opacity: 0;
+    animation: jackInTheBox 1s forwards;
+    animation-delay: 1.5s;
     color: rgb(42, 48, 46);
     display: flex;
     flex-direction: column;
@@ -13,12 +22,6 @@
     margin-top: 40px;
     padding-bottom: 50px;
   }
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   canvas {
     height: 400px;
   }
@@ -75,19 +78,6 @@
         border-radius: 10px;
         height: 100%;
       }
-      span {
-        width: 100%;
-        text-align: center;
-        font-family: monospace, "courier";
-        font-size: 12px;
-        letter-spacing: -0.5px;
-        padding: 3px 0;
-        position: absolute;
-        color: rgb(241, 241, 241);
-        background-color: rgb(44, 44, 44);
-        top: -12px;
-        border-radius: 7px;
-      }
     }
   }
   .text-container {
@@ -139,6 +129,35 @@
       display: flex;
     }
   }
+  .time-to-change {
+    margin-top: 50px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    max-width: 900px;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    span {
+      width: fit-content;
+      padding: 3px 10px;
+      text-align: center;
+      font-family: monospace, "courier";
+      font-size: 20px;
+      letter-spacing: -0.5px;
+      padding: 3px 10px;
+      position: absolute;
+      color: rgb(241, 241, 241);
+      background-color: rgb(44, 44, 44);
+      top: -20px;
+      border-radius: 100vmax;
+    }
+  }
 }
 @media screen and (orientation: portrait) {
   .homepage {
@@ -160,6 +179,9 @@
       .profile-pic {
         margin: 0;
       }
+    }
+    .time-to-change {
+      width: 95%;
     }
   }
 }

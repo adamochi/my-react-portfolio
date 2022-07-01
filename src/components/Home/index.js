@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.scss";
 import Loader from "react-loaders";
+import Chef from "../../assets/images/time.png";
 import profile from "../../assets/images/jeju.png";
 import Computer from "../Computer";
 import ButtonPortfolio from "../Links/ButtonPortfolio";
@@ -22,7 +23,6 @@ const Home = () => {
           </div>
           <div className="profile-pic">
             <img src={profile} alt="Adam Sullivan" />
-            <span>It's time to change!</span>
           </div>
         </div>
         <div className="paper-home">
@@ -85,6 +85,10 @@ const Home = () => {
             </div>
           </div>
           <ButtonAbout />
+        </div>
+        <div className="time-to-change">
+          <img src={Chef} alt="adam" />
+          <span>It's time to change!</span>
         </div>
       </div>
 
