@@ -27,13 +27,14 @@
   }
 
   h4 {
+    color: rgb(24, 24, 24);
     font-family: monospace;
     transform: translateY(-32px);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    background-color: rgba(125, 229, 255, 0.267);
+    background-color: rgba(163, 218, 233, 0.596);
     font-size: 16px;
-    letter-spacing: -0.5px;
+    font-weight: 500;
     padding: 5px 20px;
     border-radius: 5px;
     margin: 0;
@@ -134,26 +135,28 @@
     margin-top: 50px;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 50%;
     max-width: 500px;
-
+    align-items: center;
     img {
+      box-shadow: 0 0 20px 0 rgb(168, 168, 168);
       width: 100%;
       border-radius: 10px;
     }
 
-    @keyframes bkgAwesome {
-      0% {
-        background-position: left;
-      }
-      50% {
-        background-position: right;
-      }
-      100% {
-        background-position: left;
-      }
-    }
+    // @keyframes bkgAwesome {
+    //   0% {
+    //     background-position: left;
+    //   }
+    //   50% {
+    //     background-position: right;
+    //   }
+    //   100% {
+    //     background-position: left;
+    //   }
+    // }
 
     span {
       width: fit-content;
@@ -163,18 +166,18 @@
       font-size: 20px;
       letter-spacing: -0.5px;
       padding: 6px 20px;
-      position: absolute;
+      // position: absolute;
       color: rgb(53, 53, 53);
-      background: linear-gradient(
-        90deg,
-        rgb(184, 218, 248),
-        rgb(255, 142, 198),
-        rgb(0, 217, 255)
-      );
-      background-size: 1000%;
-      animation: bkgAwesome 15s linear infinite;
-      top: -20px;
-      border-radius: 3px;
+      // background: linear-gradient(
+      //   90deg,
+      //   rgba(184, 218, 248, 0.205),
+      //   rgba(255, 142, 199, 0.212),
+      //   rgba(0, 217, 255, 0.212)
+      // );
+      // background-size: 1000%;
+      // animation: bkgAwesome 15s linear infinite;
+      // // top: -20px;
+      // border-radius: 3px;
       svg {
         color: rgb(33, 52, 104);
         font-size: 16px;

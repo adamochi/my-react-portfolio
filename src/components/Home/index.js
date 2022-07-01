@@ -7,8 +7,10 @@ import Computer from "../Computer";
 import ButtonPortfolio from "../Links/ButtonPortfolio";
 import ButtonAbout from "../Links/ButtonAbout";
 import Nomad from "../Links/Nomad";
+import Splash from "../../assets/images/splash.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
+
 const Home = () => {
   return (
     <>
@@ -93,7 +95,8 @@ const Home = () => {
         <div className="time-to-change">
           <img src={Chef} alt="adam chef" />
           <span>
-            <FontAwesomeIcon icon={faStopwatch} /> It's time to change!
+            <FontAwesomeIcon icon={faStopwatch} /> It's time for a career
+            change!
           </span>
         </div>
       </div>

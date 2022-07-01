@@ -18,7 +18,7 @@ export default function Model({ ...props }) {
   });
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group position={[0, -1, 0]} ref={group} {...props} dispose={null}>
       <mesh
         geometry={nodes.chef.geometry}
         material={materials.palette}
