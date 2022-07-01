@@ -58,7 +58,7 @@ const Home = () => {
                   <br /> I have undertaken online courses at Nomad Coders For
                   the majority of the time I have been studying.
                   <br />
-                  Here you can see the formal courses I've completed
+                  Here you can see the formal courses I've completed.
                 </p>
               </div>
               <div className="nomad-link-div">

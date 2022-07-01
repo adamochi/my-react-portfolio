@@ -133,7 +133,6 @@
   .time-to-change {
     margin-top: 50px;
     position: relative;
-
     display: flex;
     justify-content: center;
     width: 50%;
@@ -144,6 +143,18 @@
       border-radius: 10px;
     }
 
+    @keyframes bkgAwesome {
+      0% {
+        background-position: left;
+      }
+      50% {
+        background-position: right;
+      }
+      100% {
+        background-position: left;
+      }
+    }
+
     span {
       width: fit-content;
       padding: 3px 10px;
@@ -151,14 +162,22 @@
       font-family: monospace, "courier";
       font-size: 20px;
       letter-spacing: -0.5px;
-      padding: 3px 10px;
+      padding: 6px 20px;
       position: absolute;
       color: rgb(53, 53, 53);
-      background-color: RGB(184, 218, 248);
+      background: linear-gradient(
+        90deg,
+        rgb(184, 218, 248),
+        rgb(255, 142, 198),
+        rgb(0, 217, 255)
+      );
+      background-size: 1000%;
+      animation: bkgAwesome 15s linear infinite;
       top: -20px;
-      border-radius: 100vmax;
+      border-radius: 3px;
       svg {
-        color: tomato;
+        color: rgb(33, 52, 104);
+        font-size: 16px;
       }
     }
   }
