@@ -14,11 +14,17 @@ export default function Model({ ...props }) {
     if (!group.current) {
       return;
     }
-    group.current.rotation.y += 0.005;
+    group.current.rotation.y += 0.0035;
   });
 
   return (
-    <group position={[0, 2, 0]} ref={group} {...props} dispose={null}>
+    <group
+      rotation={[0, 3, 0]}
+      position={[0, 1, 0]}
+      ref={group}
+      {...props}
+      dispose={null}
+    >
       <mesh
         geometry={nodes.chef.geometry}
         material={materials.palette}

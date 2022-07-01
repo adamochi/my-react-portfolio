@@ -19,7 +19,7 @@
     background-color: var(--resume-paper);
     box-shadow: 0 0 10px 2px rgba(140, 118, 192, 0.5);
     border-radius: 2px;
-    margin-top: 40px;
+    margin-top: -160px;
     padding-bottom: 50px;
   }
   canvas {
@@ -29,7 +29,7 @@
   h4 {
     color: rgb(24, 24, 24);
     font-family: monospace;
-    transform: translateY(-32px);
+    transform: translateY(-200px);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     background-color: var(--clear-hfour);
@@ -40,7 +40,7 @@
     margin: 0;
   }
   .title-home {
-    color: rgb(46, 46, 46);
+    color: var(--dark-blue-colour);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -48,9 +48,10 @@
     width: 60vw;
     max-width: 510px;
     height: 150px;
-    margin-bottom: 30px;
-    background-color: var(--resume-paper);
     border-radius: 15px;
+    transform: translateY(-170px);
+    margin-bottom: 20px;
+
     .title {
       margin-bottom: 20px;
       padding: 0 10px;
@@ -79,9 +80,10 @@
       height: 150px;
       margin: 0 0 0 10px;
       img {
+        border: 2px solid white;
         margin-right: 30px;
         border-radius: 15px;
-        height: 90%;
+        height: 180px;
       }
     }
   }
@@ -186,7 +188,7 @@
       letter-spacing: -0.5px;
       padding: 6px 20px;
       // position: absolute;
-      color: rgb(53, 53, 53);
+      color: var(--dark-blue-colour);
       // background: linear-gradient(
       //   90deg,
       //   rgba(184, 218, 248, 0.205),
@@ -198,7 +200,7 @@
       // // top: -20px;
       // border-radius: 3px;
       svg {
-        color: rgb(33, 52, 104);
+        color: tomato;
         font-size: 16px;
       }
     }
@@ -206,6 +208,10 @@
 }
 @media screen and (orientation: portrait) {
   .homepage {
+    .paper-home {
+      margin-top: 0;
+    }
+
     .text-container {
       .the-front-end-p {
         flex-direction: column;
@@ -215,19 +221,32 @@
       height: 400px;
     }
     h4 {
-      transform: translateY(-55px);
+      transform: translateY(-100px);
+      font-size: 14px;
+      width: 85%;
     }
     .title-home {
-      transform: translateY(-40px);
+      transform: translateY(-80px);
       width: 100%;
       align-items: center;
       justify-content: center;
       max-width: 95%;
+      background-color: rgba(0, 0, 0, 0);
+      margin-bottom: 30px;
       .title {
-        margin-right: 30px;
+        margin: -20px 0 10px 0;
       }
       .profile-pic {
-        margin: 0;
+        margin: 15px 0 0 0;
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        align-items: center;
+        img {
+          height: 180px;
+          margin: 0;
+          border: 3px solid white;
+        }
       }
     }
     .time-to-change {
@@ -245,12 +264,12 @@
     }
 
     h4 {
-      transform: translateY(-50px);
+      transform: translateY(-200px);
       font-size: 24px;
     }
     .title-home {
       max-width: 700px;
-      height: 150px;
+      height: 200px;
       margin-bottom: 50px;
       .title {
         h1 {

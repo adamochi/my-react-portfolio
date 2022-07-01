@@ -37,7 +37,7 @@ const Home = () => {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={"Adam Sullivan".split("")}
-                idx={15}
+                idx={20}
               />
             </h1>
             <h5>Front-End Web Developer / Designer</h5>
@@ -52,7 +52,7 @@ const Home = () => {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={"The Front End".split("")}
-                idx={20}
+                idx={25}
               />
             </h1>
             <div className="the-front-end-p">
