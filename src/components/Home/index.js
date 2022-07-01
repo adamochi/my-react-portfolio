@@ -7,6 +7,8 @@ import Computer from "../Computer";
 import ButtonPortfolio from "../Links/ButtonPortfolio";
 import ButtonAbout from "../Links/ButtonAbout";
 import Nomad from "../Links/Nomad";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   return (
     <>
@@ -89,8 +91,10 @@ const Home = () => {
           <ButtonAbout />
         </div>
         <div className="time-to-change">
-          <img src={Chef} alt="adam" />
-          <span>It's time to change!</span>
+          <img src={Chef} alt="adam chef" />
+          <span>
+            <FontAwesomeIcon icon={faStopwatch} /> It's time to change!
+          </span>
         </div>
       </div>
 

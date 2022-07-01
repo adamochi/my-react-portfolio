@@ -153,10 +153,13 @@
       letter-spacing: -0.5px;
       padding: 3px 10px;
       position: absolute;
-      color: rgb(241, 241, 241);
-      background-color: rgb(44, 44, 44);
+      color: rgb(53, 53, 53);
+      background-color: RGB(184, 218, 248);
       top: -20px;
       border-radius: 100vmax;
+      svg {
+        color: tomato;
+      }
     }
   }
 }
