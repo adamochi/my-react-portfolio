@@ -76,7 +76,7 @@
     }
   }
 
-  @media screen and(orientation: portrait) {
+  @media screen and(max-width: 1200px) {
     flex-direction: column;
     align-items: center;
     margin-top: 140px;

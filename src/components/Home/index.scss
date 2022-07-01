@@ -74,7 +74,7 @@
       height: 150px;
       margin: 0 5px 0 10px;
       img {
-        border: 1.5px solid whitesmoke;
+        border: 2px solid whitesmoke;
         border-radius: 10px;
         height: 100%;
       }
@@ -205,6 +205,62 @@
     }
     .time-to-change {
       width: 95%;
+    }
+  }
+}
+@media screen and (min-width: 2560px) {
+  .homepage {
+    .paper-home {
+      max-width: 1500px;
+    }
+    canvas {
+      height: 700px;
+    }
+
+    h4 {
+      transform: translateY(-50px);
+      font-size: 24px;
+    }
+    .title-home {
+      max-width: 700px;
+      height: 150px;
+      margin-bottom: 50px;
+      .title {
+        h1 {
+          font-size: 50px;
+        }
+        h5 {
+          font-size: 20px;
+        }
+      }
+      .profile-pic {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .text-container {
+      h3 {
+        font-size: 24px;
+      }
+      .the-front-end-p {
+        p {
+          font-size: 20px;
+        }
+      }
+      max-width: 1300px;
+    }
+    .text-section {
+      span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .time-to-change {
+      max-width: 700px;
     }
   }
 }
