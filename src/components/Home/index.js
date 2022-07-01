@@ -58,12 +58,13 @@ const Home = () => {
                   <br />
                   Here you can see the formal courses I've completed
                 </p>
+              </div>
+              <div className="nomad-link-div">
                 <Nomad />
+                <span>completed curriculum link goes here</span>
               </div>
             </div>
-            <div className="nomad-div">
-              <h2>completed courses link goes here</h2>
-            </div>
+
             <h3>The Back End</h3>
             <div className="text-section">
               <p>
