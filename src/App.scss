@@ -76,9 +76,9 @@ textarea {
   bottom: 0;
   width: 1px;
   height: 1px;
-  animation: fadeOut 1s 1s;
+  animation: fadeOut 0.5s 0.5s;
   animation-fill-mode: forwards;
-  transform: scale(150%);
+  transform: scale(100%);
 }
 @keyframes bkgAwesome {
   0% {
