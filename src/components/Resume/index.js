@@ -63,11 +63,29 @@ const Resume = () => {
           </div>
 
           <div className="i-have-xp-div">
-            <h3>I have experience in:</h3>
+            <h3>Projects</h3>
+            <div className="ul-div">
+              <ul>
+                <li>React Website</li>
+                <li>Momentum App</li>
+                <li>My first portfolio</li>
+                <li>JavaScript Number Game</li>
+              </ul>
+              <ul>
+                <li>
+                  Building speakers - from designing and assembling cabinets to
+                  designing and testing crossovers
+                </li>
+                <li>Sound engineering - at church for the past 3 years</li>
+              </ul>
+            </div>
+          </div>
+          <div className="i-have-xp-div">
+            <h3>I have experience in</h3>
             <ul>
               <li>
-                Creating a browser app and a portfolio website using HTML, CSS
-                and JavaScript
+                Creating a browser app and portfolio websites using HTML, CSS,
+                JavaScript and the React JS Framework.
               </li>
               <li>
                 Using GitHub and Visual Studio Code -
@@ -91,10 +109,38 @@ const Resume = () => {
               <li>Sound engineering - at church for the past 3 years</li>
             </ul>
           </div>
-          <span>projects</span>
-          <span>experience</span>
-          <span>education</span>
-          <span>personal</span>
+          <div className="i-have-xp-div">
+            <h3>Education</h3>
+            <ul>
+              <li>
+                Creating a browser app and portfolio websites using HTML, CSS,
+                JavaScript and the React JS Framework.
+              </li>
+            </ul>
+          </div>
+          <div className="i-have-xp-div">
+            <h3>Personal</h3>
+            <h5>2022</h5>
+            <h2>https://nomadcoders.co/</h2>
+            <p>
+              This year I started to study online and have completed three
+              courses and 2 bootcamps that have rewarded me with a greater
+              understanding of the basics of HTML, CSS and JAVASCRIPT. Here is a
+              link to my profile which shows which courses I have completed and
+              the badges acquired through the bootcamp challenges -
+              https://nomadcoders.co/users/honeyrumballs
+            </p>
+            <h4>2005 - 2009</h4>
+            <h2>Certificate III Commercial Cookery, TAFE</h2>
+            <p>
+              This year I started to study online and have completed three
+              courses and 2 bootcamps that have rewarded me with a greater
+              understanding of the basics of HTML, CSS and JAVASCRIPT. Here is a
+              link to my profile which shows which courses I have completed and
+              the badges acquired through the bootcamp challenges -
+              https://nomadcoders.co/users/honeyrumballs
+            </p>
+          </div>
           <span>
             For furthering my Front End skills, I chose to learn the React JS
             framework based on it's maintainability
