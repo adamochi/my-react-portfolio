@@ -30,7 +30,7 @@ const Resume = () => {
             </a>
           </h4>
           <div className="bordered-box">
-            <div className="bordered-box_inner-box one">
+            <div className="bordered-box_inner-box three-left">
               <h3>Coding Languages</h3>
               <ul>
                 <li>
@@ -61,7 +61,36 @@ const Resume = () => {
               </ul>
             </div>
           </div>
-          <span>skills</span>
+
+          <div className="i-have-xp-div">
+            <h3>I have experience in:</h3>
+            <ul>
+              <li>
+                Creating a browser app and a portfolio website using HTML, CSS
+                and JavaScript
+              </li>
+              <li>
+                Using GitHub and Visual Studio Code -
+                https://github.com/adamochi
+              </li>
+              <li>
+                Building and fixing computers - from building over a dozen
+                entire systems to troubleshooting both software and hardware
+                issues
+              </li>
+              <li>
+                Soldering - almost every project at home; from building speaker
+                crossovers and a microphone with a preamp -
+                https://imgur.com/gallery/DcRzLNG - to changing out the switches
+                inside computer mice
+              </li>
+              <li>
+                Building speakers - from designing and assembling cabinets to
+                designing and testing crossovers
+              </li>
+              <li>Sound engineering - at church for the past 3 years</li>
+            </ul>
+          </div>
           <span>projects</span>
           <span>experience</span>
           <span>education</span>

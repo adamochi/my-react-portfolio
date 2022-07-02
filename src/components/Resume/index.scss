@@ -34,7 +34,7 @@
       font-size: 14px;
     }
 
-    @keyframes customFade {
+    @keyframes customFadeDown {
       0% {
         transform: translateY(-2000px);
         opacity: 0;
@@ -49,7 +49,7 @@
       opacity: 0;
       margin: 20px 0 20px 0;
       background-color: paleturquoise;
-      border-radius: 5px;
+      border-radius: 0 0 20px 20px;
       display: flex;
       width: 92%;
       max-width: 833px;
@@ -58,19 +58,28 @@
       animation-delay: 1.8s;
       .one {
         opacity: 0;
-        animation: customFade 1s forwards;
+        animation: customFadeDown 1s forwards;
         animation-delay: 2s;
         transform: translateY(-30px);
         transition: 1s;
+        border-radius: 0 20px;
+      }
+      .three-left {
+        opacity: 0;
+        animation: customFadeDown 1s forwards;
+        animation-delay: 2s;
+        transform: translateY(-30px);
+        transition: 1s;
+        border-radius: 20px 0;
       }
       .two {
         opacity: 0;
         animation: fadeInUpBig 1s forwards;
         animation-delay: 2s;
+        border-radius: 20px;
       }
       .bordered-box_inner-box {
         border: 2px solid rgb(0, 225, 255);
-        border-radius: 6px;
         background-color: rgba(192, 204, 255, 0.582);
         width: 33.33%;
         h3 {
@@ -96,6 +105,14 @@
             }
           }
         }
+      }
+    }
+    .i-have-xp-div {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        margin: 0;
       }
     }
   }
