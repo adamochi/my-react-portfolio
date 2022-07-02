@@ -93,6 +93,10 @@ const Resume = () => {
                   https://github.com/adamochi
                 </li>
                 <li>
+                  For furthering my Front End skills, I chose to learn the React
+                  JS framework
+                </li>
+                <li>
                   Building and fixing computers - from building over a dozen
                   entire systems to troubleshooting both software and hardware
                   issues
@@ -136,18 +140,17 @@ const Resume = () => {
             </p>
           </div>
           <div className="i-have-xp-div">
-            <h3>Personal</h3>
-            <ul>
-              <li>
-                Creating a browser app and portfolio websites using HTML, CSS,
-                JavaScript and the React JS Framework.
-              </li>
-            </ul>
+            <h3>More About Me</h3>
+            <p>
+              I am a qualified Chef that has been cooking full-time in
+              restaurants for seventeen years, mostly in the Cairns region, the
+              past four years have been here in Brisbane at George's Paragon. I
+              have enjoyed working in these fast-paced environments, putting my
+              skills and experience to use, teaching others and working as a
+              team. But I feel it is time for change, and the thing that has
+              motivated me is my enjoyment of coding every day.
+            </p>
           </div>
-          <span>
-            For furthering my Front End skills, I chose to learn the React JS
-            framework
-          </span>
         </div>
       </div>
     </>
