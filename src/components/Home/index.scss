@@ -167,18 +167,6 @@
       border-radius: 10px;
     }
 
-    // @keyframes bkgAwesome {
-    //   0% {
-    //     background-position: left;
-    //   }
-    //   50% {
-    //     background-position: right;
-    //   }
-    //   100% {
-    //     background-position: left;
-    //   }
-    // }
-
     span {
       width: fit-content;
       padding: 3px 10px;
@@ -187,18 +175,8 @@
       font-size: 20px;
       letter-spacing: -0.5px;
       padding: 6px 20px;
-      // position: absolute;
       color: var(--dark-blue-colour);
-      // background: linear-gradient(
-      //   90deg,
-      //   rgba(184, 218, 248, 0.205),
-      //   rgba(255, 142, 199, 0.212),
-      //   rgba(0, 217, 255, 0.212)
-      // );
-      // background-size: 1000%;
-      // animation: bkgAwesome 15s linear infinite;
-      // // top: -20px;
-      // border-radius: 3px;
+
       svg {
         color: tomato;
         font-size: 16px;
@@ -206,12 +184,12 @@
     }
   }
 }
+
 @media screen and (orientation: portrait) {
   .homepage {
     .paper-home {
       margin-top: 0;
     }
-
     .text-container {
       .the-front-end-p {
         flex-direction: column;
