@@ -112,8 +112,13 @@
       width: 90%;
       display: flex;
       flex-direction: column;
-      align-items: center;
       .ul-div {
+        ul {
+          width: 50%;
+        }
+      }
+      .ul-div,
+      .ul-div-XP {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -123,11 +128,16 @@
           background-color: paleturquoise;
           border: 2px solid rgb(0, 225, 255);
           border-radius: 20px;
-          width: 50%;
           margin: 0;
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
+        }
+      }
+      .ul-div-XP {
+        width: 100%;
+        ul {
+          width: 100%;
         }
       }
       h5 {
@@ -147,6 +157,15 @@
         li {
           font-size: 14px;
           font-weight: 500;
+        }
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .i-have-xp-div {
+        .ul-div {
+          ul {
+            padding: 20px;
+          }
         }
       }
     }

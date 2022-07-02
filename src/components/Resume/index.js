@@ -82,44 +82,38 @@ const Resume = () => {
           </div>
           <div className="i-have-xp-div">
             <h3>I have experience in</h3>
-            <ul>
-              <li>
-                Creating a browser app and portfolio websites using HTML, CSS,
-                JavaScript and the React JS Framework.
-              </li>
-              <li>
-                Using GitHub and Visual Studio Code -
-                https://github.com/adamochi
-              </li>
-              <li>
-                Building and fixing computers - from building over a dozen
-                entire systems to troubleshooting both software and hardware
-                issues
-              </li>
-              <li>
-                Soldering - almost every project at home; from building speaker
-                crossovers and a microphone with a preamp -
-                https://imgur.com/gallery/DcRzLNG - to changing out the switches
-                inside computer mice
-              </li>
-              <li>
-                Building speakers - from designing and assembling cabinets to
-                designing and testing crossovers
-              </li>
-              <li>Sound engineering - at church for the past 3 years</li>
-            </ul>
+            <div className="ul-div-XP">
+              <ul>
+                <li>
+                  Creating a browser app and portfolio websites using HTML, CSS,
+                  JavaScript and the React JS Framework.
+                </li>
+                <li>
+                  Using GitHub and Visual Studio Code -
+                  https://github.com/adamochi
+                </li>
+                <li>
+                  Building and fixing computers - from building over a dozen
+                  entire systems to troubleshooting both software and hardware
+                  issues
+                </li>
+                <li>
+                  Soldering - almost every project at home; from building
+                  speaker crossovers and a microphone with a preamp -
+                  https://imgur.com/gallery/DcRzLNG - to changing out the
+                  switches inside computer mice
+                </li>
+                <li>
+                  Building speakers - from designing and assembling cabinets to
+                  designing and testing crossovers
+                </li>
+                <li>Sound engineering - at church for the past 3 years</li>
+              </ul>
+            </div>
           </div>
+
           <div className="i-have-xp-div">
             <h3>Education</h3>
-            <ul>
-              <li>
-                Creating a browser app and portfolio websites using HTML, CSS,
-                JavaScript and the React JS Framework.
-              </li>
-            </ul>
-          </div>
-          <div className="i-have-xp-div">
-            <h3>Personal</h3>
             <h5>2022</h5>
             <h2>https://nomadcoders.co/</h2>
             <p>
@@ -141,9 +135,18 @@ const Resume = () => {
               https://nomadcoders.co/users/honeyrumballs
             </p>
           </div>
+          <div className="i-have-xp-div">
+            <h3>Personal</h3>
+            <ul>
+              <li>
+                Creating a browser app and portfolio websites using HTML, CSS,
+                JavaScript and the React JS Framework.
+              </li>
+            </ul>
+          </div>
           <span>
             For furthering my Front End skills, I chose to learn the React JS
-            framework based on it's maintainability
+            framework
           </span>
         </div>
       </div>
