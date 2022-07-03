@@ -116,7 +116,7 @@ const Resume = () => {
             </div>
           </div>
 
-          <div className="i-have-xp-div">
+          <div className="i-have-xp-div education-box">
             <h3>Education</h3>
             <h5>2022</h5>
             <h2>https://nomadcoders.co/</h2>
@@ -128,7 +128,7 @@ const Resume = () => {
               the badges acquired through the bootcamp challenges -
               https://nomadcoders.co/users/honeyrumballs
             </p>
-            <h4>2005 - 2009</h4>
+            <h5>2005 - 2009</h5>
             <h2>Certificate III Commercial Cookery, TAFE</h2>
             <p>
               This year I started to study online and have completed three
@@ -139,7 +139,7 @@ const Resume = () => {
               https://nomadcoders.co/users/honeyrumballs
             </p>
           </div>
-          <div className="i-have-xp-div">
+          <div className="i-have-xp-div more-about-div">
             <h3>More About Me</h3>
             <p>
               I am a qualified Chef that has been cooking full-time in

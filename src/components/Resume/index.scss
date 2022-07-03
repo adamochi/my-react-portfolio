@@ -11,16 +11,20 @@
     opacity: 0;
     animation: jackInTheBox 1s forwards;
     animation-delay: 1s;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 95%;
     max-width: 900px;
     height: 1300px;
+
     background-color: var(--resume-paper);
     box-shadow: 0 0 10px 2px rgba(140, 118, 192, 0.5);
     margin-top: 70px;
     border-radius: 2px;
+    padding-bottom: 40px;
     h1 {
       font-size: 40px;
       font-family: "Courier New", Courier, monospace;
@@ -108,6 +112,7 @@
         }
       }
     }
+
     .i-have-xp-div {
       width: 90%;
       display: flex;
@@ -141,15 +146,19 @@
         }
       }
       h5 {
-        margin-bottom: 0;
+        padding: 0 20px;
+        margin: 10px 0 2px 0;
+        font-size: 12px;
       }
       h2 {
+        font-size: 14px;
         margin: 0;
+        padding: 0 20px;
       }
       h3 {
         border-bottom: 1px solid darkslateblue;
         width: fit-content;
-        margin: 0 0 10px 0;
+        margin: 20px 0 10px 20px;
         font-size: 16px;
         font-weight: 500;
       }
@@ -159,6 +168,22 @@
           font-weight: 500;
         }
       }
+      p {
+        font-size: 14px;
+        padding: 0 20px;
+      }
+    }
+    .education-box {
+      border: 2px solid rgb(0, 225, 255);
+      background-color: rgba(192, 204, 255, 0.582);
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+    .more-about-div {
+      margin-top: 20px;
+      background-color: paleturquoise;
+      border: 2px solid rgb(0, 225, 255);
+      border-radius: 20px;
     }
     @media screen and (max-width: 500px) {
       .i-have-xp-div {
