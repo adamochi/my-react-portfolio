@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import "./index.scss";
-import TopNavBar from "../TopNavBar";
+import TopNavBar from "../../components/TopNavBar";
 
 const Layout = () => {
   return (

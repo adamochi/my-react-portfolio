@@ -2,7 +2,7 @@ import "./index.scss";
 import Loader from "react-loaders";
 import React, { useEffect, useState } from "react";
 import backgroundImg from "../../assets/images/nexen.png";
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFloppyDisk, faComputer } from "@fortawesome/free-solid-svg-icons";
 

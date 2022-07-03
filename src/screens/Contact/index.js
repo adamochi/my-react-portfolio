@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
 import Loader from "react-loaders";
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");

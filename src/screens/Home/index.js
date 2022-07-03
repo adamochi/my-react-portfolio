@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./index.scss";
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters";
 import Loader from "react-loaders";
 import Chef from "../../assets/images/time.png";
 import profile from "../../assets/images/jeju.png";
-import Computer from "../Computer";
-import ButtonPortfolio from "../Links/ButtonPortfolio";
-import ButtonAbout from "../Links/ButtonAbout";
-import Nomad from "../Links/Nomad";
+import Computer from "../../components/Computer";
+import ButtonPortfolio from "../../components/Links/ButtonPortfolio";
+import ButtonAbout from "../../components/Links/ButtonAbout";
+import Nomad from "../../components/Links/Nomad";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
 
@@ -63,10 +63,10 @@ const Home = () => {
                 myself enjoying it more and more each day.
               </p>
               <p>
-                With 600+ hours of studying &amp; practicing writing code over
-                the course of this year, I have gained a solid understanding of
-                HTML, CSS, basic JavaScript. As well as the React JS framework
-                which I have built this website on!
+                With <strong>600+</strong> hours of studying &amp; practicing
+                writing code over the course of this year, I have gained a solid
+                understanding of HTML, CSS, basic JavaScript. As well as the
+                React JS framework which I have built this website on!
               </p>
             </div>
           </div>
@@ -91,7 +91,6 @@ const Home = () => {
                 {/* <span>completed curriculum link goes here</span> */}
               </div>
             </div>
-
             <h3>
               <AnimatedLetters
                 letterClass={letterClass}
@@ -117,6 +116,18 @@ const Home = () => {
                 continued cooking in dynamic and fast paced environments for
                 many years to come.
               </p>
+            </div>
+            <div className="to-improve-this-section">
+              <span> I like problem solving</span>
+              <br />
+              <span>my character matches</span>
+              <span>
+                As a chef last 17 years i really enjoyed creating things from my
+                thoughts, <br />
+                figuring out how things work and improving every aspect of
+                something with every iteration <br />
+              </span>
+              teamwork, good under pressure
             </div>
           </div>
           <ButtonAbout />
