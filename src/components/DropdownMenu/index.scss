@@ -70,8 +70,7 @@
         text-decoration: none;
         width: 100%;
         &:hover {
-          transform: translateY(-1px);
-          border: 2px solid rgb(117, 126, 255);
+          box-shadow: 0 0 0 2px rgb(117, 126, 255);
           border-radius: 4px;
           cursor: pointer;
         }
