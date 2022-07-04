@@ -1,27 +1,31 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./index.scss";
 
 const LightModeButton = () => {
   const checkLight = localStorage.getItem("dark mode");
   const saved = JSON.parse(checkLight);
-  const [lightMode, setLightMode] = useState(saved);
   const light = useRef();
-
-  if (saved === null) {
-    localStorage.setItem("dark mode", false);
-  }
-
-  if (saved === true) {
-    document.body.classList = "dark";
-  }
+  const [lightMode, setLightMode] = useState(saved);
 
   const changeIcon = () => {
-    if (light.current.innerText === "💡") {
-      light.current.innerText = "🌙";
-    } else {
+    if (light.current.innerText === "🌙") {
       light.current.innerText = "💡";
+    } else {
+      light.current.innerText = "🌙";
     }
   };
+
+  useEffect(() => {
+    console.log(saved);
+    if (saved === null) {
+      localStorage.setItem("dark mode", false);
+    }
+
+    if (saved === true) {
+      document.body.classList = "dark";
+      changeIcon();
+    }
+  }, []);
 
   const lightButton = () => {
     setLightMode((current) => !current);
@@ -44,7 +48,7 @@ const LightModeButton = () => {
       aria-label="toggle dark mode"
       id="light-mode-button"
     >
-      💡
+      🌙
     </button>
   );
 };

@@ -15,12 +15,16 @@ const DropdownMenu = () => {
 
   useEffect(() => {
     const closeDropdown = (e) => {
+      // console.log(e.path[0]);
+      // console.log(e.composed);
+      // console.log(btnRef.current);
       if (e.path[0] !== btnRef.current) {
         setMenuMode(true);
       }
     };
     document.body.addEventListener("click", closeDropdown);
   }, []);
+
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
