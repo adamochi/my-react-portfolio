@@ -4,13 +4,12 @@
   letter-spacing: 1px;
   padding: 7px 15px;
   cursor: pointer;
-  border: 1px solid rgb(107, 255, 188);
+  border: none;
   border-radius: 4px;
-  background-color: rgb(107, 255, 188);
+  background-color: var(--clear-opposite);
   transition: 0.1s;
   &:hover {
-    background-color: rgba(160, 255, 250, 0.877);
-    border: 1px solid rgb(107, 255, 188);
+    box-shadow: 0 0 0 2px rgb(107, 142, 255);
     animation: rubberBand 0.7s;
     transition: 0.3s;
   }

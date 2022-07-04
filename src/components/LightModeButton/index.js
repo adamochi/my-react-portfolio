@@ -15,17 +15,14 @@ const LightModeButton = () => {
     }
   };
 
-  useEffect(() => {
-    console.log(saved);
-    if (saved === null) {
-      localStorage.setItem("dark mode", false);
-    }
+  if (saved === null) {
+    localStorage.setItem("dark mode", false);
+  }
 
-    if (saved === true) {
-      document.body.classList = "dark";
-      changeIcon();
-    }
-  }, []);
+  if (saved === true) {
+    document.body.classList = "dark";
+    changeIcon();
+  }
 
   const lightButton = () => {
     setLightMode((current) => !current);

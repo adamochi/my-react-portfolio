@@ -66,8 +66,8 @@ const About = () => {
           </p>
           <p>
             Since starting my journey to become a programmer, I have found
-            myself loving to write code and solve the real world problems i've
-            faced in taking this journey
+            myself loving to write code and solve the real world problems I've
+            faced in taking this journey.
           </p>
           <p>
             I continue to study and practice writing code everyday and hope to

@@ -12,6 +12,7 @@
   --main-icon-colour: #02d6f1;
   --clear-blue: rgba(125, 229, 255, 0.267);
   --clear-hfour: rgba(163, 218, 233, 0.596);
+  --clear-opposite: rgba(236, 222, 202);
   --light-mode-gradient: linear-gradient(
     90deg,
     #0e2964,
