@@ -100,34 +100,28 @@ const Home = () => {
             </h3>
             <div className="text-section">
               <p>
-                <strong>Things I like:</strong>
+                <h6>Things I like:</h6>
+                Problem solving - I am the person that enjoys figuring out how
+                things work and improving every aspect of what I am working on.
+                I like to make every iteration better and faster.
                 <br />
-                My everyday hobbies are listening to music, coding, &amp;
-                cooking.
+                Never giving up - I am not a fan of giving up, even when I hit a
+                blocker. I see it as a chance to learn. My character is matching
+                the problem solver lifestyle.
                 <br />
-                <strong>What I get up to:</strong>
-                <br />I am a sound engineer at church. I have had a passion for
-                good audio for many years. And even considered a career path in
-                the audio world.
+                <h6>What I get up to:</h6>My everyday hobbies are listening to
+                music, and coding. I am also a sound engineer at church.
                 <br />
-                <strong>Life before coding;</strong>
-                <br />
+                <h6>Life before coding;</h6>
                 In 2009 I Completed my Chef apprenticeship in Cairns, and
                 continued cooking in dynamic and fast paced environments for
-                many years to come.
+                many years to come. Besides improving my cooking skills, I grew
+                to be good under pressure and also greatly improved my teamwork
+                skills. Being good in a team and communicating well also meant
+                becoming a good listener and someone that could take in the
+                feedback from others and use it to improve any aspect that was
+                targeted.
               </p>
-            </div>
-            <div className="to-improve-this-section">
-              <span> I like problem solving</span>
-              <br />
-              <span>my character matches</span>
-              <span>
-                As a chef last 17 years i really enjoyed creating things from my
-                thoughts, <br />
-                figuring out how things work and improving every aspect of
-                something with every iteration <br />
-              </span>
-              teamwork, good under pressure
             </div>
           </div>
           <ButtonAbout />

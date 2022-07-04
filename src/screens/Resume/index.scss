@@ -18,7 +18,8 @@
 
     width: 95%;
     max-width: 900px;
-    height: 1300px;
+    height: fit-content;
+    padding-bottom: 50px;
 
     background-color: var(--resume-paper);
     box-shadow: 0 0 10px 2px rgba(140, 118, 192, 0.5);
@@ -117,6 +118,7 @@
       width: 90%;
       display: flex;
       flex-direction: column;
+      margin-bottom: 20px;
       .ul-div {
         ul {
           width: 50%;
@@ -137,6 +139,9 @@
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
+          h3 {
+            margin: 0 0 10px 0;
+          }
         }
       }
       .ul-div-XP {
@@ -176,11 +181,9 @@
     .education-box {
       border: 2px solid rgb(0, 225, 255);
       background-color: rgba(192, 204, 255, 0.582);
-      margin-top: 20px;
       border-radius: 20px;
     }
     .more-about-div {
-      margin-top: 20px;
       background-color: paleturquoise;
       border: 2px solid rgb(0, 225, 255);
       border-radius: 20px;
