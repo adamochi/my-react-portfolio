@@ -21,7 +21,7 @@ https://adam-sullivan.netlify.app/
 
 - map:
 
-- npm i react-leaflet
+- npm i react-leaflet ✅
 
 - react integration
 
