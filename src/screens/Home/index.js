@@ -99,8 +99,8 @@ const Home = () => {
               />
             </h3>
             <div className="text-section">
+              <h6>Things I like:</h6>
               <p>
-                <h6>Things I like:</h6>
                 Problem solving - I am the person that enjoys figuring out how
                 things work and improving every aspect of what I am working on.
                 I like to make every iteration better and faster.
@@ -109,10 +109,15 @@ const Home = () => {
                 blocker. I see it as a chance to learn. My character is matching
                 the problem solver lifestyle.
                 <br />
-                <h6>What I get up to:</h6>My everyday hobbies are listening to
-                music, and coding. I am also a sound engineer at church.
+              </p>
+              <h6>What I get up to:</h6>
+              <p>
+                My everyday hobbies are listening to music, and coding. I am
+                also a sound engineer at church.
                 <br />
-                <h6>Life before coding;</h6>
+              </p>
+              <h6>Life before coding;</h6>
+              <p>
                 In 2009 I Completed my Chef apprenticeship in Cairns, and
                 continued cooking in dynamic and fast paced environments for
                 many years to come. Besides improving my cooking skills, I grew

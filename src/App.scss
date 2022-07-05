@@ -95,14 +95,7 @@ textarea {
   }
 }
 .dark {
-  transition: 0.3s ease-out;
-  --main-background-colour: linear-gradient(
-    90deg,
-    #0e2964,
-    darkslateblue,
-    rgb(160, 55, 72),
-    #0e2964
-  );
+  transition: 1s ease-out;
   background-size: 10000%;
   animation: bkgAwesome 60s linear infinite;
   animation-delay: 5s;
@@ -111,4 +104,11 @@ textarea {
   --dark-blue-colour: rgb(217, 223, 221);
   --clear-hfour: rgba(243, 233, 214, 0.932);
   --clear-opposite: rgba(163, 218, 233, 0.596);
+  --main-background-colour: linear-gradient(
+    90deg,
+    #0e2964,
+    darkslateblue,
+    rgb(160, 55, 72),
+    #0e2964
+  );
 }

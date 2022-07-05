@@ -115,22 +115,19 @@
   }
   .text-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 5px;
-    .year-span {
+
+    h6 {
       font-size: 16px;
-      font-weight: 600;
+      margin: 10px 0 5px 0;
+      border-bottom: 2px solid var(--clear-hfour);
+      width: fit-content;
     }
 
     p {
       margin: 0 0 0 20px;
       font-size: 16px;
-      h6 {
-        font-size: 16px;
-        margin: 10px 0 5px 0;
-        border-bottom: 2px solid var(--clear-hfour);
-        width: fit-content;
-      }
     }
   }
   .text-section-with-border {

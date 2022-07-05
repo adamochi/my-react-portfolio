@@ -1,40 +1,41 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./index.scss";
 
 const LightModeButton = () => {
   const checkLight = localStorage.getItem("dark mode");
   const saved = JSON.parse(checkLight);
+  const [lightMode, setLightMode] = useState(false);
   const light = useRef();
-  const [lightMode, setLightMode] = useState(saved);
 
   const changeIcon = () => {
-    if (light.current.innerText === "🌙") {
-      light.current.innerText = "💡";
-    } else {
+    if (light.current.innerText === "💡") {
       light.current.innerText = "🌙";
+    } else {
+      light.current.innerText = "💡";
     }
   };
 
-  if (saved === null) {
-    localStorage.setItem("dark mode", false);
-  }
-
-  if (saved === true) {
-    document.body.classList = "dark";
-    changeIcon();
-  }
+  useEffect(() => {
+    const lightBtn = document.getElementById("light-mode-button");
+    if (saved === null) {
+      localStorage.setItem("dark mode", false);
+    } else if (saved === true) {
+      document.body.classList = "dark";
+      lightBtn.innerText = "💡";
+    } else {
+      return;
+    }
+  });
 
   const lightButton = () => {
     setLightMode((current) => !current);
+    changeIcon();
     if (lightMode === false) {
       localStorage.setItem("dark mode", true);
       document.body.classList = "dark";
-      changeIcon();
-    }
-    if (lightMode === true) {
+    } else {
       localStorage.setItem("dark mode", false);
       document.body.classList = "";
-      changeIcon();
     }
   };
 
