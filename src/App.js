@@ -5,6 +5,7 @@ import About from "./screens/About";
 import Contact from "./screens/Contact";
 import Portfolio from "./screens/Portfolio";
 import Resume from "./screens/Resume";
+// import Courses from "./screens/Courses";
 import "./App.scss";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/works" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
+        {/* <Route path="/courses" element={<Courses />} /> */}
       </Route>
     </Routes>
   );

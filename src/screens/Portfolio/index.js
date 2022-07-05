@@ -16,6 +16,7 @@ const Portfolio = () => {
       clearTimeout(timer);
     };
   });
+
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
