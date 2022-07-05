@@ -9,7 +9,7 @@ const Contact = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 3000);
+    }, 15000);
 
     return () => {
       clearTimeout(timer);
@@ -22,7 +22,7 @@ const Contact = () => {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={"Contact Me".split("")}
-            idx={15}
+            idx={10}
           />
         </h1>
       </header>

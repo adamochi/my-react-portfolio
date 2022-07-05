@@ -147,6 +147,10 @@
     }
     .inner-xp-learn-div {
       display: flex;
+      span {
+        font-size: 14px;
+        font-weight: 600;
+      }
       p {
         width: 90%;
       }

@@ -113,19 +113,20 @@ const Home = () => {
               <h6>What I get up to:</h6>
               <p>
                 My everyday hobbies are listening to music, and coding. I am
-                also a sound engineer at church.
+                also a sound engineer at church every second Sunday.
                 <br />
               </p>
               <h6>Life before coding;</h6>
               <p>
                 In 2009 I Completed my Chef apprenticeship in Cairns, and
                 continued cooking in dynamic and fast paced environments for
-                many years to come. Besides improving my cooking skills, I grew
-                to be good under pressure and also greatly improved my teamwork
-                skills. Being good in a team and communicating well also meant
-                becoming a good listener and someone that could take in the
-                feedback from others and use it to improve any aspect that was
-                targeted.
+                many years to come.
+                <br />
+                Besides improving my cooking skills, I grew to be good under
+                pressure and also developed my teamwork skills. Being good in a
+                team and communicating well also meant becoming a good listener
+                and someone that could take in the feedback from others and use
+                it to improve any aspect of my work.
               </p>
             </div>
           </div>
