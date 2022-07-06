@@ -82,7 +82,7 @@ const Resume = () => {
                   years
                 </li>
                 <li>
-                  <strong>DIY mic</strong> - a condensor microphone project for
+                  <strong>DIY mic</strong> - a condenser microphone project for
                   my home PC
                 </li>
               </ul>
