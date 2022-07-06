@@ -13,7 +13,7 @@ import {
 const Resume = () => {
   return (
     <>
-      <div className="contact-page container">
+      <div className="resume-page container">
         <div className="paper">
           <h1>Adam Sullivan</h1>
           <h4>Spring Hill QLD 4000</h4>

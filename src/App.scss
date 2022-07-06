@@ -29,13 +29,14 @@ $primary-color: var(--main-text-colour);
 
 input,
 textarea {
+  opacity: 0;
+  animation: fadeInUp 1s 2s forwards;
   font-family: "Helvetica Neue", sans-serif;
 }
 
 .container {
   opacity: 0;
   animation: fadeIn 0.5s 1s forwards;
-  margin-bottom: 150px;
 }
 
 .page-title {

@@ -1,20 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
-// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import emailjs from "@emailjs/browser";
-
 import "./index.scss";
-import Loader from "react-loaders";
+import React, { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import AnimatedLetters from "../../components/AnimatedLetters";
+import Loader from "react-loaders";
 
 const Contact = () => {
-  // const position = [-27.46087, 153.02676];
+  const position = [-27.46087, 153.02676];
   const [letterClass, setLetterClass] = useState("text-animate");
   const form = useRef();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 15000);
+    }, 4000);
 
     return () => {
       clearTimeout(timer);
@@ -44,17 +43,21 @@ const Contact = () => {
 
   return (
     <>
-      <header className="page-title">
-        <h1>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={"Contact Me".split("")}
-            idx={10}
-          />
-        </h1>
-      </header>
       <div className="contact-page container">
         <div className="contact-form">
+          <h1>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={"G'day, how's it going".split("")}
+              idx={10}
+            />
+          </h1>
+          <p>
+            I am also interested in freelance opportunities - especially
+            ambitious or large projects to kickstart my new career.
+            <br /> However, if you have other requests or questions, don't
+            hesitate to contact me using the form below!
+          </p>
           <form ref={form} onSubmit={sendEmail}>
             <div className="name-div">
               <input type="text" placeholder="Name" name="from-name" required />
@@ -89,6 +92,19 @@ const Contact = () => {
               />
             </div>
           </form>
+        </div>
+        <div className="map-wrap">
+          <MapContainer center={position} zoom={13}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={position}>
+              <Popup>
+                Adam lives here, <br /> come over for a cup of coffee :)
+              </Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="ball-clip-rotate-multiple" />

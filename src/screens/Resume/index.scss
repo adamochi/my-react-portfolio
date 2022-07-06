@@ -1,4 +1,4 @@
-.contact-page {
+.resume-page {
   width: 100%;
   height: 100%;
   position: relative;
@@ -7,6 +7,8 @@
   color: rgb(42, 48, 46);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  margin-bottom: 50px;
   .paper {
     opacity: 0;
     animation: jackInTheBox 1s forwards;
