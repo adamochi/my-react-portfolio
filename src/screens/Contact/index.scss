@@ -113,9 +113,38 @@
   animation: backInRight 1s forwards;
   animation-delay: 1s;
 }
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 1300px) {
   .contact-page {
     .contact-form {
+      width: 50%;
+      form {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+    .contact-form {
+      width: 80%;
+      padding: 5px;
+      form {
+        width: 100%;
+      }
+    }
+    .map-wrap {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+    .contact-form {
+      width: 90%;
       padding: 5px;
       form {
         width: 100%;
