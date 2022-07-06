@@ -53,8 +53,16 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am also interested in freelance opportunities - especially
-            ambitious or large projects to kickstart my new career.
+            E-mail: sullivanadam@bigpond.com
+            <br />
+            Ph: 0409 051 595
+            <br />
+            Spring Hill QLD 4000
+          </p>
+
+          <p>
+            I am interested in freelance opportunities - especially ambitious or
+            large projects to kickstart my new career.
             <br /> However, if you have other requests or questions, don't
             hesitate to contact me using the form below!
           </p>
