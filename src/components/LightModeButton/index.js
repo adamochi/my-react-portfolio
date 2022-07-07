@@ -4,7 +4,6 @@ import "./index.scss";
 const LightModeButton = () => {
   const checkLight = localStorage.getItem("dark mode");
   const saved = JSON.parse(checkLight);
-  const [lightMode, setLightMode] = useState(false);
   const light = useRef();
 
   const changeIcon = () => {
@@ -27,15 +26,19 @@ const LightModeButton = () => {
     }
   });
 
+  const [lightMode, setLightMode] = useState(saved);
+
   const lightButton = () => {
     setLightMode((current) => !current);
     changeIcon();
+    console.log("i clicked");
     if (lightMode === false) {
       localStorage.setItem("dark mode", true);
       document.body.classList = "dark";
-    } else {
+    }
+    if (lightMode === true) {
       localStorage.setItem("dark mode", false);
-      document.body.classList = "";
+      document.body.classList.remove("dark");
     }
   };
 

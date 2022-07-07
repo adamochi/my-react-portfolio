@@ -83,7 +83,7 @@ const Home = () => {
                   <br /> I have undertaken online courses at Nomad Coders For
                   the majority of the time I have been studying.
                   <br />
-                  Here you can see the courses I've completed:
+                  Here you can see the courses and bootcamps I've completed:
                 </p>
               </div>
               <div className="nomad-link-div">
@@ -101,12 +101,12 @@ const Home = () => {
             <div className="text-section">
               <h6>Things I like:</h6>
               <p>
-                Problem solving - I am the person that enjoys figuring out how
-                things work and improving every aspect of what I am working on.
-                I like to make every iteration better and faster.
+                I am the person that enjoys figuring out how things work and
+                improving every aspect of what I am working on. I like to make
+                every iteration better and faster.
                 <br />
-                Never giving up - I am not a fan of giving up, even when I hit a
-                blocker. I see it as a chance to learn. My character is matching
+                Never giving up - I have the patience to keep going, even when I
+                hit a blocker. I see it as a chance to learn. My character is
                 the problem solver lifestyle.
                 <br />
               </p>
