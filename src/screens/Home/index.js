@@ -99,7 +99,7 @@ const Home = () => {
               />
             </h3>
             <div className="text-section">
-              <h6>Things I like:</h6>
+              <h6>What I'm like:</h6>
               <p>
                 I am the person that enjoys figuring out how things work and
                 improving every aspect of what I am working on. I like to make
@@ -107,7 +107,7 @@ const Home = () => {
                 <br />
                 Never giving up - I have the patience to keep going, even when I
                 hit a blocker. I see it as a chance to learn. My character is
-                the problem solver lifestyle.
+                the problem solver.
                 <br />
               </p>
               <h6>What I get up to:</h6>

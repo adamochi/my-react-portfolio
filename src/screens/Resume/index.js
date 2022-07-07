@@ -66,10 +66,46 @@ const Resume = () => {
             <div className="ul-div">
               <ul>
                 <h3>Coding Projects</h3>
-                <li>React Website</li>
-                <li>Momentum App</li>
-                <li>My first portfolio</li>
-                <li>JavaScript Number Game</li>
+                <li>
+                  React Website -{" "}
+                  <a
+                    href="https://greenbean-woodsmith.netlify.app/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    Link
+                  </a>
+                </li>
+                <li>
+                  Momentum App -{" "}
+                  <a
+                    href="https://adamochi.github.io/vanilla-js-2022/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    Link
+                  </a>
+                </li>
+                <li>
+                  My first portfolio -{" "}
+                  <a
+                    href="https://eloquent-kashata-64e9a1.netlify.app"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    Link
+                  </a>
+                </li>
+                <li>
+                  JavaScript Number Game -{" "}
+                  <a
+                    href="https://eloquent-kashata-64e9a1.netlify.app/numbergame/index.html"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    Link
+                  </a>
+                </li>
               </ul>
               <ul>
                 <h3>Other Projects</h3>
@@ -83,7 +119,14 @@ const Resume = () => {
                 </li>
                 <li>
                   <strong>DIY mic</strong> - a condenser microphone project for
-                  my home PC
+                  my home PC -{" "}
+                  <a
+                    href="https://imgur.com/gallery/DcRzLNG"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    Link
+                  </a>
                 </li>
               </ul>
             </div>
@@ -101,11 +144,7 @@ const Resume = () => {
                   https://github.com/adamochi
                 </li>
                 <li>
-                  For furthering my Front End skills, I chose to learn the React
-                  JS framework
-                </li>
-                <li>
-                  Building and fixing computers - from building over a dozen
+                  Building and Fixing Computers - from building over a dozen
                   entire systems to troubleshooting both software and hardware
                   issues
                 </li>
@@ -116,10 +155,10 @@ const Resume = () => {
                   switches inside computer mice
                 </li>
                 <li>
-                  Building speakers - from designing and assembling cabinets to
-                  designing and testing crossovers
+                  Building Speakers - from designing and assembling cabinets to
+                  soldering and testing different crossover configurations
                 </li>
-                <li>Sound engineering - at church for the past 3 years</li>
+                <li>Sound Engineering - at church for the past 3 years</li>
               </ul>
             </div>
           </div>
@@ -129,12 +168,12 @@ const Resume = () => {
             <h5>2022</h5>
             <h2>https://nomadcoders.co/</h2>
             <p>
-              This year I started to study online and have completed three
+              This year I started to study online and have completed four
               courses and 2 bootcamps that have rewarded me with a greater
-              understanding of the basics of HTML, CSS, JavaScript, and now
-              studying React Js. Here is a link to my profile which shows which
-              courses I have completed and the badges acquired through the
-              bootcamp challenges - https://nomadcoders.co/users/honeyrumballs
+              understanding of the basics of HTML, CSS, JavaScript, and React
+              Js. Here is a link to my profile which shows which courses I have
+              completed and the badges acquired through the bootcamp challenges
+              - https://nomadcoders.co/users/honeyrumballs
             </p>
             <h5>2005 - 2009</h5>
             <h2>Certificate III Commercial Cookery, TAFE</h2>
