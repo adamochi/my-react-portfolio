@@ -140,6 +140,10 @@ const Resume = () => {
                   JavaScript and the React JS Framework.
                 </li>
                 <li>
+                  Using Three.js to implement a 3D model, which I created using
+                  MagicaVoxel and Blender, into my portfolio website.
+                </li>
+                <li>
                   Using GitHub and Visual Studio Code -
                   https://github.com/adamochi
                 </li>
