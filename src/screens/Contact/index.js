@@ -13,7 +13,7 @@ const Contact = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 4000);
+    }, 3000);
 
     return () => {
       clearTimeout(timer);
@@ -61,8 +61,8 @@ const Contact = () => {
           </p>
 
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects to kickstart my new career.
+            I am also interested in freelance opportunities - especially
+            ambitious or large projects to kickstart my new career.
             <br /> However, if you have other requests or questions, don't
             hesitate to contact me using the form below!
           </p>
