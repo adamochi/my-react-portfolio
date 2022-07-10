@@ -25,7 +25,20 @@ const Curriculum = () => {
           />
         </h1>
       </header>
-      <div className="curriculum-page container"></div>
+      <div className="curriculum-page container">
+        <div>
+          <h2>Course Name</h2>
+          <div>
+            <h3>component</h3>
+            <ul>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
