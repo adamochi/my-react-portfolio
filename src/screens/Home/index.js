@@ -3,7 +3,7 @@ import "./index.scss";
 import AnimatedLetters from "../../components/AnimatedLetters";
 import Loader from "react-loaders";
 import Chef from "../../assets/images/time.png";
-import profile from "../../assets/images/jeju.png";
+import profile from "../../assets/images/jeju180.png";
 import Computer from "../../components/Computer";
 import ButtonPortfolio from "../../components/Links/ButtonPortfolio";
 import ButtonAbout from "../../components/Links/ButtonAbout";
@@ -135,7 +135,7 @@ const Home = () => {
           <ButtonAbout />
         </div>
         <div className="time-to-change">
-          <img src={Chef} alt="adam chef" />
+          <img src={Chef} alt="adam chef" loading="lazy" />
           <span>
             <FontAwesomeIcon icon={faStopwatch} /> It's time for a career
             change!

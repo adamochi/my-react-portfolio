@@ -29,6 +29,7 @@
     color: rgb(24, 24, 24);
     font-family: monospace;
     transform: translateY(-200px);
+    transition: 0.3s;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     background-color: var(--clear-hfour);
@@ -39,6 +40,7 @@
     margin: 0;
   }
   .title-home {
+    transition: 0.3s;
     color: var(--dark-blue-colour);
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +95,7 @@
       width: fit-content;
       border-bottom: 4px solid var(--clear-hfour);
       cursor: default;
+      transition: 0.3s;
     }
     h3 {
       font-family: "Courier New", Courier, monospace;
