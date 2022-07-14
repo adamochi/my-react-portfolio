@@ -10,7 +10,7 @@ import ButtonAbout from "../../components/Links/ButtonAbout";
 import Nomad from "../../components/Links/Nomad";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
-import CoursesBtn from "../../components/Links/CoursesBtn";
+// import CoursesBtn from "../../components/Links/CoursesBtn";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -89,7 +89,7 @@ const Home = () => {
               </div>
               <div className="nomad-link-div">
                 <Nomad />
-                <CoursesBtn />
+                {/* <CoursesBtn /> */}
                 {/* <span>completed curriculum link goes here</span> */}
               </div>
             </div>
