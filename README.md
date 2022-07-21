@@ -2,6 +2,8 @@
 
 https://adam-sullivan.netlify.app/
 
+![Screenshot](screenshot.png)
+
 # Dependencies
 
 - for contact form:

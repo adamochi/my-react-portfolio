@@ -84,7 +84,8 @@ const Home = () => {
                   <br /> I have undertaken online courses at Nomad Coders For
                   the majority of the time I have been studying.
                   <br />
-                  Here you can see the courses and bootcamps I've completed:
+                  Here you can see the courses and bootcamps I've completed at
+                  Nomad Coders
                 </p>
               </div>
               <div className="nomad-link-div">
@@ -125,10 +126,10 @@ const Home = () => {
                 many years to come.
                 <br />
                 Besides improving my cooking skills, I grew to be good under
-                pressure and also developed my teamwork skills. Being good in a
-                team and communicating well also meant becoming a good listener
-                and someone that could take in the feedback from others and use
-                it to improve any aspect of my work.
+                pressure and developed my teamwork skills. Being good in a team
+                and communicating well also meant becoming a good listener and
+                someone that could take in the feedback from others and use it
+                to improve any aspect of my work.
               </p>
             </div>
           </div>
