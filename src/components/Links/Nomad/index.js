@@ -8,7 +8,7 @@ const Nomad = () => {
     <a
       target={"_blank"}
       rel="noreferrer"
-      href="https://nomadcoders.co/users/honeyrumballs"
+      href="https://nomadcoders.co/users/adamochi"
     >
       <button className="nomad-btn">
         <FontAwesomeIcon icon={faLaptopCode} /> Nomad Coders ↵
