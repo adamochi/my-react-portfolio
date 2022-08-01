@@ -66,8 +66,8 @@ const Home = () => {
               <p>
                 With <strong>600+</strong> hours of studying &amp; practicing
                 writing code over the course of this year, I have gained a solid
-                understanding of HTML, CSS, basic JavaScript. As well as the
-                React JS framework which I have built this website on!
+                understanding of JavaScript ES6 and React which I have built
+                multiple applications with!
               </p>
             </div>
           </div>
