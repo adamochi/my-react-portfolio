@@ -81,8 +81,8 @@ const Home = () => {
                 <span className="year-span">2022</span>
                 <p>
                   <strong>Online Courses and self-motivation</strong>
-                  <br /> I have undertaken online courses at Nomad Coders For
-                  the majority of the time I have been studying.
+                  <br /> I have undertaken online courses and bootcamps at Nomad
+                  Coders For the majority of the time I have been studying.
                   <br />
                   Here you can see the courses and bootcamps I've completed at
                   Nomad Coders

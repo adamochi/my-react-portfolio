@@ -1,10 +1,13 @@
+.about-title {
+  padding: 40px 0 0 100px;
+  font-size: 20px;
+}
 .about-page {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 120px;
   color: rgb(58, 58, 58);
   margin-bottom: 50px;
   .text-container-about {
@@ -80,7 +83,9 @@
   @media screen and(max-width: 1200px) {
     flex-direction: column;
     align-items: center;
-    margin-top: 140px;
+    .about-title {
+      text-align: center;
+    }
 
     .text-container-about {
       margin: 0;
@@ -95,5 +100,11 @@
     .nexen-img-div {
       width: 90%;
     }
+  }
+}
+@media screen and(max-width: 1200px) {
+  .about-title {
+    text-align: center;
+    padding-left: 0;
   }
 }

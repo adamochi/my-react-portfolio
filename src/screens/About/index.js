@@ -20,12 +20,12 @@ const About = () => {
   });
   return (
     <>
-      <header className="page-title">
+      <header className="about-title">
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
             strArray={"About".split("")}
-            idx={15}
+            idx={18}
           />
         </h1>
       </header>
