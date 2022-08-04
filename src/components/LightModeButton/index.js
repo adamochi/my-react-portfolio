@@ -31,7 +31,6 @@ const LightModeButton = () => {
   const lightButton = () => {
     setLightMode((current) => !current);
     changeIcon();
-    console.log("i clicked");
     if (lightMode === false) {
       localStorage.setItem("dark mode", true);
       document.body.classList = "dark";
