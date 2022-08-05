@@ -1,4 +1,4 @@
-# Hello, my name is Adam, and this is my website.
+# Check out my website
 
 https://adam-sullivan.netlify.app/
 
