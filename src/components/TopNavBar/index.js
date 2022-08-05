@@ -8,6 +8,7 @@ import {
   faUserAstronaut,
   faIcons,
   faFileLines,
+  faBarsStaggered,
 } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 import LightModeButton from "../LightModeButton";
@@ -37,7 +38,7 @@ const TopNavBar = () => {
                 className="more-awesome-icon"
                 icon={faHouseChimneyWindow}
                 color="var(--main-icon-colour)"
-              />{" "}
+              />
               <span>Home</span>
             </NavLink>
             <NavLink
@@ -51,7 +52,7 @@ const TopNavBar = () => {
                 className="more-awesome-icon"
                 icon={faUserAstronaut}
                 color="var(--main-icon-colour)"
-              />{" "}
+              />
               <span>About</span>
             </NavLink>
             <NavLink
@@ -65,7 +66,7 @@ const TopNavBar = () => {
                 className="more-awesome-icon"
                 icon={faEnvelopesBulk}
                 color="var(--main-icon-colour)"
-              />{" "}
+              />
               <span>Contact</span>
             </NavLink>
             <NavLink
@@ -79,7 +80,7 @@ const TopNavBar = () => {
                 className="more-awesome-icon"
                 icon={faIcons}
                 color="var(--main-icon-colour)"
-              />{" "}
+              />
               <span>Works</span>
             </NavLink>
             <NavLink
@@ -91,7 +92,17 @@ const TopNavBar = () => {
             >
               <FontAwesomeIcon icon={faFileLines} />
               <span>Resume</span>
-            </NavLink>{" "}
+            </NavLink>
+            <NavLink
+              onClick={scrollToTop}
+              exact="true"
+              activeclassname="active"
+              className="contact-link"
+              to="/todo"
+            >
+              <FontAwesomeIcon icon={faBarsStaggered} />
+              <span>Todo List</span>
+            </NavLink>
           </nav>
         </div>
         <a

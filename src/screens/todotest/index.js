@@ -4,7 +4,7 @@ import "./index.scss";
 
 const ToDotest = () => {
   return (
-    <div className="todo-div">
+    <div className="todo-div container">
       <TodoList />
     </div>
   );

@@ -5,9 +5,8 @@ import About from "./screens/About";
 import Contact from "./screens/Contact";
 import Portfolio from "./screens/Portfolio";
 import Resume from "./screens/Resume";
-// import Curriculum from "./screens/Curriculum";
-import "./App.scss";
 import ToDotest from "./screens/todotest";
+import "./App.scss";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Route path="/works" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/todo" element={<ToDotest />} />
-        {/* <Route path="/courses" element={<Curriculum />} /> */}
       </Route>
     </Routes>
   );
