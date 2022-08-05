@@ -1,38 +1,93 @@
-import React, { useState } from "react";
-// import "./index.scss";
+import React, { useState, useEffect } from "react";
+import "./index.scss";
 
 const TodoList = () => {
-  const [toDo, setToDo] = useState("");
-  const [toDos, setToDos] = useState([]);
+  let [toDo, setToDo] = useState("");
+  let [toDos, setToDos] = useState([]);
+  // const [check, setChecked] = useState(false);
 
-  const onChange = (event) => setToDo(event.target.value);
+  // Load toDos
+  useEffect(() => {
+    const saved = localStorage.getItem("todos");
+    if (saved !== null) {
+      const parsed = JSON.parse(saved);
+      setToDos(parsed);
+    }
+  }, []);
+
+  // Save toDos
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(toDos));
+  }, [toDos]);
+
+  // Set toDo
+  const onChange = (event) => {
+    setToDo(event.target.value);
+  };
+
+  // Set toDos
   const onSubmit = (event) => {
     event.preventDefault();
     if (toDo === "") {
       return;
     }
-    setToDos((currentArray) => [toDo, ...currentArray]);
+    setToDos((currentArray) => [
+      {
+        text: toDo,
+        id: Date.now(),
+        check: false,
+      },
+      ...currentArray,
+    ]);
     setToDo("");
   };
 
-  //   console.log(toDos);
-  //   console.log(toDos.map((item, index) => <li key={index}>{item}</li>));
+  // Delete a toDo
+  const deleteToDos = (event) => {
+    event.preventDefault();
+    const li = event.target.parentElement.parentElement;
+    li.remove();
+    const number = parseInt(event.target.id);
+    toDos = toDos.filter((toDos) => toDos.id !== number);
+    localStorage.setItem("todos", JSON.stringify(toDos));
+  };
+
+  // Check off a toDo
+  const checked = (e) => {
+    const checked = e.target.checked;
+    // setChecked(checked);
+    const textt = e.target.parentElement.parentElement.style;
+    checked
+      ? (textt.textDecoration = "line-through")
+      : (textt.textDecoration = "");
+  };
+
   return (
     <div>
-      <h1>My To Do List ({toDos.length})</h1>
-      <form onSubmit={onSubmit}>
+      <h1>
+        {toDos.length === 0 ? `Make a To Do!` : ""}
+        {toDos.length === 1 ? `You have ${toDos.length} Task` : ``}
+        {toDos.length > 1 ? `You have ${toDos.length} Tasks` : ``}
+      </h1>
+      <form className="todo-form" onSubmit={onSubmit}>
         <input
           onChange={onChange}
           value={toDo}
           type="text"
-          placeholder="make a to do"
+          placeholder="Type here and press enter"
         />
-        <button>Add To Do</button>
       </form>
-      <hr />
-      <ul>
-        {toDos.map((item, index) => (
-          <li key={index}>{item}</li>
+      <ul className="toodoo">
+        {toDos.map((item) => (
+          <li className="todo-li" key={item.id}>
+            {item.text}
+            <div>
+              <input type="checkbox" onClick={checked} />
+              <button id={item.id} className="deleteBtn" onClick={deleteToDos}>
+                ✔
+              </button>
+            </div>
+          </li>
         ))}
       </ul>
     </div>
@@ -40,156 +95,3 @@ const TodoList = () => {
 };
 
 export default TodoList;
-/*
-import React, { useState, useRef } from "react";
-// import "./index.scss";
-
-const TodoList = () => {
-  const [toDo, setToDo] = useState("");
-  let [toDos, setToDos] = useState([]);
-
-  const savedToDos = localStorage.getItem("todos");
-  if (savedToDos !== null) {
-    const parsedToDos = JSON.parse(savedToDos);
-    toDos = parsedToDos;
-    // console.log(parsedToDos[0].text);
-  }
-
-  const saveToDos = () => {
-    localStorage.setItem("todos", JSON.stringify(toDos));
-  };
-
-  const handleToDoSubmit = (event) => {
-    event.preventDefault();
-    const newToDo = toDoInput.current.value;
-    const newTodoObject = {
-      text: newToDo,
-      id: Date.now(),
-    };
-    console.log(newTodoObject);
-    setToDos([...toDos, newTodoObject]);
-    console.log(toDos);
-    saveToDos();
-    toDoInput.current.value = "";
-  };
-
-  //   function deleteToDo(event) {
-  //     event.preventDefault();
-  //     console.log(event);
-  //     // const li = event.target.parentElement;
-  //     // li.remove();
-  //     // toDos = toDos.filter((toDo) => toDo.id !== parseInt(li));
-  //     // saveToDos();
-  //   }
-
-  return (
-    <form onSubmit={handleToDoSubmit}>
-      <input required ref={toDoInput} type="text" placeholder="make a todo" />
-      <ul className="toodoo">
-        {toDos.map((todo) => {
-          return (
-            <li className="todo-li" key={todo.id}>
-              {todo.text}
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  const dis = todo.id;
-                  toDos = toDos.filter((todo) => todo.id !== JSON.parse(dis));
-                  console.log(toDos);
-                  saveToDos();
-                }}
-                className="deleteBtn"
-                key={todo.id}
-              >
-                ✔
-              </button>
-            </li>
-          );
-        })}
-      </ul>
-      <h2>hi</h2>
-    </form>
-  );
-};
-
-export default TodoList;
-*/
-/*
-import React, { useState, useRef } from "react";
-import { useEffect } from "react";
-import "./index.scss";
-
-const TodoList = () => {
-  let [toDos, setToDos] = useState();
-  const toDoInput = useRef();
-
-  const saveToDos = () => {
-    localStorage.setItem("todos", JSON.stringify(toDos));
-  };
-
-  const handleToDoSubmit = (event) => {
-    event.preventDefault();
-    const newToDo = toDoInput.current.value;
-    const newTodoObject = {
-      text: newToDo,
-      id: Date.now(),
-    };
-    console.log(newTodoObject);
-    setToDos((toDos) => [...toDos, newTodoObject]);
-    console.log(toDos);
-    saveToDos();
-    toDoInput.current.value = "";
-  };
-
-  const savedToDos = localStorage.getItem("todos");
-  if (savedToDos !== null) {
-    const parsedToDos = JSON.parse(savedToDos);
-    toDos = parsedToDos;
-    console.log(toDos);
-    // console.log(parsedToDos[0].text);
-  }
-
-  //   function deleteToDo(event) {
-  //     event.preventDefault();
-  //     console.log(event);
-  //     // const li = event.target.parentElement;
-  //     // li.remove();
-  //     // toDos = toDos.filter((toDo) => toDo.id !== parseInt(li));
-  //     // saveToDos();
-  //   }
-
-  return (
-    <form onSubmit={handleToDoSubmit}>
-      <input required ref={toDoInput} type="text" placeholder="make a todo" />
-      <ul className="toodoo"></ul>
-      <h2>hi</h2>
-    </form>
-  );
-};
-
-export default TodoList;
-/*
-
-{toDos.map((todo) => {
-          return (
-            <li className="todo-li" key={todo.id}>
-              {todo.text}
-            </li>
-          );
-        })}
-
-<button
-                onClick={(e) => {
-                  e.preventDefault();
-                  const dis = todo.id;
-                  console.log(dis);
-                  toDos = toDos.filter((todo) => todo.id !== dis);
-                  console.log(toDos);
-                  saveToDos();
-                }}
-                className="deleteBtn"
-                key={todo.id}
-              >
-                ✔
-              </button>
-*/
