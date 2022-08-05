@@ -53,7 +53,7 @@ const Resume = () => {
               </ul>
             </div>
             <div className="bordered-box_inner-box one">
-              <h3>Framework</h3>
+              <h3>Fave JS Library</h3>
               <ul>
                 <li>
                   <FontAwesomeIcon icon={faReact} /> React JS
