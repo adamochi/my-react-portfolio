@@ -1,4 +1,5 @@
 import {
+  faBarsStaggered,
   faComments,
   faFileLines,
   faInfinity,
@@ -48,7 +49,7 @@ const DropdownMenu = () => {
           >
             <FontAwesomeIcon icon={faInfinity} />
             <span>About me</span>
-          </Link>{" "}
+          </Link>
           <Link
             onClick={scrollToTop}
             className="dropdown-link-item"
@@ -56,7 +57,7 @@ const DropdownMenu = () => {
           >
             <FontAwesomeIcon icon={faComments} />
             <span>Contact me</span>
-          </Link>{" "}
+          </Link>
           <Link
             onClick={scrollToTop}
             className="dropdown-link-item"
@@ -64,7 +65,7 @@ const DropdownMenu = () => {
           >
             <FontAwesomeIcon icon={faPanorama} />
             <span>Works</span>
-          </Link>{" "}
+          </Link>
           <Link
             onClick={scrollToTop}
             className="dropdown-link-item"
@@ -72,7 +73,11 @@ const DropdownMenu = () => {
           >
             <FontAwesomeIcon icon={faFileLines} />
             <span>Resume</span>
-          </Link>{" "}
+          </Link>
+          <Link onClick={scrollToTop} className="dropdown-link-item" to="/todo">
+            <FontAwesomeIcon icon={faBarsStaggered} />
+            <span>To Do List</span>
+          </Link>
         </div>
       </div>
     </div>
