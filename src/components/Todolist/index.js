@@ -1,3 +1,5 @@
+import { faSquarePlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
 import "./index.scss";
 
@@ -63,12 +65,8 @@ const TodoList = () => {
   };
 
   return (
-    <div>
-      <h1>
-        {toDos.length === 0 ? `Make a To Do!` : ""}
-        {toDos.length === 1 ? `You have ${toDos.length} Task` : ``}
-        {toDos.length > 1 ? `You have ${toDos.length} Tasks` : ``}
-      </h1>
+    <div className="todo-div-outer">
+      <h1>Today's Goals</h1>
       <form className="todo-form" onSubmit={onSubmit}>
         <input
           onChange={onChange}
@@ -76,6 +74,9 @@ const TodoList = () => {
           type="text"
           placeholder="Type here and press enter"
         />
+        <button>
+          <FontAwesomeIcon icon={faSquarePlus} />
+        </button>
       </form>
       <ul className="toodoo">
         {toDos.map((item) => (
@@ -84,7 +85,7 @@ const TodoList = () => {
             <div>
               <input type="checkbox" onClick={checked} />
               <button id={item.id} className="deleteBtn" onClick={deleteToDos}>
-                ✔
+                💩
               </button>
             </div>
           </li>
