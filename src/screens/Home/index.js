@@ -133,7 +133,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <ButtonAbout />
+          <ButtonAbout banana="/about" btnTxt="More About Me ↵" />
         </div>
         <div className="time-to-change">
           <img src={Chef} alt="adam chef" loading="lazy" />
