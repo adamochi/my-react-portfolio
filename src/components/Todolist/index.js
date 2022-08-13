@@ -2,6 +2,7 @@ import { faSquarePlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
 import "./index.scss";
+import PracticeBtn from "../PracticeBtn/PracticeBtn";
 
 const TodoList = () => {
   let [toDo, setToDo] = useState("");
@@ -30,16 +31,22 @@ const TodoList = () => {
   // Set toDos
   const onSubmit = (event) => {
     event.preventDefault();
-    if (toDo === "") {
+
+    const onlySpaces = (str) => {
+      // console.log(str.trim().length === 0);
+      return str.trim().length === 0;
+    };
+    if (toDo === "" || onlySpaces(toDo)) {
       return;
     }
+
     setToDos((currentArray) => [
+      ...currentArray,
       {
         text: toDo,
         id: Date.now(),
         check: false,
       },
-      ...currentArray,
     ]);
     setToDo("");
   };
@@ -64,6 +71,11 @@ const TodoList = () => {
       : (textt.textDecoration = "");
   };
 
+  const clearAll = () => {
+    toDos = toDos.filter((toDos) => toDos.id === "banana");
+    localStorage.setItem("todos", null);
+    setToDos([]);
+  };
   return (
     <div className="todo-div-outer">
       <h1>Today's Goals</h1>
@@ -91,6 +103,11 @@ const TodoList = () => {
           </li>
         ))}
       </ul>
+      {toDos.length > 1 ? (
+        <PracticeBtn clearAll={clearAll} text="Clear All" />
+      ) : (
+        ""
+      )}
     </div>
   );
 };

@@ -2,49 +2,41 @@ import React, { useState, useRef, useEffect } from "react";
 import "./index.scss";
 
 const LightModeButton = () => {
-  const checkLight = localStorage.getItem("dark mode");
-  const saved = JSON.parse(checkLight);
   const light = useRef();
 
-  const changeIcon = () => {
-    if (light.current.innerText === "💡") {
-      light.current.innerText = "🌙";
-    } else {
-      light.current.innerText = "💡";
-    }
-  };
-
+  const [lightMode, setLightMode] = useState(false);
   useEffect(() => {
-    const lightBtn = document.getElementById("light-mode-button");
+    const checkLight = localStorage.getItem("dark mode");
+    const saved = JSON.parse(checkLight);
+    setLightMode(saved);
     if (saved === null) {
+      document.body.classList = "";
       localStorage.setItem("dark mode", false);
     } else if (saved === true) {
       document.body.classList = "dark";
-      lightBtn.innerText = "💡";
-    } else {
-      return;
     }
-  });
+  }, []);
 
-  const [lightMode, setLightMode] = useState(saved);
-
-  const lightButton = () => {
+  const mode = () => {
     setLightMode((current) => !current);
-    changeIcon();
-    if (lightMode === false) {
+  };
+
+  useEffect(() => {
+    if (lightMode === true) {
       localStorage.setItem("dark mode", true);
       document.body.classList = "dark";
-    }
-    if (lightMode === true) {
+      light.current.innerText = "💡";
+    } else if (lightMode === false) {
       localStorage.setItem("dark mode", false);
       document.body.classList.remove("dark");
+      light.current.innerText = "🌙";
     }
-  };
+  }, [lightMode]);
 
   return (
     <button
       ref={light}
-      onClick={lightButton}
+      onClick={mode}
       aria-label="toggle dark mode"
       id="light-mode-button"
     >
