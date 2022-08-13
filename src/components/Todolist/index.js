@@ -50,15 +50,12 @@ const TodoList = () => {
   // Delete a toDo
   const deleteToDos = (event) => {
     event.preventDefault();
-    // const li = event.target.parentElement.parentElement;
-    // li.remove();
-    const number = parseInt(event.target.id);
-    toDos = toDos.filter((toDos) => toDos.id !== number);
+    const id = parseInt(event.target.id);
+    toDos = toDos.filter((toDos) => toDos.id !== id);
     setToDos(toDos);
   };
 
   // Check off a toDo
-
   const checked = (e) => {
     const id = parseInt(e.target.id);
     const saved = localStorage.getItem("todos");
@@ -87,7 +84,6 @@ const TodoList = () => {
   };
 
   const clearAll = () => {
-    toDos = toDos.filter((toDos) => toDos.id === "banana");
     localStorage.setItem("todos", null);
     setToDos([]);
   };
