@@ -7,7 +7,6 @@ import PracticeBtn from "../PracticeBtn/PracticeBtn";
 const TodoList = () => {
   let [toDo, setToDo] = useState("");
   let [toDos, setToDos] = useState([]);
-  // const [check, setChecked] = useState(false);
 
   // Load toDos
   useEffect(() => {
@@ -59,13 +58,35 @@ const TodoList = () => {
   };
 
   // Check off a toDo
+
   const checked = (e) => {
+    const id = parseInt(e.target.id);
+    const saved = localStorage.getItem("todos");
+    const parsed = JSON.parse(saved);
+    const obj = parsed.filter((parsed) => parsed.id === id);
+    const isChecked = obj[0].check;
+
     const checked = e.target.checked;
-    // setChecked(checked);
     const textt = e.target.parentElement.parentElement.style;
     checked
       ? (textt.textDecoration = "line-through")
       : (textt.textDecoration = "");
+
+    const newState = toDos.map((parsed) => {
+      // 👇️ if id matches, update check property
+      if (parsed.id === id) {
+        if (!isChecked) {
+          return { ...parsed, check: true };
+        } else {
+          return { ...parsed, check: false };
+        }
+      }
+
+      // 👇️ otherwise return object as is
+      return parsed;
+    });
+
+    setToDos(newState);
   };
 
   const clearAll = () => {
@@ -90,10 +111,19 @@ const TodoList = () => {
       </form>
       <ul className="toodoo">
         {toDos.map((item) => (
-          <li className="todo-li" key={item.id}>
+          <li
+            className="todo-li"
+            key={item.id}
+            style={{ textDecoration: item.check && "line-through" }}
+          >
             {item.text}
             <div>
-              <input type="checkbox" onClick={checked} />
+              <input
+                id={item.id}
+                type="checkbox"
+                onChange={checked}
+                checked={item.check}
+              />
               <button id={item.id} className="deleteBtn" onClick={deleteToDos}>
                 💩
               </button>
