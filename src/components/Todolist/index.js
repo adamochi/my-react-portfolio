@@ -72,8 +72,7 @@ const TodoList = () => {
       ? (textt.textDecoration = "line-through")
       : (textt.textDecoration = "");
 
-    const newState = toDos.map((parsed) => {
-      // 👇️ if id matches, update check property
+    const checkedState = toDos.map((parsed) => {
       if (parsed.id === id) {
         if (!isChecked) {
           return { ...parsed, check: true };
@@ -81,12 +80,10 @@ const TodoList = () => {
           return { ...parsed, check: false };
         }
       }
-
-      // 👇️ otherwise return object as is
       return parsed;
     });
 
-    setToDos(newState);
+    setToDos(checkedState);
   };
 
   const clearAll = () => {
