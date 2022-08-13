@@ -31,15 +31,12 @@ const TodoList = () => {
   // Set toDos
   const onSubmit = (event) => {
     event.preventDefault();
-
     const onlySpaces = (str) => {
-      // console.log(str.trim().length === 0);
       return str.trim().length === 0;
     };
     if (toDo === "" || onlySpaces(toDo)) {
       return;
     }
-
     setToDos((currentArray) => [
       ...currentArray,
       {
@@ -54,11 +51,11 @@ const TodoList = () => {
   // Delete a toDo
   const deleteToDos = (event) => {
     event.preventDefault();
-    const li = event.target.parentElement.parentElement;
-    li.remove();
+    // const li = event.target.parentElement.parentElement;
+    // li.remove();
     const number = parseInt(event.target.id);
     toDos = toDos.filter((toDos) => toDos.id !== number);
-    localStorage.setItem("todos", JSON.stringify(toDos));
+    setToDos(toDos);
   };
 
   // Check off a toDo
@@ -76,6 +73,7 @@ const TodoList = () => {
     localStorage.setItem("todos", null);
     setToDos([]);
   };
+
   return (
     <div className="todo-div-outer">
       <h1>Today's Goals</h1>
