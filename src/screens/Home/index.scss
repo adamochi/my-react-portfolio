@@ -23,6 +23,9 @@
   }
   canvas {
     height: 600px;
+    opacity: 0;
+    animation: bounceIn 1s forwards;
+    animation-delay: 2s;
   }
 
   h4 {
