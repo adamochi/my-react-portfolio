@@ -93,6 +93,7 @@ const TodoList = () => {
       <h1>Today's Goals</h1>
       <form className="todo-form" onSubmit={onSubmit}>
         <input
+          autoFocus
           onChange={onChange}
           value={toDo}
           type="text"

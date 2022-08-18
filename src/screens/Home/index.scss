@@ -6,8 +6,8 @@
   align-items: center;
   .paper-home {
     opacity: 0;
-    animation: jackInTheBox 1s forwards;
-    animation-delay: 1.5s;
+    animation: fadeInUp 1.2s forwards;
+    animation-delay: 3s;
     color: rgb(42, 48, 46);
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
   canvas {
     height: 600px;
     opacity: 0;
-    animation: bounceIn 1s forwards;
+    animation: bounceIn 1.1s forwards;
     animation-delay: 2s;
   }
 
@@ -161,6 +161,7 @@
       }
     }
     .nomad-link-div {
+      gap: 5px;
       width: 100%;
       display: flex;
       justify-content: space-evenly;

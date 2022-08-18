@@ -10,7 +10,7 @@ import ButtonAbout from "../../components/Links/ButtonAbout";
 import Nomad from "../../components/Links/Nomad";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
-// import CoursesBtn from "../../components/Links/CoursesBtn";
+import CoursesBtn from "../../components/Links/CoursesBtn";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -76,11 +76,11 @@ const Home = () => {
 
           <div className="text-container">
             <div className="text-section text-section-with-border">
-              <h3>How did I make it this far by Self study?</h3>
+              <h3>Where I studied</h3>
               <div className="inner-xp-learn-div">
                 <span className="year-span">2022</span>
                 <p>
-                  <strong>Online Courses and self-motivation</strong>
+                  <strong>Online at Nomad Coders</strong>
                   <br /> I have undertaken online courses and bootcamps at Nomad
                   Coders For the majority of the time I have been studying.
                   <br />
@@ -90,7 +90,7 @@ const Home = () => {
               </div>
               <div className="nomad-link-div">
                 <Nomad />
-                {/* <CoursesBtn /> */}
+                <CoursesBtn />
                 {/* <span>completed curriculum link goes here</span> */}
               </div>
             </div>

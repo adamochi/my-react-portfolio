@@ -8,8 +8,8 @@ const CoursesBtn = () => {
   };
   return (
     <>
-      <NavLink onClick={scrollToTop} to={"/courses"}>
-        <button className="courses-btn">Detailed Curriculum ↵</button>
+      <NavLink onClick={scrollToTop} to={"/curriculum"}>
+        <button className="courses-btn">See the Curriculum ↵</button>
       </NavLink>
     </>
   );

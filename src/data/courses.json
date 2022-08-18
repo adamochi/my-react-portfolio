@@ -1,28 +1,117 @@
 {
   "courses": [
     {
-      "cover": "https://i.imgur.com/21pUJbQ.png",
-      "title": "javascript",
-      "description": "After beginning my coding studies just one month prior, I decided that I needed to start my own project and get some practice in!",
-      "url": "https://eloquent-kashata-64e9a1.netlify.app"
+      "image": "https://i.imgur.com/2kReWam.png",
+      "title": "Movie Service with React JS",
+      "achieved": [
+        "I wanted to become an upgraded frontend developer who can handle React. In this course I was able to understand the basics of React"
+      ],
+      "url": "https://github.com/adamochi/react-beginner.git",
+      "linktext": "Source",
+      "linktexttwo": "",
+      "urltwo": "https://adamochi.github.io/vanillajs2022",
+      "description": [
+        "JSX",
+        "State",
+        "Props",
+        "Class Components",
+        "Data Fetching",
+        "Routing"
+      ],
+      "packages": ["React", "Axios", "React Router", "Github Pages"],
+      "languages": ["React", "Axios", "React Router", "Github Pages"]
     },
     {
-      "cover": "https://i.imgur.com/2kReWam.png",
-      "title": "JavaScript Number Game",
-      "description": "Go head to head with my AI and guess the right number",
-      "url": "https://eloquent-kashata-64e9a1.netlify.app/numbergame/index.html"
+      "image": "https://i.imgur.com/21pUJbQ.png",
+      "title": "Chrome App with JavaScript",
+      "achieved": [
+        "JS Clock",
+        "JS To Do List",
+        "Get Geolocation",
+        "Get Weather Information",
+        "Deploy to Github Pages"
+      ],
+      "linktext": "Source",
+      "url": "https://github.com/adamochi/vanilla-js-2022.git",
+      "linktexttwo": "Link to project",
+      "urltwo": "https://adamochi.github.io/vanilla-js-2022",
+      "description": [
+        "Variables",
+        "Functions",
+        "Data Types",
+        "Arrays, Objects",
+        "DOM Functions",
+        "Events",
+        "if / else / for"
+      ],
+      "packages": [
+        "Javascript",
+        "localStorage",
+        "AJAX",
+        "JSON",
+        "DOM",
+        "fetch",
+        "OpenWeather API"
+      ],
+      "languages": ["JavaScript", "HTML5", "Open Weather API"]
     },
     {
-      "cover": "https://i.imgur.com/vKdazGg.png",
-      "title": "Momentum App",
-      "description": "Based on learning JavaScript. The first course I took challenged me to build my own browser app. It features current time, weather, randomised inspirational quotes and you can keep track of your own To Do List",
-      "url": "https://adamochi.github.io/vanilla-js-2022/"
+      "image": "https://i.imgur.com/vKdazGg.png",
+      "title": "Kakao Talk Clone Coding 2 week Bootcamp",
+      "achieved": [
+        "Status Bar",
+        "Chat screen",
+        "Friends screen",
+        "Find",
+        "Settings",
+        "Message Animations",
+        "Chats",
+        "and More"
+      ],
+      "url": "https://github.com/adamochi/kokoa-clone-2022.git",
+      "linktext": "Source",
+      "linktexttwo": "",
+      "urltwo": "",
+      "description": [
+        "IDs & Classes",
+        "HTML Tags",
+        "Semantic & nonsemantic tags",
+        "box model",
+        "Inline, Block, inlineblock",
+        "CSS Position",
+        "Flexbox",
+        "Selectors",
+        "Pseudo Selectors",
+        "Transitions",
+        "Animations",
+        "Media Queries"
+      ],
+      "packages": ["HTML5", "CSS3", "VSCode", "Github Desktop", "Font Awesome"],
+      "languages": ["HTML", "CSS", "Github"]
     },
     {
-      "cover": "https://i.imgur.com/bQeuPlm.png",
-      "title": "React Website",
-      "description": "Within two months, I had started to feel confident with my skills in HTML, CSS, and basic JavaScript. So I began to pick-up the React framework and put together a project that would accelerate my learning",
-      "url": "https://greenbean-woodsmith.netlify.app/"
+      "image": "https://i.imgur.com/vKdazGg.png",
+      "title": "Creating Paint with Vanilla JS",
+      "achieved": [""],
+      "url": "https://github.com/adamochi/vanilla-js-canvas-2022",
+      "linktext": "Source",
+      "linktexttwo": "",
+      "urltwo": "",
+      "description": [""],
+      "packages": [""],
+      "languages": [""]
+    },
+    {
+      "image": "https://i.imgur.com/vKdazGg.png",
+      "title": "Git & Github for Everyone",
+      "achieved": [""],
+      "url": "https://github.com/adamochi/git-for-everyone",
+      "linktext": "Source",
+      "linktexttwo": "",
+      "urltwo": "",
+      "description": [""],
+      "packages": [""],
+      "languages": [""]
     }
   ]
 }

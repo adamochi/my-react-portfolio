@@ -6,6 +6,7 @@ import Contact from "./screens/Contact";
 import Portfolio from "./screens/Portfolio";
 import Resume from "./screens/Resume";
 import ToDotest from "./screens/todotest";
+import Curriculum from "./screens/Curriculum";
 import "./App.scss";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/works" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/todo" element={<ToDotest />} />
+        <Route path="/curriculum" element={<Curriculum />} />
       </Route>
     </Routes>
   );

@@ -2,7 +2,7 @@
   h1 {
     font-size: 32px;
   }
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,5 +68,8 @@
         }
       }
     }
+  }
+  @media screen and (max-width: 500px) {
+    width: 90vw;
   }
 }
