@@ -20,4 +20,9 @@
     rgb(239, 207, 240)
   );
   --resume-paper: rgb(248, 248, 248);
+  /* curriculum page colors */
+  --window-xp-border: rgb(47, 105, 234);
+  --window-xp-border-light: rgb(21, 133, 250);
+  --window-xp-toolbar: rgb(240, 237, 222);
+  --window-xp-exit: rgb(225, 84, 18);
 }

@@ -64,7 +64,7 @@ const Home = () => {
                 myself enjoying it more and more each day.
               </p>
               <p>
-                With <strong>600+</strong> hours of studying &amp; practicing
+                With <strong>800+</strong> hours of studying &amp; practicing
                 writing code over the course of this year, I have gained a solid
                 understanding of JavaScript ES6 and React which I have built
                 multiple applications with!
@@ -81,11 +81,11 @@ const Home = () => {
                 <span className="year-span">2022</span>
                 <p>
                   <strong>Online at Nomad Coders</strong>
-                  <br /> I have undertaken online courses and bootcamps at Nomad
-                  Coders For the majority of the time I have been studying.
                   <br />
-                  Here you can see the courses and bootcamps I've completed at
-                  Nomad Coders
+                  This year I began my study online and have completed eight
+                  courses, including 2 bootcamps, that have rewarded me with a
+                  greater understanding of the basics of HTML5, CSS3, JavaScript
+                  and React. As well as many other tools.
                 </p>
               </div>
               <div className="nomad-link-div">

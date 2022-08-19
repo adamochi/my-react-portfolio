@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./index.scss";
 import AnimatedLetters from "../../components/AnimatedLetters";
 import courses from "../../data/courses.json";
+import { faWindows } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComputer } from "@fortawesome/free-solid-svg-icons";
 const course = courses.courses;
 
 const Curriculum = () => {
@@ -30,24 +33,44 @@ const Curriculum = () => {
       <div className="curriculum-page container">
         {course.map((course, index) => (
           <div className="course-div" key={index}>
-            <h2>{course.title}</h2>
-            <div className="curriculum-links-div">
-              <a target="_blank" rel="noreferrer" href={course.url}>
-                {course.linktext}
-              </a>
-              {course.linktexttwo !== "" && (
-                <a target="_blank" rel="noreferrer" href={course.urltwo}>
-                  {course.linktexttwo}
-                </a>
-              )}
-            </div>
-            <div className="using-div">
-              {course.languages.map((i, idx) => (
-                <div className="using" key={idx}>
-                  {i}
+            <div className="window-top-header-bar">
+              <FontAwesomeIcon icon={faComputer} />
+              {course.title}
+              <div className="window-close-div">
+                <div>
+                  <div className="minimise"></div>
                 </div>
-              ))}
+                <div>
+                  <div></div>
+                </div>
+                <div className="x-div">X</div>
+              </div>
             </div>
+            <div className="menu-bar-xp">
+              <div className="menu-bar-with-logo">
+                <div className="using-div">
+                  {course.languages.map((i, idx) => (
+                    <div className="using" key={idx}>
+                      {i}
+                    </div>
+                  ))}
+                </div>
+                <div className="windows-icon-div">
+                  <FontAwesomeIcon icon={faWindows} />
+                </div>
+              </div>
+              <div className="curriculum-links-div">
+                <a target="_blank" rel="noreferrer" href={course.url}>
+                  {course.linktext}
+                </a>
+                {course.linktexttwo !== "" && (
+                  <a target="_blank" rel="noreferrer" href={course.urltwo}>
+                    {course.linktexttwo}
+                  </a>
+                )}
+              </div>
+            </div>
+
             <div className="map-party">
               <div>
                 <h3>Components:</h3>

@@ -1,15 +1,14 @@
 {
   "courses": [
     {
+      "logo": "faReact",
       "image": "https://i.imgur.com/2kReWam.png",
-      "title": "Movie Service with React JS",
-      "achieved": [
-        "I wanted to become an upgraded frontend developer who can handle React. In this course I was able to understand the basics of React"
-      ],
+      "title": "React JS",
+      "achieved": ["Movie web service", "Bitcoin money converter"],
       "url": "https://github.com/adamochi/react-beginner.git",
       "linktext": "Source",
-      "linktexttwo": "",
-      "urltwo": "https://adamochi.github.io/vanillajs2022",
+      "linktexttwo": "Coin Converter",
+      "urltwo": "https://adamochi.github.io/react-beginner/",
       "description": [
         "JSX",
         "State",
@@ -22,8 +21,9 @@
       "languages": ["React", "Axios", "React Router", "Github Pages"]
     },
     {
+      "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/21pUJbQ.png",
-      "title": "Chrome App with JavaScript",
+      "title": "JavaScript - 2 week bootcamp",
       "achieved": [
         "JS Clock",
         "JS To Do List",
@@ -33,7 +33,7 @@
       ],
       "linktext": "Source",
       "url": "https://github.com/adamochi/vanilla-js-2022.git",
-      "linktexttwo": "Link to project",
+      "linktexttwo": "Web App",
       "urltwo": "https://adamochi.github.io/vanilla-js-2022",
       "description": [
         "Variables",
@@ -56,8 +56,9 @@
       "languages": ["JavaScript", "HTML5", "Open Weather API"]
     },
     {
+      "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/vKdazGg.png",
-      "title": "Kakao Talk Clone Coding 2 week Bootcamp",
+      "title": "Clone Coding - 2 week Bootcamp",
       "achieved": [
         "Status Bar",
         "Chat screen",
@@ -70,8 +71,8 @@
       ],
       "url": "https://github.com/adamochi/kokoa-clone-2022.git",
       "linktext": "Source",
-      "linktexttwo": "",
-      "urltwo": "",
+      "linktexttwo": "See it on your mobile",
+      "urltwo": "https://adamochi.github.io/kokoa-clone-2022/",
       "description": [
         "IDs & Classes",
         "HTML Tags",
@@ -90,18 +91,20 @@
       "languages": ["HTML", "CSS", "Github"]
     },
     {
+      "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/vKdazGg.png",
-      "title": "Creating Paint with Vanilla JS",
+      "title": "Creating Paint with JavaScript",
       "achieved": [""],
       "url": "https://github.com/adamochi/vanilla-js-canvas-2022",
       "linktext": "Source",
-      "linktexttwo": "",
-      "urltwo": "",
+      "linktexttwo": "Meme Maker",
+      "urltwo": "https://adamochi.github.io/vanilla-js-canvas-2022/",
       "description": [""],
       "packages": [""],
       "languages": [""]
     },
     {
+      "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/vKdazGg.png",
       "title": "Git & Github for Everyone",
       "achieved": [""],
