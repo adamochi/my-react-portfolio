@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
-import AnimatedLetters from "../../components/AnimatedLetters";
-import courses from "../../data/courses.json";
+import AnimatedLetters from "components/AnimatedLetters";
+import courses from "data/courses.json";
 import { faWindows } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComputer } from "@fortawesome/free-solid-svg-icons";
+import {
+  faComputer,
+  faArrowAltCircleLeft,
+  faArrowAltCircleRight,
+  faHammer,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const course = courses.courses;
 
 const Curriculum = () => {
@@ -25,9 +31,10 @@ const Curriculum = () => {
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={"This page under construction".split("")}
+            strArray={"Under Construction".split("")}
             idx={15}
-          />
+          />{" "}
+          <FontAwesomeIcon icon={faHammer} />
         </h1>
       </header>
       <div className="curriculum-page container">
@@ -60,11 +67,33 @@ const Curriculum = () => {
                 </div>
               </div>
               <div className="curriculum-links-div">
-                <a target="_blank" rel="noreferrer" href={course.url}>
-                  {course.linktext}
+                <div className="back-n-forward">
+                  <Link to={"/"}>
+                    <FontAwesomeIcon
+                      className="back-svg"
+                      icon={faArrowAltCircleLeft}
+                    />
+                    back ▾
+                  </Link>
+                </div>
+                <div className="back-n-forward forward">
+                  <FontAwesomeIcon icon={faArrowAltCircleRight} /> ▾
+                </div>
+                <a
+                  className="xp-a-links"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={course.url}
+                >
+                  🔎 {course.linktext}
                 </a>
                 {course.linktexttwo !== "" && (
-                  <a target="_blank" rel="noreferrer" href={course.urltwo}>
+                  <a
+                    className="xp-a-links"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={course.urltwo}
+                  >
                     {course.linktexttwo}
                   </a>
                 )}

@@ -17,7 +17,7 @@
         "Data Fetching",
         "Routing"
       ],
-      "packages": ["React", "Axios", "React Router", "Github Pages"],
+      "packages": ["React", "Axios", "React-Router", "Github-Pages"],
       "languages": ["React", "Axios", "React Router", "Github Pages"]
     },
     {
