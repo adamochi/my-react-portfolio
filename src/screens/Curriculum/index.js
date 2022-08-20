@@ -8,7 +8,6 @@ import {
   faComputer,
   faArrowAltCircleLeft,
   faArrowAltCircleRight,
-  faHammer,
   faLaptopCode,
   faPlusSquare,
   faTools,
