@@ -184,6 +184,22 @@
       border: 2px solid rgb(0, 225, 255);
       background-color: rgba(192, 204, 255, 0.582);
       border-radius: 20px;
+      .studies-resume-link {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(0, 88, 204);
+        width: fit-content;
+        border-radius: 3px;
+        display: block;
+        padding: 2px 5px;
+        margin: 10px 0px;
+        background-color: rgb(134, 236, 206);
+        &:hover {
+          animation: rubberBand 0.7s;
+          transition: 0.3s;
+          box-shadow: 0 0 0 2px rgb(0, 88, 204);
+        }
+      }
     }
     .more-about-div {
       background-color: paleturquoise;

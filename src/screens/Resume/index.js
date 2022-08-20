@@ -8,9 +8,13 @@ import {
   faSass,
   faJsSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 // import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="resume-page container">
@@ -27,6 +31,16 @@ const Resume = () => {
               href="https://github.com/adamochi"
             >
               adamochi
+            </a>
+          </h4>
+          <h4>
+            Linkedin:{" "}
+            <a
+              target={"_blank"}
+              rel={"noreferrer"}
+              href="https://www.linkedin.com/in/adam-sullivan87/"
+            >
+              adam-sullivan87
             </a>
           </h4>
           <div className="bordered-box">
@@ -150,19 +164,19 @@ const Resume = () => {
                 <li>
                   Building and Fixing Computers - from building over a dozen
                   entire systems to troubleshooting both software and hardware
-                  issues
+                  issues.
                 </li>
                 <li>
                   Soldering - almost every project at home; from building
                   speaker crossovers and a microphone with a preamp -
                   https://imgur.com/gallery/DcRzLNG - to changing out the
-                  switches inside computer mice
+                  switches inside computer mice &amp; keyboards.
                 </li>
                 <li>
                   Building Speakers - from designing and assembling cabinets to
-                  soldering and testing different crossover configurations
+                  soldering and testing different crossover configurations.
                 </li>
-                <li>Sound Engineering - at church for the past 3 years</li>
+                <li>Sound Engineering - at church for the past 3 years.</li>
               </ul>
             </div>
           </div>
@@ -172,12 +186,17 @@ const Resume = () => {
             <h5>2022</h5>
             <h2>https://nomadcoders.co/</h2>
             <p>
-              This year I started to study online and have completed four
-              courses and 2 bootcamps that have rewarded me with a greater
-              understanding of the basics of HTML, CSS, JavaScript, and React
-              Js. Here is a link to my profile which shows which courses I have
-              completed and the badges acquired through the bootcamp challenges
-              - https://nomadcoders.co/users/honeyrumballs
+              This year I began my study online and have completed eight
+              courses, including 2 bootcamps! This journey has rewarded me with
+              a greater understanding of HTML, CSS, JavaScript, and React Js.
+              <Link
+                className="studies-resume-link"
+                onClick={scrollToTop}
+                to={"/curriculum"}
+              >
+                {" "}
+                - Studies I have completed ↵
+              </Link>
             </p>
             <h5>2005 - 2009</h5>
             <h2>Certificate III Commercial Cookery, TAFE</h2>
