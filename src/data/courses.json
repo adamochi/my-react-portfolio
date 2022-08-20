@@ -3,8 +3,12 @@
     {
       "logo": "faReact",
       "image": "https://i.imgur.com/2kReWam.png",
+      "images": [
+        "https://i.imgur.com/2kReWam.png",
+        "https://i.imgur.com/21pUJbQ.png"
+      ],
       "title": "React JS",
-      "achieved": ["Movie web service", "Bitcoin money converter"],
+      "achieved": ["Movie web service", "crypto coin converter"],
       "url": "https://github.com/adamochi/react-beginner.git",
       "linktext": "Source",
       "linktexttwo": "Coin Converter",
@@ -23,6 +27,7 @@
     {
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/21pUJbQ.png",
+      "images": ["https://i.imgur.com/2kReWam.png"],
       "title": "JavaScript - 2 week bootcamp",
       "achieved": [
         "JS Clock",
@@ -58,6 +63,7 @@
     {
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/vKdazGg.png",
+      "images": ["https://i.imgur.com/2kReWam.png"],
       "title": "Clone Coding - 2 week Bootcamp",
       "achieved": [
         "Status Bar",
@@ -93,6 +99,7 @@
     {
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/vKdazGg.png",
+      "images": ["https://i.imgur.com/2kReWam.png"],
       "title": "Creating Paint with JavaScript",
       "achieved": [""],
       "url": "https://github.com/adamochi/vanilla-js-canvas-2022",
@@ -106,6 +113,7 @@
     {
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/vKdazGg.png",
+      "images": ["https://i.imgur.com/2kReWam.png"],
       "title": "Git & Github for Everyone",
       "achieved": [""],
       "url": "https://github.com/adamochi/git-for-everyone",

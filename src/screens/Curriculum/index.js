@@ -9,9 +9,16 @@ import {
   faArrowAltCircleLeft,
   faArrowAltCircleRight,
   faHammer,
+  faLaptopCode,
+  faPlusSquare,
+  faTools,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 const course = courses.courses;
+
+// const map1 = new Map([course[0].images]);
+// const map2 = new Map([course[0].achieved]);
+// const newmap = new Map([...map1, ...map2]);
 
 const Curriculum = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -101,22 +108,46 @@ const Curriculum = () => {
             </div>
 
             <div className="map-party">
-              <div>
-                <h3>Components:</h3>
-                {course.description.map((i, idx) => (
-                  <li key={idx}>{i}</li>
-                ))}
+              <div className="my-computer-file-system">
+                <div className="linesss"></div>
+                <div className="divider-linesss"></div>
+                <div className="Components-file-system">
+                  <FontAwesomeIcon icon={faComputer} />
+                  <h3>Components (course)</h3>
+                </div>
+                <div className="minus-div-parent">
+                  <div className="minus-div">-</div>
+                  <FontAwesomeIcon icon={faLaptopCode} />
+                  <h4> Coding</h4>
+                </div>
+                <ul>
+                  {course.description.map((item, key) => (
+                    <li key={key}>
+                      <FontAwesomeIcon icon={faPlusSquare} />
+                      {item.length > 16 ? `${item.substring(0, 16)}...` : item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="minus-div-parent">
+                  <div className="minus-div">-</div>
+                  <FontAwesomeIcon icon={faTools} />
+                  <h4>System Tools:</h4>
+                </div>
+                <ul>
+                  {course.packages.map((item, key) => (
+                    <li key={key}>
+                      <FontAwesomeIcon icon={faPlusSquare} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div>
-                <h3>What was used:</h3>
-                {course.packages.map((i, idx) => (
-                  <li key={idx}>{i}</li>
-                ))}
-              </div>
-              <div>
-                <h3>What I made:</h3>
-                {course.achieved.map((i, idx) => (
-                  <li key={idx}>{i}</li>
+              <div className="files-with-images">
+                {course.achieved.map((item, key) => (
+                  <div key={key}>
+                    <img src={course.image} alt="img" />
+                    <span>{item}.png</span>
+                  </div>
                 ))}
               </div>
             </div>

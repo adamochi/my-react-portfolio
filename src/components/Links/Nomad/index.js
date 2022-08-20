@@ -11,7 +11,7 @@ const Nomad = () => {
       href="https://nomadcoders.co/users/adamochi"
     >
       <button className="nomad-btn">
-        <FontAwesomeIcon icon={faLaptopCode} /> Nomad Coders ↵
+        <FontAwesomeIcon icon={faLaptopCode} /> My Profile ↵
       </button>
     </a>
   );

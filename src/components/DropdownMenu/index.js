@@ -1,6 +1,7 @@
 import {
   faBarsStaggered,
   faComments,
+  faFileCode,
   faFileLines,
   faInfinity,
   faPanorama,
@@ -49,6 +50,14 @@ const DropdownMenu = () => {
           >
             <FontAwesomeIcon icon={faInfinity} />
             <span>About me</span>
+          </Link>
+          <Link
+            onClick={scrollToTop}
+            className="dropdown-link-item"
+            to="/curriculum"
+          >
+            <FontAwesomeIcon icon={faFileCode} />
+            <span>My Studies</span>
           </Link>
           <Link
             onClick={scrollToTop}
