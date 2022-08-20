@@ -14,6 +14,7 @@ import {
   faTools,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+
 const course = courses.courses;
 
 // const map1 = new Map([course[0].images]);
@@ -48,8 +49,10 @@ const Curriculum = () => {
         {course.map((course, index) => (
           <div className="course-div" key={index}>
             <div className="window-top-header-bar">
-              <FontAwesomeIcon icon={faComputer} />
-              {course.title}
+              <div>
+                <FontAwesomeIcon icon={faComputer} />
+                {course.title}
+              </div>
               <div className="window-close-div">
                 <div>
                   <div className="minimise"></div>
@@ -124,7 +127,7 @@ const Curriculum = () => {
                   {course.description.map((item, key) => (
                     <li key={key}>
                       <FontAwesomeIcon icon={faPlusSquare} />
-                      {item.length > 16 ? `${item.substring(0, 16)}...` : item}
+                      {item.length > 20 ? `${item.substring(0, 20)}...` : item}
                     </li>
                   ))}
                 </ul>

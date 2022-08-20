@@ -2,16 +2,16 @@
   "courses": [
     {
       "logo": "faReact",
-      "image": "https://i.imgur.com/2kReWam.png",
+      "image": "https://i.imgur.com/UKREjak.png",
       "images": [
         "https://i.imgur.com/2kReWam.png",
         "https://i.imgur.com/21pUJbQ.png"
       ],
-      "title": "React JS",
-      "achieved": ["Movie web service", "crypto coin converter"],
+      "title": "REACT JS",
+      "achieved": ["Movie Database web service"],
       "url": "https://github.com/adamochi/react-beginner.git",
       "linktext": "Source",
-      "linktexttwo": "Coin Converter",
+      "linktexttwo": "🥇 Coin Converter",
       "urltwo": "https://adamochi.github.io/react-beginner/",
       "description": [
         "JSX",
@@ -21,21 +21,49 @@
         "Data Fetching",
         "Routing"
       ],
-      "packages": ["React", "Axios", "React-Router", "Github-Pages"],
+      "packages": ["React", "Axios", "React Router", "VSCode", "Github Pages"],
       "languages": ["React", "Axios", "React Router", "Github Pages"]
     },
     {
-      "logo": "<FontAwesomeIcon icon={faWindows} />",
-      "image": "https://i.imgur.com/21pUJbQ.png",
-      "images": ["https://i.imgur.com/2kReWam.png"],
-      "title": "JavaScript - 2 week bootcamp",
-      "achieved": [
-        "JS Clock",
-        "JS To Do List",
-        "Get Geolocation",
-        "Get Weather Information",
-        "Deploy to Github Pages"
+      "logo": "faReact",
+      "image": "https://i.imgur.com/4Pz4yYK.jpg",
+      "images": [
+        "https://i.imgur.com/2kReWam.png",
+        "https://i.imgur.com/21pUJbQ.png"
       ],
+      "title": "REACT NATIVE 101 for beginners",
+      "achieved": ["To-Do App"],
+      "url": "https://github.com/adamochi/react-beginner.git",
+      "linktext": "Source",
+      "linktexttwo": "Coin Converter",
+      "urltwo": "https://adamochi.github.io/react-beginner/",
+      "description": [
+        "React Native Foundations",
+        "Styles on React Native",
+        "Font Icons",
+        "Data Fetching",
+        "Permissions",
+        "User Input",
+        "To Do App",
+        "Async Storage",
+        "Disk Persistance",
+        "Responsive Design",
+        "React Native Web"
+      ],
+      "packages": [
+        "Weather App",
+        "Phone Geolocation",
+        "Address Geocoding",
+        "Data Fetching"
+      ],
+      "languages": ["React Native", "React Native Web", "Open Weather API"]
+    },
+    {
+      "logo": "<FontAwesomeIcon icon={faWindows} />",
+      "image": "https://i.imgur.com/vKdazGg.png",
+      "images": ["https://i.imgur.com/2kReWam.png"],
+      "title": "JAVASCRIPT - 2wk JS Bootcamp",
+      "achieved": ["Momentum App"],
       "linktext": "Source",
       "url": "https://github.com/adamochi/vanilla-js-2022.git",
       "linktexttwo": "Web App",
@@ -47,7 +75,10 @@
         "Arrays, Objects",
         "DOM Functions",
         "Events",
-        "if / else / for"
+        "if / else / for",
+        "HTML5",
+        "CSS3",
+        "Github Pages"
       ],
       "packages": [
         "Javascript",
@@ -58,23 +89,14 @@
         "fetch",
         "OpenWeather API"
       ],
-      "languages": ["JavaScript", "HTML5", "Open Weather API"]
+      "languages": ["JavaScript", "Open Weather API", "Clock", "Todo List"]
     },
     {
       "logo": "<FontAwesomeIcon icon={faWindows} />",
-      "image": "https://i.imgur.com/vKdazGg.png",
+      "image": "https://i.imgur.com/Myr2P7Z.png",
       "images": ["https://i.imgur.com/2kReWam.png"],
-      "title": "Clone Coding - 2 week Bootcamp",
-      "achieved": [
-        "Status Bar",
-        "Chat screen",
-        "Friends screen",
-        "Find",
-        "Settings",
-        "Message Animations",
-        "Chats",
-        "and More"
-      ],
+      "title": "Clone Coding - 2wk CSS Bootcamp",
+      "achieved": ["Messaging App"],
       "url": "https://github.com/adamochi/kokoa-clone-2022.git",
       "linktext": "Source",
       "linktexttwo": "See it on your mobile",
@@ -94,35 +116,96 @@
         "Media Queries"
       ],
       "packages": ["HTML5", "CSS3", "VSCode", "Github Desktop", "Font Awesome"],
-      "languages": ["HTML", "CSS", "Github"]
+      "languages": ["HTML", "CSS", "Github Pages"]
     },
     {
       "logo": "<FontAwesomeIcon icon={faWindows} />",
-      "image": "https://i.imgur.com/vKdazGg.png",
+      "image": "https://i.imgur.com/cxlltFW.png",
       "images": ["https://i.imgur.com/2kReWam.png"],
-      "title": "Creating Paint with JavaScript",
-      "achieved": [""],
+      "title": "PAINT with JavaScript",
+      "achieved": ["Canvas"],
       "url": "https://github.com/adamochi/vanilla-js-canvas-2022",
       "linktext": "Source",
       "linktexttwo": "Meme Maker",
       "urltwo": "https://adamochi.github.io/vanilla-js-canvas-2022/",
-      "description": [""],
-      "packages": [""],
-      "languages": [""]
+      "description": [
+        "HTML5",
+        "Mouse Events",
+        "2D Context",
+        "2D Painting",
+        "Brush Size",
+        "Image Saving"
+      ],
+      "packages": ["Javascript", "Canvas", "2D Context", "Pointer Events"],
+      "languages": ["JavaScript", "HTML5", "CSS"]
     },
     {
       "logo": "<FontAwesomeIcon icon={faWindows} />",
-      "image": "https://i.imgur.com/vKdazGg.png",
+      "image": "https://i.imgur.com/qSvhS55.png",
       "images": ["https://i.imgur.com/2kReWam.png"],
-      "title": "Git & Github for Everyone",
-      "achieved": [""],
+      "title": "10 Practical React Hooks",
+      "achieved": ["React Hooks"],
       "url": "https://github.com/adamochi/git-for-everyone",
       "linktext": "Source",
       "linktexttwo": "",
       "urltwo": "",
-      "description": [""],
-      "packages": [""],
-      "languages": [""]
+      "description": [
+        "useInput",
+        "useTabs",
+        "useTitle",
+        "useClick",
+        "useConfirm",
+        "usePreventLeave",
+        "useBeforeLeave",
+        "useFadeIn",
+        "useNetwork",
+        "useAxios"
+      ],
+      "packages": ["React", "useEffect", "useState", "NPM"],
+      "languages": ["React", "useEffect", "useState", "NPM"]
+    },
+    {
+      "logo": "<FontAwesomeIcon icon={faWindows} />",
+      "image": "https://i.imgur.com/kVd5p0Y.png",
+      "images": ["https://i.imgur.com/2kReWam.png"],
+      "title": "Redux 101 for Beginners",
+      "achieved": ["Redux"],
+      "url": "https://github.com/adamochi/git-for-everyone",
+      "linktext": "Source",
+      "linktexttwo": "",
+      "urltwo": "",
+      "description": [
+        "Store",
+        "Dispatch",
+        "Subscribe",
+        "Reducer",
+        "mapStateToProps",
+        "mapDispatchToProps",
+        "Redux Toolkit"
+      ],
+      "packages": ["React", "Redux", "Redux Toolkit"],
+      "languages": ["Redux", "React", "Github"]
+    },
+    {
+      "logo": "<FontAwesomeIcon icon={faWindows} />",
+      "image": "https://i.imgur.com/VQg5NSS.png",
+      "images": ["https://i.imgur.com/2kReWam.png"],
+      "title": "Git & Github for Everyone",
+      "achieved": ["Git & GitHub"],
+      "url": "https://github.com/adamochi/git-for-everyone",
+      "linktext": "Source",
+      "linktexttwo": "",
+      "urltwo": "",
+      "description": [
+        "Repositories",
+        "Commits",
+        "Branches",
+        "Pull Requests",
+        "Issues",
+        "CLI"
+      ],
+      "packages": ["Git", "Github"],
+      "languages": ["Git", "Github"]
     }
   ]
 }
