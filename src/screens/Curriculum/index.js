@@ -37,12 +37,12 @@ const Curriculum = () => {
     <>
       <header className="page-title">
         <h1>
+          <FontAwesomeIcon icon={faLaptopCode} />{" "}
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={"Under Construction".split("")}
+            strArray={"My Completed Studies".split("")}
             idx={15}
-          />{" "}
-          <FontAwesomeIcon icon={faHammer} />
+          />
         </h1>
       </header>
       <div className="curriculum-page container">

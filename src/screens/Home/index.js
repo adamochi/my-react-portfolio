@@ -72,7 +72,7 @@ const Home = () => {
             </div>
           </div>
 
-          <ButtonPortfolio />
+          {/* <ButtonPortfolio /> */}
 
           <div className="text-container">
             <div className="text-section text-section-with-border">
