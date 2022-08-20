@@ -74,6 +74,16 @@ const TopNavBar = () => {
               exact="true"
               activeclassname="active"
               className="contact-link"
+              to="/resume"
+            >
+              <FontAwesomeIcon icon={faFileLines} />
+              <span>Resume</span>
+            </NavLink>
+            <NavLink
+              onClick={scrollToTop}
+              exact="true"
+              activeclassname="active"
+              className="contact-link"
               to="/works"
             >
               <FontAwesomeIcon
@@ -82,16 +92,6 @@ const TopNavBar = () => {
                 color="var(--main-icon-colour)"
               />
               <span>Works</span>
-            </NavLink>
-            <NavLink
-              onClick={scrollToTop}
-              exact="true"
-              activeclassname="active"
-              className="contact-link"
-              to="/resume"
-            >
-              <FontAwesomeIcon icon={faFileLines} />
-              <span>Resume</span>
             </NavLink>
             <NavLink
               onClick={scrollToTop}
