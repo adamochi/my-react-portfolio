@@ -83,9 +83,9 @@ const Home = () => {
                   <strong>Online at Nomad Coders</strong>
                   <br />
                   This year I began my study online and have completed eight
-                  courses, including 2 bootcamps, that have rewarded me with a
-                  greater understanding of the basics of HTML5, CSS3, JavaScript
-                  and React. As well as many other tools.
+                  courses, including two bootcamps, that have rewarded me with a
+                  greater understanding of HTML5, CSS3, JavaScript and React. As
+                  well as many other tools.
                 </p>
               </div>
               <div className="nomad-link-div">
