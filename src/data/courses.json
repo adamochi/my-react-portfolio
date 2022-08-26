@@ -56,7 +56,7 @@
         "Address Geocoding",
         "Data Fetching"
       ],
-      "languages": ["React Native", "React Native Web", "Open Weather API"]
+      "languages": ["React Native", "React Native Web", "Weather API"]
     },
     {
       "logo": "<FontAwesomeIcon icon={faWindows} />",

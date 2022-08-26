@@ -99,7 +99,7 @@ textarea {
   }
 }
 .dark {
-  transition: 0.3s ease-out;
+  transition: 0.5s ease-in-out;
   background-size: 10000%;
   animation: bkgAwesome 60s linear infinite;
   animation-delay: 5s;
@@ -116,4 +116,11 @@ textarea {
   //   #0e2964
   // );
   --main-background-colour: #0e2964;
+  --light-mode-gradient: linear-gradient(
+    90deg,
+    #0e2964,
+    var(--main-purple-colour),
+    rgb(239, 207, 240)
+  );
+  --folder-yellow: rgb(251, 212, 109);
 }

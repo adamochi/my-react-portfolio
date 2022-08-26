@@ -1,26 +1,42 @@
-#light-mode-button {
-  height: 34px;
-  width: 34px;
-  border-radius: 100vmax;
+.light-div {
   display: flex;
-  align-items: center;
+  position: relative;
   justify-content: center;
-  margin-left: 20px;
-  color: white;
-  border: 0;
-  cursor: pointer;
-  background: var(--light-mode-gradient);
-  font-size: 20px;
-  background-size: 300%;
-  background-position: left;
-  transition: background-position 0.3s ease-in-out;
-  &:hover {
-    background-position: right;
-    color: black;
-    transition: 0.3s;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  background-color: rgb(226, 226, 226);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+
+  #light-mode-button {
+    padding: 4px;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(137, 231, 255);
+    border: 0;
+    cursor: pointer;
+    background: var(--light-mode-gradient);
+    background-size: 100%;
+    // background-position: left;
+    // transition: background-position 0.3s ease-in-out;
+    &:hover {
+      background-position: right;
+      transition: 0.3s;
+    }
+    &:active {
+      transform: rotate(360deg);
+      transition: forwards;
+      box-shadow: 0 0 5px 0 white;
+    }
   }
-  &:active {
-    transform: rotate(360deg);
-    transition: forwards;
+  .moon {
+    transform: translateY(25px);
   }
 }

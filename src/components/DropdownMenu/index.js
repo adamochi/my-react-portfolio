@@ -3,6 +3,7 @@ import {
   faComments,
   faFileCode,
   faFileLines,
+  faFolderOpen,
   faInfinity,
   faPanorama,
 } from "@fortawesome/free-solid-svg-icons";
@@ -31,15 +32,24 @@ const DropdownMenu = () => {
     window.scrollTo(0, 0);
   };
 
+  const folderClick = (e) => {
+    setMenuMode((prev) => !prev);
+    // console.dir(e.target.parentElement);
+    // console.dir(e.target.id);
+  };
+
   return (
     <div className="hamburger">
-      <button
+      <button ref={btnRef} id="burger" onClick={folderClick}>
+        <FontAwesomeIcon icon={faFolderOpen} />
+      </button>
+      {/* <button
         ref={btnRef}
         className="burger"
         onClick={() => setMenuMode((prev) => !prev)}
       >
         📁
-      </button>
+      </button> */}
       <div className={"dropdown-menu-div hidden" + (menuMode ? "" : "hidden")}>
         <h5>Menu</h5>
         <div className="dropdown-links">

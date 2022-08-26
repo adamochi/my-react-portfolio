@@ -34,7 +34,7 @@ const Curriculum = () => {
 
   return (
     <>
-      <header className="page-title">
+      <header className="curriculum-title">
         <h1>
           <FontAwesomeIcon icon={faLaptopCode} />{" "}
           <AnimatedLetters

@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./screens/Home";
-import Layout from "./screens/Layout";
-import About from "./screens/About";
-import Contact from "./screens/Contact";
-import Portfolio from "./screens/Portfolio";
-import Resume from "./screens/Resume";
-import ToDotest from "./screens/todotest";
-import Curriculum from "./screens/Curriculum";
-import "./App.scss";
+import Home from "screens/Home";
+import Layout from "screens/Layout";
+import About from "screens/About";
+import Contact from "screens/Contact";
+import Portfolio from "screens/Portfolio";
+import Resume from "screens/Resume";
+import ToDotest from "screens/todotest";
+import Curriculum from "screens/Curriculum";
+import "App.scss";
 
 function App() {
   return (
