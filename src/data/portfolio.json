@@ -2,10 +2,10 @@
   "portfolio": [
     {
       "react": "react",
-      "cover": "https://i.imgur.com/21pUJbQ.png",
-      "title": "First Portfolio",
-      "description": "After beginning my coding studies just one month prior, I decided that I needed to start my own project and get some practice in!",
-      "url": "https://eloquent-kashata-64e9a1.netlify.app"
+      "cover": "https://i.imgur.com/eDNMda6.png",
+      "title": "Todo List App",
+      "description": "One of my most used apps is this simple CRUD operations app",
+      "url": "/#/todo"
     },
     {
       "react": "react",
@@ -13,6 +13,13 @@
       "title": "JavaScript Number Game",
       "description": "Go head to head with my AI and guess the right number",
       "url": "https://eloquent-kashata-64e9a1.netlify.app/numbergame/index.html"
+    },
+    {
+      "react": "react",
+      "cover": "https://i.imgur.com/21pUJbQ.png",
+      "title": "First Portfolio",
+      "description": "After beginning my coding studies just one month prior, I decided that I needed to start my own project and get some practice in!",
+      "url": "https://eloquent-kashata-64e9a1.netlify.app"
     },
     {
       "react": "react",

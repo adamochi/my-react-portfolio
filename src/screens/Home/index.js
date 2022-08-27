@@ -5,7 +5,7 @@ import Loader from "react-loaders";
 import Chef from "assets/images/time.png";
 import profile from "assets/images/jeju180.png";
 import Computer from "components/Computer";
-// import ButtonPortfolio from "components/Links/ButtonPortfolio";
+import ButtonPortfolio from "components/Links/ButtonPortfolio";
 import ButtonAbout from "components/Links/ButtonAbout";
 import Nomad from "components/Links/Nomad";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -72,7 +72,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* <ButtonPortfolio /> */}
+          <ButtonPortfolio />
 
           <div className="text-container">
             <div className="text-section text-section-with-border">
