@@ -8,7 +8,7 @@ import {
   faUserAstronaut,
   faIcons,
   faFileLines,
-  faBarsStaggered,
+  faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 import LightModeButton from "../LightModeButton";
@@ -99,10 +99,10 @@ const TopNavBar = () => {
               exact="true"
               activeclassname="active"
               className="contact-link"
-              to="/todo"
+              to="/curriculum"
             >
-              <FontAwesomeIcon icon={faBarsStaggered} />
-              <span>Todo List</span>
+              <FontAwesomeIcon icon={faLaptopCode} />
+              <span>Studies</span>
             </NavLink>
           </nav>
         </div>

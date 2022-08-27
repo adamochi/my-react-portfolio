@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
 import "./index.scss";
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComputer } from "@fortawesome/free-solid-svg-icons";
 import Loader from "react-loaders";
-import portfolioData from "../../data/portfolio.json";
 import AnimatedLetters from "../../components/AnimatedLetters";
+import portfolioData from "../../data/portfolio.json";
+const portData = portfolioData.portfolio;
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -17,33 +20,9 @@ const Portfolio = () => {
     };
   });
 
-  const renderPortfolio = (portfolio) => {
-    return (
-      <div className="images-container">
-        {portfolio.map((port, idx) => {
-          return (
-            <div className="image-box" key={idx}>
-              <img
-                src={port.cover}
-                className="portfolio-image"
-                alt="portfolio"
-              />
-              <div className="content">
-                <p className="title">{port.title}</p>
-                <h4 className="description">{port.description}</h4>
-                <button className="btn" onClick={() => window.open(port.url)}>
-                  View
-                </button>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    );
-  };
   return (
     <>
-      <header className="page-title">
+      <header className="works-title">
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
@@ -53,9 +32,47 @@ const Portfolio = () => {
         </h1>
       </header>
       <div className="portfolio-page container">
-        <div className="portfolio-images-container">
-          {renderPortfolio(portfolioData.portfolio)}
-        </div>
+        {portData.map((course, index) => (
+          <div className="course-div" key={index}>
+            <div className="window-top-header-bar">
+              <div className="window-top-icon">
+                <FontAwesomeIcon icon={faComputer} />
+                {course.title}
+              </div>
+              <div className="window-close-div">
+                <div>
+                  <div className="minimise"></div>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+                <div className="x-div">X</div>
+              </div>
+            </div>
+
+            <div className="map-party">
+              <div className="images-container">
+                <div className="image-box">
+                  <img
+                    src={course.cover}
+                    className="portfolio-image"
+                    alt="portfolio"
+                  />
+                  <div className="content">
+                    <p className="title">{course.title}</p>
+                    <h4 className="description">{course.description}</h4>
+                    <button
+                      className="btn"
+                      onClick={() => window.open(course.url)}
+                    >
+                      View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
       <Loader type="ball-clip-rotate-multiple" />
     </>

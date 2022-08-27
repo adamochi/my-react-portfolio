@@ -1,6 +1,7 @@
 {
   "courses": [
     {
+      "react": "faReact",
       "logo": "faReact",
       "image": "https://i.imgur.com/bnu83Ct.png",
       "images": [
@@ -25,6 +26,7 @@
       "languages": ["React", "Axios", "React Router", "Github Pages"]
     },
     {
+      "react": "faReact",
       "logo": "faReact",
       "image": "https://i.imgur.com/4Pz4yYK.jpg",
       "images": [
@@ -59,6 +61,7 @@
       "languages": ["React Native", "React Native Web", "Weather API"]
     },
     {
+      "react": "js",
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/vKdazGg.png",
       "images": ["https://i.imgur.com/2kReWam.png"],
@@ -92,6 +95,7 @@
       "languages": ["JavaScript", "Open Weather API", "Clock", "Todo List"]
     },
     {
+      "react": "css",
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/Myr2P7Z.png",
       "images": ["https://i.imgur.com/2kReWam.png"],
@@ -119,6 +123,7 @@
       "languages": ["HTML", "CSS", "Github Pages"]
     },
     {
+      "react": "js",
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/cxlltFW.png",
       "images": ["https://i.imgur.com/2kReWam.png"],
@@ -140,6 +145,7 @@
       "languages": ["JavaScript", "HTML5", "CSS"]
     },
     {
+      "react": "faReact",
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/qSvhS55.png",
       "images": ["https://i.imgur.com/2kReWam.png"],
@@ -165,6 +171,7 @@
       "languages": ["React", "useEffect", "useState", "NPM"]
     },
     {
+      "react": "js",
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/kVd5p0Y.png",
       "images": ["https://i.imgur.com/2kReWam.png"],
@@ -187,6 +194,7 @@
       "languages": ["Redux", "React", "Github"]
     },
     {
+      "react": "git",
       "logo": "<FontAwesomeIcon icon={faWindows} />",
       "image": "https://i.imgur.com/VQg5NSS.png",
       "images": ["https://i.imgur.com/2kReWam.png"],

@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
 import AnimatedLetters from "components/AnimatedLetters";
-import courses from "data/courses.json";
-import { faWindows } from "@fortawesome/free-brands-svg-icons";
+import {
+  faJsSquare,
+  faWindows,
+  faReact,
+  faGithub,
+  faCss3,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComputer,
@@ -13,12 +18,8 @@ import {
   faTools,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-
-const course = courses.courses;
-
-// const map1 = new Map([course[0].images]);
-// const map2 = new Map([course[0].achieved]);
-// const newmap = new Map([...map1, ...map2]);
+import courseData from "data/courses.json";
+const course = courseData.courses;
 
 const Curriculum = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -48,8 +49,13 @@ const Curriculum = () => {
         {course.map((course, index) => (
           <div className="course-div" key={index}>
             <div className="window-top-header-bar">
-              <div>
-                <FontAwesomeIcon icon={faComputer} />
+              <div className="window-top-icon">
+                {course.react === "faReact" && (
+                  <FontAwesomeIcon icon={faReact} />
+                )}
+                {course.react === "js" && <FontAwesomeIcon icon={faJsSquare} />}
+                {course.react === "git" && <FontAwesomeIcon icon={faGithub} />}
+                {course.react === "css" && <FontAwesomeIcon icon={faCss3} />}
                 {course.title}
               </div>
               <div className="window-close-div">
