@@ -16,6 +16,13 @@
     },
     {
       "react": "react",
+      "cover": "https://i.imgur.com/H0sgz9o.png",
+      "title": "A Top Student!",
+      "description": "Out of 1037 applicants, and only 197 graduates, I was chosen as one of the top 15 students!",
+      "url": "https://nomadcoders.co/community/thread/5459"
+    },
+    {
+      "react": "react",
       "cover": "https://i.imgur.com/21pUJbQ.png",
       "title": "First Portfolio",
       "description": "After beginning my coding studies just one month prior, I decided that I needed to start my own project and get some practice in!",
