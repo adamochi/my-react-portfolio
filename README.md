@@ -4,19 +4,19 @@ https://adam-sullivan.netlify.app/
 
 ![Screenshot](screenshot.png)
 
-# Dependencies
+## Dependencies
 
 - for contact form:
 
 - npm i @emailjs/browser ✅
 
-- for icons
+### for icons
 
 - npm i @fortawesome/free-brands-svg-icons ✅
 - npm i @fortawesome/free-solid-svg-icons ✅
 - npm i @fortawesome/react-fontawesome ✅
 
-- styles:
+### styles:
 
 - npm i animate.css ✅
 - npm i loaders.css ✅
@@ -29,7 +29,7 @@ https://adam-sullivan.netlify.app/
 
 - npm i react-loaders ✅
 
-- router:
+### router:
 
 - npm i react-router-dom@5.3.0 ✅
 
@@ -37,7 +37,7 @@ https://adam-sullivan.netlify.app/
 
 - npm i sass ✅
 
-- 3D:
+### 3D:
 
 - npm i three ✅
 - npm i @react-three/fiber ✅
