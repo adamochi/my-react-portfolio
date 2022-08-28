@@ -6,7 +6,7 @@ https://adam-sullivan.netlify.app/
 
 ## Dependencies
 
-- for contact form:
+### Contact Form:
 
 - npm i @emailjs/browser ✅
 
@@ -16,12 +16,12 @@ https://adam-sullivan.netlify.app/
 - npm i @fortawesome/free-solid-svg-icons ✅
 - npm i @fortawesome/react-fontawesome ✅
 
-### styles:
+### Styles:
 
 - npm i animate.css ✅
 - npm i loaders.css ✅
 
-- map:
+### Map:
 
 - npm i react-leaflet ✅
 
@@ -29,11 +29,11 @@ https://adam-sullivan.netlify.app/
 
 - npm i react-loaders ✅
 
-### router:
+### Router:
 
 - npm i react-router-dom@5.3.0 ✅
 
-- styling - helps to write less code
+### Styling - helps to write less code
 
 - npm i sass ✅
 
