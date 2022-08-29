@@ -11,9 +11,8 @@ export default function Model({ ...props }) {
   const { nodes, materials } = useGLTF("/final-chef.glb");
 
   useFrame(() => {
-    if (!group.current) {
-      return;
-    }
+    if (!group.current) return;
+
     group.current.rotation.y += 0.0035;
   });
 

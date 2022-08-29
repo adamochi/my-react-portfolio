@@ -41,7 +41,7 @@ const Home = () => {
                 idx={20}
               />
             </h1>
-            <h5>Front-End Web Developer / Designer</h5>
+            <h5>Front-End Web Developer</h5>
           </div>
           <div className="profile-pic">
             <img src={profile} alt="Adam Sullivan" />
