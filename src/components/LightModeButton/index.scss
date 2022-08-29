@@ -26,15 +26,15 @@
     background-size: 100%;
     // background-position: left;
     // transition: background-position 0.3s ease-in-out;
-    &:hover {
-      background-position: right;
-      transition: 0.3s;
-    }
-    &:active {
-      transform: rotate(360deg);
-      transition: forwards;
-      box-shadow: 0 0 5px 0 white;
-    }
+    // &:hover {
+    //   background-position: right;
+    //   transition: 0.3s;
+    // }
+    // &:active {
+    //   transform: rotate(360deg);
+    //   transition: forwards;
+    //   box-shadow: 0 0 5px 0 white;
+    // }
   }
   .moon {
     transform: translateY(25px);

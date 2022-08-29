@@ -36,34 +36,28 @@ const LightModeButton = () => {
   return (
     <>
       <div className="light-div">
-        <FontAwesomeIcon
-          style={{
-            animation: lightMode
-              ? "fadeInLeft 0.3s ease-in-out forwards"
-              : "fadeOutRight 0.3s ease-in-out forwards",
-            right: lightMode ? "0" : "",
-            left: lightMode ? "" : "0",
-            display: lightMode ? "" : "none",
-            transition: "forwards",
-          }}
-          onClick={mode}
-          id="light-mode-button"
-          icon={faLightbulb}
-        />
-        <FontAwesomeIcon
-          style={{
-            transition: "0.3s",
-            animation: lightMode
-              ? "fadeOutLeft 0.3s ease-in-out forwards"
-              : "fadeInRight 0.3s ease-in-out forwards",
-            left: lightMode ? "" : "0",
-            right: lightMode ? "0" : "",
-            display: lightMode ? "none" : "",
-          }}
-          onClick={mode}
-          id="light-mode-button"
-          icon={faMoon}
-        />
+        {lightMode ? (
+          <FontAwesomeIcon
+            onClick={mode}
+            id="light-mode-button"
+            icon={faLightbulb}
+            style={{
+              animation:
+                lightMode && "rotateInDownLeft 0.3s ease-in-out forwards",
+            }}
+          />
+        ) : (
+          <FontAwesomeIcon
+            onClick={mode}
+            id="light-mode-button"
+            icon={faMoon}
+            style={{
+              transition: "0.3s",
+              animation:
+                !lightMode && "rotateInDownRight 0.3s ease-in-out forwards",
+            }}
+          />
+        )}
       </div>
     </>
   );
