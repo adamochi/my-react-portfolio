@@ -3,6 +3,7 @@ import {
   faComments,
   faFileCode,
   faFileLines,
+  faFolder,
   faFolderOpen,
   faInfinity,
   faPanorama,
@@ -41,15 +42,13 @@ const DropdownMenu = () => {
   return (
     <div className="hamburger">
       <button ref={btnRef} id="burger" onClick={folderClick}>
-        <FontAwesomeIcon icon={faFolderOpen} />
+        {menuMode ? (
+          <FontAwesomeIcon icon={faFolder} />
+        ) : (
+          <FontAwesomeIcon icon={faFolderOpen} />
+        )}
       </button>
-      {/* <button
-        ref={btnRef}
-        className="burger"
-        onClick={() => setMenuMode((prev) => !prev)}
-      >
-        📁
-      </button> */}
+
       <div className={"dropdown-menu-div hidden" + (menuMode ? "" : "hidden")}>
         <h5>Menu</h5>
         <div className="dropdown-links">
