@@ -7,8 +7,11 @@ import {
   faCss3,
   faSass,
   faJsSquare,
+  faNodeJs,
+  faGithubAlt,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import { faServer } from "@fortawesome/free-solid-svg-icons";
 // import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
@@ -45,34 +48,37 @@ const Resume = () => {
           </h4>
           <div className="bordered-box">
             <div className="bordered-box_inner-box three-left">
-              <h3>Coding Languages</h3>
-              <ul>
-                <li>
-                  <FontAwesomeIcon icon={faHtml5} /> HTML
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCss3} /> CSS
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faSass} /> SCSS
-                </li>
-              </ul>
-            </div>
-            <div className="bordered-box_inner-box two">
-              <h3>Programming Language</h3>
-              <ul>
-                <li>
-                  <FontAwesomeIcon icon={faJsSquare} /> JavaScript
-                </li>
-              </ul>
-            </div>
-            <div className="bordered-box_inner-box one">
-              <h3>Fave JS Library</h3>
-              <ul>
-                <li>
-                  <FontAwesomeIcon icon={faReact} /> React JS
-                </li>
-              </ul>
+              <h3>Skills</h3>
+              <div className="ul-div_bordered-box">
+                <ul>
+                  <li>
+                    <FontAwesomeIcon icon={faReact} /> React
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faJsSquare} /> JavaScript ES6
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faHtml5} /> HTML5
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faCss3} /> CSS3
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <FontAwesomeIcon icon={faGithubAlt} /> Git/GitHub
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faNodeJs} /> Node JS
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faServer} /> Mongo
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faSass} /> SCSS
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
