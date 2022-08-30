@@ -59,11 +59,12 @@ const Home = () => {
             </h1>
             <div className="the-front-end-p">
               <p>
-                As far back as I can remember, I have been fascinated with
-                computers. I have always had a strong interest to learn and to
-                make things work. Since starting my journey into learning how to
-                code, I&apos;ve found myself enjoying it more and more each day
-                as I solve new challenges and build upon my skills.
+                I&apos;m a tech-savvy person and as far back as I can remember,
+                I have been fascinated with computers. I have always had a
+                strong interest to learn and to make things work. Since starting
+                my journey into learning how to code, I&apos;ve found myself
+                enjoying it more and more each day as I solve new challenges and
+                build upon my skills.
               </p>
               <br />
               <p>
