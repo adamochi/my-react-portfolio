@@ -103,10 +103,13 @@
     }
     .the-front-end-p {
       display: flex;
+      flex-direction: row;
+      width: 100%;
       p {
         padding: 0 15px;
         font-size: 16px;
-        margin: 0 0 10px 0;
+        width: 50%;
+        margin: 0;
       }
     }
     width: 90%;
@@ -196,7 +199,7 @@
   }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 800px) {
   .homepage {
     .paper-home {
       margin-top: 0;
@@ -204,6 +207,17 @@
     .text-container {
       .the-front-end-p {
         flex-direction: column;
+        p {
+          width: 100%;
+          padding: 0 20px 0 0;
+        }
+      }
+      .text-section-with-border {
+        .inner-xp-learn-div {
+          p {
+            padding: 0 20px 0 0;
+          }
+        }
       }
     }
     canvas {

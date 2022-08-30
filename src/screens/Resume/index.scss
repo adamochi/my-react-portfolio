@@ -34,13 +34,21 @@
       margin-bottom: 10px;
     }
     h4 {
+      font-weight: 500;
       font-size: 14px;
       margin: 2px;
+      &:hover {
+        transform: scale(120%);
+        transition: 0.3s;
+      }
     }
     a {
       text-decoration: none;
-      color: rgb(83, 133, 226);
+      color: rgb(1, 90, 255);
       font-size: 14px;
+      background-color: rgba(112, 216, 193, 0.11);
+      border-radius: 4px;
+      padding: 0 5px;
     }
 
     @keyframes customFadeDown {
@@ -58,8 +66,9 @@
     .bordered-box {
       opacity: 0;
       margin: 40px 0 20px 0;
-      background-color: rgb(222, 247, 247);
-      border-radius: 20px;
+      // background-color: rgb(222, 247, 247);
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px 0 lightgray;
       display: flex;
       width: 90%;
       max-width: 833px;
@@ -68,33 +77,42 @@
       animation-delay: 1.8s;
 
       .bordered-box_inner-box {
-        border-radius: 20px;
-        background-color: rgba(192, 204, 255, 0.384);
-        width: 100%;
-        h3 {
-          margin-bottom: 0;
-          text-decoration: underline;
-          font-size: 16px;
-          text-align: center;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px 0 lightgray;
+        // background-color: rgba(192, 204, 255, 0.384);
+        width: 80%;
+        border-bottom: 2px solid rgb(54, 110, 233);
+        .bordered-box_skills-div {
+          width: 100%;
+          display: flex;
+          height: fit-content;
+          justify-content: center;
+          h3 {
+            margin: 5px 0 10px 0;
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 1px solid black;
+          }
         }
         .ul-div_bordered-box {
           display: flex;
           justify-content: space-evenly;
 
           ul {
-            display: flex;
-            flex-direction: column;
-            padding: 0 0 0 0;
+            margin: 0;
+            padding: 0;
             li {
               width: fit-content;
-              font-size: 14px;
+              font-size: 16px;
+              font-weight: bold;
               list-style: none;
               display: flex;
               align-items: center;
+              padding: 7px;
               svg {
                 margin-right: 10px;
                 color: tomato;
-                font-size: 16px;
+                font-size: 24px;
               }
             }
           }
@@ -106,7 +124,9 @@
       width: 90%;
       display: flex;
       flex-direction: column;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px 0 lightgray;
       .ul-div {
         ul {
           width: 50%;
@@ -120,9 +140,10 @@
         gap: 5px;
         ul {
           padding: 10px 30px;
-          background-color: paleturquoise;
-          border: 2px solid rgb(0, 225, 255);
-          border-radius: 20px;
+          // background-color: rgba(255, 220, 220, 0.452);
+          border-bottom: 2px solid rgb(54, 110, 233);
+          border-radius: 5px;
+          box-shadow: 5px 5px 10px 0 lightgray;
           margin: 0;
           display: flex;
           flex-direction: column;
@@ -167,19 +188,21 @@
       }
     }
     .education-box {
-      border: 2px solid rgb(0, 225, 255);
-      background-color: rgba(192, 204, 255, 0.582);
-      border-radius: 20px;
+      // border: 2px solid rgb(0, 225, 255);
+      // background-color: rgb(210, 231, 250);
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px 0 lightgray;
+      border-bottom: 2px solid rgb(54, 110, 233);
       .studies-resume-link {
         font-size: 16px;
-        font-weight: 600;
-        color: rgb(0, 88, 204);
+        font-weight: 500;
+        color: rgb(54, 54, 54);
         width: fit-content;
         border-radius: 3px;
         display: block;
-        padding: 2px 5px;
+        padding: 2px 15px;
         margin: 10px 0px;
-        background-color: rgb(134, 236, 206);
+        background-color: rgb(218, 250, 250);
         &:hover {
           animation: rubberBand 0.7s;
           transition: 0.3s;
@@ -188,9 +211,11 @@
       }
     }
     .more-about-div {
-      background-color: paleturquoise;
-      border: 2px solid rgb(0, 225, 255);
-      border-radius: 20px;
+      // background-color: rgb(205, 248, 248);
+      // border: 2px solid rgb(0, 225, 255);
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px 0 lightgray;
+      border-bottom: 2px solid rgb(54, 110, 233);
     }
   }
 }
@@ -199,6 +224,9 @@
     .paper {
       width: 96%;
       .bordered-box {
+        .bordered-box_inner-box {
+          width: 90%;
+        }
         width: 97%;
       }
       .i-have-xp-div {

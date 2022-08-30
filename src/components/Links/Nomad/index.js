@@ -1,7 +1,5 @@
 import React from "react";
 import "./index.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const Nomad = () => {
   return (
@@ -10,9 +8,7 @@ const Nomad = () => {
       rel="noreferrer"
       href="https://nomadcoders.co/users/adamochi"
     >
-      <button className="nomad-btn">
-        <FontAwesomeIcon icon={faLaptopCode} /> nomadcoders.co ↵
-      </button>
+      <button className="nomad-btn">nomadcoders.co ↵</button>
     </a>
   );
 };

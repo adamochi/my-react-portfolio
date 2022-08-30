@@ -38,10 +38,10 @@ const About = () => {
           <p>
             Since my earliest memory of using a computer, I have always been
             fascinated with them. And thinking back to that time in the country
-            town I was living in, it was such a natural thing for me to start
-            interacting and learning what a computer is. It was one of the most
-            influential moments for me to type in commands to start a program
-            that was saved onto a 5.25 Floppy Disk.
+            town I was living in, it was quite natural for me to start
+            interacting and learning how to use a computer. It was one of the
+            most influential moments for me to type in commands to start a
+            program that was saved onto a 5.25 Floppy Disk.
           </p>
           <div className="story-title-div">
             <h2>A new era begins</h2>
@@ -49,25 +49,25 @@ const About = () => {
           </div>
           <p>
             After attending a dozen different schools and graduating year 12, I
-            started cooking, I had grown up loving to cook, I think that is
+            started cooking, I had grown up loving to cook, and I think that is
             because I come from a large family. At the age of 18 (and although I
             would go on to work as a chef for 17 years), I had my first real
             experience with computers . My friend from school helped me build a
             custom PC for my dad. It became the household PC and that is when I
-            really got into computers. If I wasn't out skateboarding on my day
-            off work, I was messing around with the computer. Either playing
+            really got into computers. If I wasn&apos;t out skateboarding on my
+            day off work, I was messing around with the computer. Either playing
             music, playing games or even modding them. I was always resourceful
             at solving my computer needs either by finding information online or
-            at the library. If I couldn't find a way, I would troubleshoot
+            at the library. If I couldn&apos;t find a way, I would troubleshoot
             through trial and error until something finally worked. Editing code
             and adding mods to games and applications bacame a 2nd hobby along
             with the dozen computers I would build and repair over the following
-            years.
+            years for not only myself but for family and others around me.
           </p>
           <p>
             Since starting my journey to become a programmer, I have found
-            myself loving to write code and solve the real world problems I've
-            faced in taking this journey.
+            myself loving to write code and solve the challenges I&apos;ve faced
+            in taking this journey.
           </p>
           <p>
             I continue to study and practice writing code everyday and hope to

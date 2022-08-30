@@ -25,7 +25,7 @@ const Resume = () => {
           <h1>Adam Sullivan</h1>
           <h4>Spring Hill QLD 4000</h4>
           <h4>Ph: 0409 051 595</h4>
-          <h4>E-mail: sullivanadam@bigpond.com</h4>
+          <h4>E-mail: honeyrumballs@gmail.com</h4>
           <h4>
             GitHub:{" "}
             <a
@@ -48,7 +48,9 @@ const Resume = () => {
           </h4>
           <div className="bordered-box">
             <div className="bordered-box_inner-box three-left">
-              <h3>Skills</h3>
+              <div className="bordered-box_skills-div">
+                <h3>Skills</h3>
+              </div>
               <div className="ul-div_bordered-box">
                 <ul>
                   <li>
@@ -72,7 +74,7 @@ const Resume = () => {
                     <FontAwesomeIcon icon={faNodeJs} /> Node JS
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faServer} /> Mongo
+                    <FontAwesomeIcon icon={faServer} /> MongoDB
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faSass} /> SCSS
@@ -201,7 +203,7 @@ const Resume = () => {
                 to={"/curriculum"}
               >
                 {" "}
-                - Studies I have completed ↵
+                - Completed Courses ↵
               </Link>
             </p>
             <h5>2005 - 2009</h5>

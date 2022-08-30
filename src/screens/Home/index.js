@@ -30,7 +30,8 @@ const Home = () => {
         <Computer />
 
         <h4>
-          Hello, I'm an aspiring Web Developer based in Brisbane, Australia!
+          Hello, I&apos;m an aspiring Web Developer based in Brisbane,
+          Australia!
         </h4>
         <div className="title-home">
           <div className="title">
@@ -58,22 +59,22 @@ const Home = () => {
             </h1>
             <div className="the-front-end-p">
               <p>
-                This year has been a turning point in my life as I have
-                completely dedicated my time into becoming a Web Developer.
-                Since starting my journey into learning how to code, I found
-                myself enjoying it more and more each day.
+                As far back as I can remember, I have been fascinated with
+                computers. I have always had a strong interest to learn and to
+                make things work. Since starting my journey into learning how to
+                code, I&apos;ve found myself enjoying it more and more each day
+                as I solve new challenges and build upon my skills.
               </p>
+              <br />
               <p>
-                With <strong>800+</strong> hours of studying &amp; practicing
-                writing code over the course of this year, I have gained a solid
-                understanding of JavaScript ES6 and React which I have built
-                multiple applications with!
+                From studying &amp; practicing writing code over the course of
+                this year, I have gained a solid understanding of JavaScript ES6
+                and React which I have built multiple applications with. Now I
+                am looking to start my new career as a front end web developer
               </p>
             </div>
           </div>
-
           <ButtonPortfolio />
-
           <div className="text-container">
             <div className="text-section text-section-with-border">
               <h3>Where I studied</h3>
@@ -84,7 +85,7 @@ const Home = () => {
                   <br />
                   This year I began my study online and have completed eight
                   courses, including two bootcamps, that have rewarded me with a
-                  greater understanding of HTML5, CSS3, JavaScript and React. As
+                  greater proficiency in React, JavaScript, HTML5, and CSS3. As
                   well as many other tools.
                 </p>
               </div>
@@ -102,24 +103,14 @@ const Home = () => {
               />
             </h3>
             <div className="text-section">
-              <h6>What I'm like:</h6>
+              <h6>More about me:</h6>
               <p>
-                I am the person that enjoys figuring out how things work and
-                improving every aspect of what I am working on. I like to make
-                every iteration better and faster.
-                <br />
-                Never giving up - I have the patience to keep going, even when I
-                hit a blocker. I see it as a chance to learn. My character is
-                the problem solver.
-                <br />
+                Although I wasn&apos;t able to follow this path when I graduated
+                high school, I had this goal to change my career when I got
+                older. This year has been that turning point in my life as I
+                have completely dedicated my time into becoming a Web Developer.
               </p>
-              <h6>What I get up to:</h6>
-              <p>
-                My everyday hobbies are listening to music, and coding. I am
-                also a sound engineer at church every second Sunday.
-                <br />
-              </p>
-              <h6>Life before coding;</h6>
+              <h6>Life before coding:</h6>
               <p>
                 In 2009 I Completed my Chef apprenticeship in Cairns, and
                 continued cooking in dynamic and fast paced environments for
@@ -133,12 +124,12 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <ButtonAbout banana="/about" btnTxt="More About Me ↵" />
+          <ButtonAbout banana="/resume" btnTxt="Resume ↵" />
         </div>
         <div className="time-to-change">
           <img src={Chef} alt="adam chef" loading="lazy" />
           <span>
-            <FontAwesomeIcon icon={faStopwatch} /> It's time for a career
+            <FontAwesomeIcon icon={faStopwatch} /> It&apos;s time for a career
             change!
           </span>
         </div>
