@@ -89,7 +89,7 @@ const Resume = () => {
               <ul>
                 <h3>Coding Projects</h3>
                 <li>
-                  React Website -{" "}
+                  Green Bean Woodsmith -{" "}
                   <a
                     href="https://greenbean-woodsmith.netlify.app/"
                     target={"_blank"}
