@@ -22,14 +22,12 @@ const LightModeButton = () => {
   };
 
   useEffect(() => {
-    if (lightMode === true) {
+    if (lightMode) {
       localStorage.setItem("dark mode", true);
       document.body.classList = "dark";
-      // light.current.innerText = "💡";
-    } else if (lightMode === false) {
+    } else if (!lightMode) {
       localStorage.setItem("dark mode", false);
       document.body.classList.remove("dark");
-      // light.current.innerText = "🌙";
     }
   }, [lightMode]);
 
@@ -64,14 +62,3 @@ const LightModeButton = () => {
 };
 
 export default LightModeButton;
-
-/*
-  <button
-    ref={light}
-    onClick={mode}
-    aria-label="toggle dark mode"
-    id="light-mode-button"
-    >
-    🌙
-  </button>
-*/

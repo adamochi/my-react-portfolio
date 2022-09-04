@@ -6,37 +6,33 @@
   width: 30px;
   height: 30px;
   margin: 0 20px;
-  background-color: rgb(226, 226, 226);
-  border: 1px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.212);
+  border: 1px solid rgb(224, 224, 224);
   border-radius: 5px;
 
   #light-mode-button {
-    padding: 4px;
+    padding: 6px;
     position: absolute;
-    height: 22px;
-    width: 22px;
+    height: 18px;
+    width: 18px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(137, 231, 255);
+    color: rgb(255, 232, 132);
     border: 0;
     cursor: pointer;
-    background: var(--light-mode-gradient);
+    background-color: rgb(68, 68, 68);
     background-size: 100%;
+    // background: var(--light-mode-gradient);
     // background-position: left;
     // transition: background-position 0.3s ease-in-out;
     // &:hover {
     //   background-position: right;
     //   transition: 0.3s;
     // }
-    // &:active {
-    //   transform: rotate(360deg);
-    //   transition: forwards;
-    //   box-shadow: 0 0 5px 0 white;
-    // }
-  }
-  .moon {
-    transform: translateY(25px);
+    &:active {
+      box-shadow: 0 0 10px 0 white;
+    }
   }
 }
