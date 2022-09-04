@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -16,9 +16,21 @@ import DropdownMenu from "../DropdownMenu";
 import { NavLink, Link } from "react-router-dom";
 
 const TopNavBar = () => {
+  const [size, setSize] = useState();
+  const sizer = () => {
+    const widthOfWindow = window.window.innerWidth;
+    setSize(widthOfWindow);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", sizer);
+    return () => window.removeEventListener("resize", sizer);
+  }, [size]);
+
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
+
   return (
     <div className="top-navbar">
       <Link onClick={scrollToTop} className="name-nav" to="/">
@@ -119,8 +131,17 @@ const TopNavBar = () => {
           />
           <span>Source</span>
         </a>
-        <DropdownMenu />
-        <LightModeButton />
+        {size > 600 ? (
+          <>
+            <DropdownMenu />
+            <LightModeButton />
+          </>
+        ) : (
+          <>
+            <LightModeButton />
+            <DropdownMenu />
+          </>
+        )}
       </div>
     </div>
   );

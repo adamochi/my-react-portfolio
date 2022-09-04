@@ -34,8 +34,8 @@
   }
 
   .source-n-light {
-    margin-left: 140px;
-    width: 80%;
+    margin: 0 10px;
+    width: 70%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +130,20 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .top-navbar {
+    .name-nav {
+      margin-left: 5px;
+    }
+  }
   .nav-bar {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .top-navbar {
+    .source-n-light {
+      width: 100%;
+      justify-content: flex-end;
+    }
   }
 }
