@@ -1,9 +1,10 @@
 .hamburger {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1px;
-  margin-right: 10px;
+  margin-left: 20px;
 
   #burger {
     background-color: rgba(236, 235, 235, 0);
@@ -34,14 +35,12 @@
   }
 
   .dropdown-menu-div {
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
     border-radius: 4px;
-    transform: none;
+    transform: translateX(20px);
     transition: 0.2s;
     width: fit-content;
     height: fit-content;
-    position: fixed;
+    position: absolute;
     top: 50px;
     right: 10px;
     background-color: var(--clear-hfour);

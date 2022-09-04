@@ -119,9 +119,9 @@ const TopNavBar = () => {
           />
           <span>Source</span>
         </a>
+        <DropdownMenu />
         <LightModeButton />
       </div>
-      <DropdownMenu />
     </div>
   );
 };

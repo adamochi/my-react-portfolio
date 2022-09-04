@@ -9,6 +9,7 @@ import {
   faJsSquare,
   faNodeJs,
   faGithubAlt,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
@@ -37,7 +38,9 @@ const Resume = () => {
             </a>
           </h4>
           <h4>
-            Linkedin:{" "}
+            Linked
+            <FontAwesomeIcon icon={faLinkedin} />
+            {" : "}
             <a
               target={"_blank"}
               rel={"noreferrer"}

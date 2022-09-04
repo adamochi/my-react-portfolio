@@ -13,20 +13,24 @@
 .top-navbar {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
+  position: relative;
   z-index: 5;
   background-color: var(--nav-bar-colour);
   animation: dropDown 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1s;
   height: 50px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   top: 0;
-  .my-name {
-    width: 25%;
+  .name-nav {
+    position: absolute;
+    left: 0;
+    width: fit-content;
+    margin-left: 20px;
   }
 
   .source-n-light {
@@ -56,10 +60,15 @@
       font-size: 16px;
       font-family: monospace;
       &:hover {
+        transition: 0.2s;
+        color: #356adf;
         transition: 0.07s;
         text-decoration: underline;
         .awesome-icon {
           animation-duration: 2s;
+        }
+        svg {
+          transition: none;
         }
       }
     }

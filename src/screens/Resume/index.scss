@@ -35,8 +35,12 @@
     }
     h4 {
       font-weight: 500;
-      font-size: 14px;
+      font-size: 16px;
       margin: 2px;
+      svg {
+        color: rgb(34, 102, 194);
+        margin-left: 1px;
+      }
       &:hover {
         transform: scale(120%);
         transition: 0.3s;
@@ -68,7 +72,7 @@
       margin: 40px 0 20px 0;
       // background-color: rgb(222, 247, 247);
       border-radius: 5px;
-      box-shadow: 5px 5px 10px 0 lightgray;
+      // box-shadow: 5px 5px 10px 0 lightgray;
       display: flex;
       width: 90%;
       max-width: 833px;
@@ -81,7 +85,7 @@
         box-shadow: 5px 5px 10px 0 lightgray;
         // background-color: rgba(192, 204, 255, 0.384);
         width: 80%;
-        border-bottom: 2px solid rgb(54, 110, 233);
+        border-bottom: 1px solid rgb(54, 110, 233);
         .bordered-box_skills-div {
           width: 100%;
           display: flex;
@@ -141,7 +145,7 @@
         ul {
           padding: 10px 30px;
           // background-color: rgba(255, 220, 220, 0.452);
-          border-bottom: 2px solid rgb(54, 110, 233);
+          border-bottom: 1px solid rgb(54, 110, 233);
           border-radius: 5px;
           box-shadow: 5px 5px 10px 0 lightgray;
           margin: 0;
@@ -192,7 +196,7 @@
       // background-color: rgb(210, 231, 250);
       border-radius: 5px;
       box-shadow: 5px 5px 10px 0 lightgray;
-      border-bottom: 2px solid rgb(54, 110, 233);
+      border-bottom: 1px solid rgb(54, 110, 233);
       .studies-resume-link {
         font-size: 16px;
         font-weight: 500;
@@ -215,7 +219,7 @@
       // border: 2px solid rgb(0, 225, 255);
       border-radius: 5px;
       box-shadow: 5px 5px 10px 0 lightgray;
-      border-bottom: 2px solid rgb(54, 110, 233);
+      border-bottom: 1px solid rgb(54, 110, 233);
     }
   }
 }
@@ -232,7 +236,10 @@
       .i-have-xp-div {
         width: 97%;
         .ul-div {
+          display: flex;
+          flex-direction: column;
           ul {
+            width: 90%;
             padding: 20px;
           }
         }
