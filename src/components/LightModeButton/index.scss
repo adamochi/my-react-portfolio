@@ -11,6 +11,8 @@
   border-radius: 5px;
 
   #light-mode-button {
+    transition: 1s;
+    transform: none;
     padding: 6px;
     position: absolute;
     height: 18px;
@@ -27,12 +29,12 @@
     // background: var(--light-mode-gradient);
     // background-position: left;
     // transition: background-position 0.3s ease-in-out;
-    // &:hover {
-    //   background-position: right;
-    //   transition: 0.3s;
-    // }
+    &:hover {
+      background-color: rgb(135, 117, 214);
+      transition: 0.3s;
+    }
     &:active {
-      box-shadow: 0 0 10px 0 white;
+      box-shadow: 0 0 15px 0 white;
     }
   }
 }
