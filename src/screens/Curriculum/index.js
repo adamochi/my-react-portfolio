@@ -27,7 +27,6 @@ const Curriculum = () => {
     const timer = setTimeout(() => {
       setLetterClass("text-animate-hover");
     }, 4500);
-
     return () => {
       clearTimeout(timer);
     };
@@ -132,7 +131,7 @@ const Curriculum = () => {
                   {course.description.map((item, key) => (
                     <li key={key}>
                       <FontAwesomeIcon icon={faPlusSquare} />
-                      {item.length > 20 ? `${item.substring(0, 20)}...` : item}
+                      {item}
                     </li>
                   ))}
                 </ul>
