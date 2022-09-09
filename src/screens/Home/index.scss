@@ -43,16 +43,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 60vw;
-    max-width: 510px;
+    width: 700px;
     height: 150px;
-    border-radius: 15px;
     transform: translateY(-170px);
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 
     .title {
-      margin-bottom: 20px;
-      padding: 0 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -74,14 +70,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 150px;
-      height: 150px;
+      width: fit-content;
+      height: fit-content;
       margin: 0 0 0 10px;
       img {
-        border: 2px solid white;
-        margin-right: 30px;
+        box-shadow: 0 0 0 2px white;
         border-radius: 15px;
-        height: 180px;
+        height: 225px;
       }
     }
   }
@@ -175,7 +170,7 @@
     max-width: 500px;
     align-items: center;
     img {
-      box-shadow: 0 0 20px 0 rgb(168, 168, 168);
+      box-shadow: 0 0 0 3px rgb(255, 255, 255);
       width: 100%;
       border-radius: 10px;
     }
@@ -192,7 +187,7 @@
       margin-bottom: 50px;
 
       svg {
-        color: tomato;
+        color: rgb(52, 122, 202);
         font-size: 16px;
       }
     }
@@ -236,25 +231,46 @@
       justify-content: center;
       max-width: 95%;
       background-color: rgba(0, 0, 0, 0);
-      margin-bottom: 30px;
+      margin: 10px 0 30px 0;
       .title {
-        margin: -20px 0 10px 0;
+        margin: 0 10px 20px 0;
       }
       .profile-pic {
-        margin: 15px 0 0 0;
+        margin: 0 0 0 0;
         display: flex;
         justify-content: center;
         width: fit-content;
         align-items: center;
         img {
-          height: 180px;
+          height: 225px;
           margin: 0;
-          border: 3px solid white;
+          border: 2px solid white;
         }
       }
     }
     .time-to-change {
       width: 95%;
+    }
+  }
+}
+@media screen and (max-width: 742px) {
+  .homepage {
+    .paper-home {
+      margin-top: 100px;
+    }
+  }
+}
+@media screen and (max-width: 451px) {
+  .homepage {
+    .paper-home {
+      margin-top: 20vw;
+    }
+    .title-home {
+      .profile-pic {
+        img {
+          height: 50vw;
+        }
+      }
     }
   }
 }
@@ -283,10 +299,10 @@
           font-size: 20px;
         }
       }
-      .profile-pic {
-        width: 200px;
-        height: 200px;
-      }
+      // .profile-pic {
+      //   width: 200px;
+      //   height: 200px;
+      // }
     }
     .text-container {
       h3 {

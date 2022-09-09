@@ -37,11 +37,9 @@ const About = () => {
           </div>
           <p>
             Since my earliest memory of using a computer, I have always been
-            fascinated with them. And thinking back to that time in the country
-            town I was living in, it was quite natural for me to start
-            interacting and learning how to use a computer. It was one of the
-            most influential moments for me to type in commands to start a
-            program that was saved onto a 5.25 Floppy Disk.
+            drawn to technology. And thinking back to that time in the country
+            town I grew up in, it was quite natural for me to start interacting
+            and learning how to use a computer.
           </p>
           <div className="story-title-div">
             <h2>A new era begins</h2>

@@ -1,5 +1,4 @@
 import {
-  faBarsStaggered,
   faComments,
   faFileCode,
   faFileLines,
@@ -55,10 +54,10 @@ const DropdownMenu = () => {
           <Link
             onClick={scrollToTop}
             className="dropdown-link-item"
-            to="/about"
+            to="/works"
           >
-            <FontAwesomeIcon icon={faInfinity} />
-            <span>About me</span>
+            <FontAwesomeIcon icon={faPanorama} />
+            <span>Works</span>
           </Link>
           <Link
             onClick={scrollToTop}
@@ -66,23 +65,7 @@ const DropdownMenu = () => {
             to="/curriculum"
           >
             <FontAwesomeIcon icon={faFileCode} />
-            <span>My Studies</span>
-          </Link>
-          <Link
-            onClick={scrollToTop}
-            className="dropdown-link-item"
-            to="/contact"
-          >
-            <FontAwesomeIcon icon={faComments} />
-            <span>Contact me</span>
-          </Link>
-          <Link
-            onClick={scrollToTop}
-            className="dropdown-link-item"
-            to="/works"
-          >
-            <FontAwesomeIcon icon={faPanorama} />
-            <span>Works</span>
+            <span>Studies</span>
           </Link>
           <Link
             onClick={scrollToTop}
@@ -92,9 +75,21 @@ const DropdownMenu = () => {
             <FontAwesomeIcon icon={faFileLines} />
             <span>Resume</span>
           </Link>
-          <Link onClick={scrollToTop} className="dropdown-link-item" to="/todo">
-            <FontAwesomeIcon icon={faBarsStaggered} />
-            <span>To Do List</span>
+          <Link
+            onClick={scrollToTop}
+            className="dropdown-link-item"
+            to="/about"
+          >
+            <FontAwesomeIcon icon={faInfinity} />
+            <span>About me</span>
+          </Link>
+          <Link
+            onClick={scrollToTop}
+            className="dropdown-link-item"
+            to="/contact"
+          >
+            <FontAwesomeIcon icon={faComments} />
+            <span>Contact</span>
           </Link>
         </div>
       </div>
