@@ -29,6 +29,7 @@ const Resume = () => {
   // };
   return (
     <>
+      <h1 className="under-construction">Under Construction</h1>
       <div className="resume-page container">
         <div className="paper">
           <div className="resume-download">
