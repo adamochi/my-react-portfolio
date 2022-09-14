@@ -3,13 +3,12 @@
   justify-content: center;
   .paper {
     position: relative;
-    padding-bottom: 40px;
     margin: 70px 0;
     background-color: var(--resume-paper);
     width: 90vw;
     max-width: 900px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     border-radius: 3px;
     box-shadow: 5px 10px 12px 1px rgba(0, 0, 0, 0.555);
@@ -35,187 +34,49 @@
         color: rgb(21, 68, 139);
       }
     }
-    .contact-bubble {
+    .left-panel-div {
+      width: 30%;
+      height: 100%;
+      background-color: rgb(115, 136, 198);
+      color: white;
       display: flex;
-      margin-top: 60px;
-      width: 90%;
-      height: 100px;
-      background-color: gray;
-      border-radius: 10px;
-      div {
-        position: relative;
-        width: 33.33%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .triangle {
-          position: absolute;
-          width: 0;
-          height: 0;
-          bottom: -30px;
-          left: 40%;
-          border-left: 20px solid transparent;
-          border-right: 20px solid transparent;
-          border-top: 50px solid gray;
-        }
-        span {
-          font-size: 18px;
-          color: whitesmoke;
-        }
-      }
-      .middle-div_contact-bubble {
-        .divider-1 {
-          transform: translateX(-1px);
-          position: absolute;
-          left: 0;
-          width: 2px;
-          height: 70px;
-          background-color: peachpuff;
-        }
-        .divider-2 {
-          transform: translateX(1px);
-          position: absolute;
-          right: 0;
-          width: 2px;
-          height: 70px;
-          background-color: peachpuff;
-        }
-      }
-      @media screen and (max-width: 840px) {
-        flex-direction: column;
-        height: fit-content;
-        padding: 5px 20px;
-        width: 60%;
-        div {
-          padding: 10px 0;
-          width: 100%;
-          .triangle {
-            bottom: -200px;
-            left: 20%;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 50px solid gray;
-          }
-        }
-        .middle-div_contact-bubble {
-          .divider-1 {
-            transform: translatey(-1px);
-            position: absolute;
-            top: 0;
-            left: 15%;
-            height: 2px;
-            width: 70%;
-            background-color: peachpuff;
-            padding: 0;
-          }
-          .divider-2 {
-            padding: 0;
-            transform: translatey(1px);
-            position: absolute;
-            bottom: 0;
-            right: 15%;
-            height: 2px;
-            width: 70%;
-            background-color: peachpuff;
-          }
-        }
-      }
-    }
-    header {
-      position: relative;
-      margin-top: 50px;
-      width: 100%;
-      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-around;
-      .header-name-div {
-        padding: 10px;
-        width: 50%;
-        .header-underline {
-          position: absolute;
-          height: 5px;
-          width: 50%;
-          right: 40px;
-          background-color: gray;
-          @media screen and (max-width: 500px) {
-            width: 80%;
-          }
-        }
-        h1 {
-          text-align: center;
-          font-size: 46px;
-          margin: 0;
-          padding: 20px 0;
-        }
-        h4 {
-          text-align: center;
-          font-size: 20px;
-          font-family: Roboto;
-          font-weight: 500;
-        }
-        @media screen and (max-width: 500px) {
-          width: 100%;
-        }
-      }
       .profile-pic {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-        background-color: gray;
-        transition: 0.5s;
-        img {
-          padding: 20px;
-          transition: 0.4s;
-          height: 84%;
-          border-radius: 50%;
-          z-index: 1;
-          box-shadow: 0 0 0 5px whitesmoke;
-          &:hover {
-            box-shadow: 0 0 0 20px peachpuff;
-            padding: 0;
-            transition: 0.4s;
-            height: 100%;
-          }
-        }
-        @media screen and (max-width: 800px) {
-          transition: 0.5s;
-          width: 200px;
-          height: 200px;
-          img {
-            height: 90%;
-            padding: 0px;
-          }
-        }
-      }
-      @media screen and (max-width: 500px) {
         flex-direction: column;
+        align-items: center;
+        img {
+          margin-top: 30px;
+          width: 80%;
+          border-radius: 50%;
+          box-shadow: 0 0 0 7px white;
+        }
       }
-    }
-  }
-  .document-party {
-    display: flex;
-    width: 100%;
-    position: relative;
-    .left-div {
-      width: calc(50% - 80px);
-      padding: 40px;
-    }
-    .right-div {
-      width: calc(50% - 80px);
-      padding: 40px;
-      .education-div-resume {
-        .skills-visual-resume {
-          width: 100%;
-          display: flex;
-          ul {
-            margin: 0 20px;
-            li {
-              font-size: 16px;
-            }
+      .contact-panel {
+        margin-top: 20px;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-size: 16px;
+          border-bottom: 3px solid white;
+        }
+        div {
+          padding: 4px;
+          font-size: 12px;
+          svg {
+            font-size: 16px;
+            margin-right: 5px;
+          }
+        }
+      }
+      .skills-visual-resume {
+        width: 85%;
+        ul {
+          padding: 0;
+          li {
+            list-style: none;
           }
           .range-party {
             display: flex;
@@ -226,6 +87,79 @@
             }
           }
         }
+      }
+    }
+    @media screen and (max-width: 800px) {
+      flex-direction: column-reverse;
+    }
+  }
+  .right-panel-div {
+    color: rgb(34, 34, 34);
+    width: 70%;
+    height: 100%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    h1 {
+      margin: 70px 0 0 0;
+      font-size: 46px;
+      text-align: center;
+      font-family: Roboto;
+    }
+    h2 {
+      font-weight: normal;
+      font-family: Roboto;
+      text-align: center;
+      margin: 0;
+    }
+    .document-party {
+      display: flex;
+      width: 100%;
+      position: relative;
+      .about-and-education-div {
+        padding: 0 40px;
+        h4 {
+          border-bottom: 4px solid palevioletred;
+          font-size: 24px;
+        }
+        p {
+          font-size: 14px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+        }
+        ul {
+          padding-left: 18px;
+          li {
+            font-size: 14px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+          }
+        }
+        .education-div-resume {
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+      .education-div-resume {
+        .skills-visual-resume {
+          width: 100%;
+          display: flex;
+          ul {
+            margin: 0 20px;
+            li {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+        width: 100%;
+        // .about-and-education-div {
+
+        // }
       }
     }
   }
