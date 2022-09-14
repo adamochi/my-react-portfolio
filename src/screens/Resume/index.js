@@ -62,43 +62,53 @@ const Resume = () => {
               <ul>
                 <li>React</li>
                 <div className="range-party">
-                  <input type="range" max="20" value="16" />
-                  <span>85%</span>
+                  <input type="range" max="100" value="75" />
+                  <span>75%</span>
                 </div>
                 <li>JavaScript ES6</li>
                 <div className="range-party">
-                  <input type="range" max="20" value="16" />
-                  <span>85%</span>
+                  <input type="range" max="100" value="75" />
+                  <span>75%</span>
                 </div>
                 <li>HTML5</li>
                 <div className="range-party">
-                  <input type="range" max="20" value="16" />
-                  <span>85%</span>
+                  <input type="range" max="100" value="90" />
+                  <span>90%</span>
                 </div>
                 <li>CSS3, SCSS</li>
                 <div className="range-party">
-                  <input type="range" max="20" value="16" />
-                  <span>85%</span>
+                  <input type="range" max="100" value="90" />
+                  <span>90%</span>
                 </div>
                 <li>Git / GitHub</li>
                 <div className="range-party">
-                  <input type="range" max="20" value="16" />
-                  <span>85%</span>
+                  <input type="range" max="100" value="80" />
+                  <span>80%</span>
                 </div>
                 <li>Node Js</li>
                 <div className="range-party">
-                  <input type="range" max="20" value="16" />
-                  <span>85%</span>
+                  <input type="range" max="100" value="50" />
+                  <span>50%</span>
                 </div>
                 <li>MongoDB</li>
                 <div className="range-party">
-                  <input type="range" max="20" value="16" />
-                  <span>85%</span>
+                  <input type="range" max="100" value="60" />
+                  <span>60%</span>
                 </div>
                 <li>Express</li>
                 <div className="range-party">
-                  <input type="range" max="20" value="16" />
-                  <span>85%</span>
+                  <input type="range" max="100" value="60" />
+                  <span>60%</span>
+                </div>
+                <li>Three.js</li>
+                <div className="range-party">
+                  <input type="range" max="100" value="60" />
+                  <span>60%</span>
+                </div>
+                <li>Visual Studio Code</li>
+                <div className="range-party">
+                  <input type="range" max="100" value="80" />
+                  <span>80%</span>
                 </div>
               </ul>
             </div>
