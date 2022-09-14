@@ -1,23 +1,16 @@
-.under-construction {
-  margin: 80px 0 0 0;
-  text-align: center;
-  font-size: 30px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
 .resume-page {
   display: flex;
   justify-content: center;
   .paper {
     position: relative;
-    margin: 70px 0;
+    margin: 75px 0;
     background-color: var(--resume-paper);
     width: 90vw;
-    max-width: 900px;
+    max-width: 950px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 5px 10px 12px 1px rgba(0, 0, 0, 0.555);
     .resume-download {
       transition: 0.1s;
@@ -42,7 +35,8 @@
       }
     }
     .left-panel-div {
-      width: 30%;
+      border-radius: 5px 0 0 5px;
+      width: 33%;
       height: 100%;
       background-color: rgb(115, 136, 198);
       color: white;
@@ -72,9 +66,23 @@
         div {
           padding: 4px;
           font-size: 12px;
+          span {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+          }
           svg {
             font-size: 16px;
             margin-right: 5px;
+          }
+        }
+        a {
+          transition: 0.3s;
+          text-decoration: none;
+          color: white;
+          &:hover {
+            transition: 0.1s;
+            box-shadow: 0 0 0 2px palevioletred;
+            border-radius: 3px;
           }
         }
       }
@@ -84,10 +92,15 @@
           padding: 0;
           li {
             list-style: none;
+            letter-spacing: 0.5px;
+            font-size: 14px;
           }
           .range-party {
             display: flex;
             align-items: center;
+            input {
+              width: 70%;
+            }
             span {
               margin-left: 10px;
               font-size: 16px;
@@ -96,77 +109,130 @@
         }
       }
     }
-    @media screen and (max-width: 800px) {
-      flex-direction: column-reverse;
-    }
-  }
-  .right-panel-div {
-    color: rgb(34, 34, 34);
-    width: 70%;
-    height: 100%;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    h1 {
-      margin: 70px 0 0 0;
-      font-size: 46px;
-      text-align: center;
-      font-family: Roboto;
-    }
-    h2 {
-      font-weight: normal;
-      font-family: Roboto;
-      text-align: center;
-      margin: 0;
-    }
-    .document-party {
-      display: flex;
-      width: 100%;
-      position: relative;
-      .about-and-education-div {
-        padding: 0 40px;
-        h4 {
-          border-bottom: 4px solid palevioletred;
-          font-size: 24px;
-        }
-        p {
-          font-size: 14px;
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-            sans-serif;
-        }
-        ul {
-          padding-left: 18px;
-          li {
+
+    .right-panel-div {
+      color: rgb(34, 34, 34);
+      width: 67%;
+      height: 100%;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+      h1 {
+        margin: 70px 0 0 0;
+        font-size: 46px;
+        text-align: center;
+        font-family: Roboto;
+      }
+      h2 {
+        font-weight: normal;
+        font-family: Roboto;
+        text-align: center;
+        margin: 0;
+      }
+      .document-party {
+        display: flex;
+        width: 100%;
+        position: relative;
+        .about-and-education-div {
+          padding: 0 40px;
+          h4 {
+            border-bottom: 4px solid palevioletred;
+            font-size: 24px;
+          }
+          p {
             font-size: 14px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont,
               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
               "Helvetica Neue", sans-serif;
           }
-        }
-        .education-div-resume {
-          span {
-            font-size: 16px;
-          }
-        }
-      }
-      .education-div-resume {
-        .skills-visual-resume {
-          width: 100%;
-          display: flex;
           ul {
-            margin: 0 20px;
+            margin-top: 0;
+            padding-left: 18px;
             li {
+              font-size: 14px;
+              font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                "Helvetica Neue", sans-serif;
+            }
+          }
+          .education-div-resume {
+            span {
+              margin: 0;
+              display: inline-block;
               font-size: 16px;
+            }
+            a {
+              transition: 0.2s;
+              text-decoration: none;
+              color: black;
+              &:hover {
+                transition: 0.1s;
+                box-shadow: 0 0 0 2px rgb(6, 161, 140);
+                border-radius: 3px;
+                padding: 3px;
+                box-sizing: border-box;
+              }
+            }
+            .nomad-span {
+              margin-bottom: 10px;
+            }
+          }
+          .work-exp-div {
+            span {
+              display: inline-block;
+              font-size: 16px;
+              margin: 0 10px 0 0;
+            }
+            .certificate-span {
+              font-size: 14px;
+            }
+            p {
+              margin: 0;
+            }
+            ul {
+              margin: 5px 0;
             }
           }
         }
       }
-      @media screen and (max-width: 800px) {
-        flex-direction: column;
+    }
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      margin-top: 60px;
+      width: 95%;
+      .left-panel-div {
         width: 100%;
-        // .about-and-education-div {
+        padding-top: 50px;
+        border-radius: 5px 5px 0 0;
+        .skills-visual-resume {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          ul {
+            width: 85%;
+            li {
+              font-size: 18px;
+            }
 
-        // }
+            .range-party {
+              input {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .right-panel-div {
+        width: 100%;
+        h1 {
+          display: none;
+        }
+        h2 {
+          display: none;
+        }
+        .document-party {
+          flex-direction: column;
+          width: 100%;
+        }
       }
     }
   }

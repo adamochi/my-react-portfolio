@@ -1,19 +1,5 @@
 import React from "react";
 import "./index.scss";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faReact,
-//   faHtml5,
-//   faCss3,
-//   faSass,
-//   faJsSquare,
-//   faNodeJs,
-//   faGithubAlt,
-//   faLinkedin,
-// } from "@fortawesome/free-brands-svg-icons";
-// import { Link } from "react-router-dom";
-// import { faServer } from "@fortawesome/free-solid-svg-icons";
-// import { faCode } from "@fortawesome/free-solid-svg-icons";
 import me from "assets/images/jeju-resume.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,6 +8,8 @@ import {
   faPhoneSquareAlt,
   faSquareEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Resume = () => {
   // const scrollToTop = () => {
@@ -29,11 +17,14 @@ const Resume = () => {
   // };
   return (
     <>
-      <h1 className="under-construction">Under Construction</h1>
       <div className="resume-page container">
         <div className="paper">
           <div className="resume-download">
-            <a href="https://drive.google.com/file/d/1GC_FrfULQ3bJd5NFrtpww2ZCy3N80Bc7/view?usp=sharing">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/1GC_FrfULQ3bJd5NFrtpww2ZCy3N80Bc7/view?usp=sharing"
+            >
               <FontAwesomeIcon icon={faCloudDownload} />{" "}
               <span>Download Resume</span>
             </a>
@@ -42,73 +33,97 @@ const Resume = () => {
             <div className="profile-pic">
               <img src={me} alt="profile-pic" />
             </div>
-
             <div className="contact-panel">
               <h3>Contact</h3>
-              <div>
-                <FontAwesomeIcon icon={faPhoneSquareAlt} />
-                <span>0409 051 595</span>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faSquareEnvelope} />
-                <span>honeyrumballs@gmail.com</span>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faEarthOceania} />
-                <span>Spring Hill, QLD 4000</span>
-              </div>
+
+              <Link to="/contact">
+                <div>
+                  <FontAwesomeIcon icon={faPhoneSquareAlt} />
+                  <span>0409 051 595</span>
+                </div>
+
+                <div>
+                  <FontAwesomeIcon icon={faSquareEnvelope} />
+                  <span>honeyrumballs@gmail.com</span>
+                </div>
+
+                <div>
+                  <FontAwesomeIcon icon={faEarthOceania} />
+                  <span>Spring Hill, QLD 4000</span>
+                </div>
+              </Link>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/adamochi"
+              >
+                <div>
+                  <FontAwesomeIcon icon={faGithub} />
+                  <span>github.com/adamochi</span>
+                </div>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/adam-sullivan87/"
+              >
+                <div>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                  <span>linkedin.com/in/adam-sullivan87/</span>
+                </div>
+              </a>
               <h3>Skills</h3>
             </div>
             <div className="skills-visual-resume">
               <ul>
                 <li>React</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="75" />
+                  <input readOnly type="range" max="100" value="75" />
                   <span>75%</span>
                 </div>
                 <li>JavaScript ES6</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="75" />
+                  <input readOnly type="range" max="100" value="75" />
                   <span>75%</span>
                 </div>
                 <li>HTML5</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="90" />
+                  <input readOnly type="range" max="100" value="90" />
                   <span>90%</span>
                 </div>
                 <li>CSS3, SCSS</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="90" />
+                  <input readOnly type="range" max="100" value="90" />
                   <span>90%</span>
                 </div>
                 <li>Git / GitHub</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="80" />
+                  <input readOnly type="range" max="100" value="80" />
                   <span>80%</span>
                 </div>
                 <li>Node Js</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="50" />
+                  <input readOnly type="range" max="100" value="50" />
                   <span>50%</span>
                 </div>
                 <li>MongoDB</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="60" />
+                  <input readOnly type="range" max="100" value="60" />
                   <span>60%</span>
                 </div>
                 <li>Express</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="60" />
+                  <input readOnly type="range" max="100" value="60" />
                   <span>60%</span>
                 </div>
                 <li>Three.js</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="60" />
+                  <input readOnly type="range" max="100" value="60" />
                   <span>60%</span>
                 </div>
                 <li>Visual Studio Code</li>
                 <div className="range-party">
-                  <input type="range" max="100" value="80" />
+                  <input readOnly type="range" max="100" value="80" />
                   <span>80%</span>
                 </div>
               </ul>
@@ -159,20 +174,145 @@ const Resume = () => {
                 </div>
                 <div className="education-div-resume">
                   <h4>EDUCATION</h4>
+                  <span className="nomad-span">
+                    <strong>Nomad Coders - </strong>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://nomadcoders.co/users/adamochi"
+                    >
+                      nomadcoders.co/users/adamochi
+                    </a>
+                  </span>
+                  <br />
                   <span>
-                    <strong>Nomad Coders</strong> -
-                    nomadcoders.co/users/adamochi
+                    <strong>Courses</strong>
                   </span>
                   <ul>
-                    <li>Vanilla JS - 2 Weeks Completion Class</li>
-                    <li>Creating a Movie Web Service with React JS</li>
-                    <li>React Native 101 for beginners</li>
-                    <li>Kakao Clone - 2 Weeks Completion Class</li>
-                    <li>Git &amp; Github for Everyone</li>
-                    <li>Redux 101 for Beginners</li>
-                    <li>10 Practical React Hooks</li>
-                    <li>Create a drawing app with vanilla JS</li>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://nomadcoders.co/certs/0e213613-c4dd-47de-8ead-0919f40d532d"
+                    >
+                      <li>
+                        <strong>Vanilla JS</strong> - 2 Weeks Completion Class
+                      </li>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://nomadcoders.co/certs/7fd93c7c-ddeb-453a-b940-b8517449ab81"
+                    >
+                      <li>
+                        Creating a Movie Web Service with{" "}
+                        <strong>React JS</strong>
+                      </li>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://nomadcoders.co/certs/d84653b9-4d77-4e3a-97c8-476a8430e917"
+                    >
+                      <li>
+                        <strong>React Native</strong> 101 for beginners
+                      </li>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://nomadcoders.co/certs/a03ccb24-67d2-43d7-bb3e-3d7d02c83ef9"
+                    >
+                      <li>
+                        <strong>CSS</strong> - Kakao Clone - 2 Weeks Completion
+                        Class
+                      </li>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://nomadcoders.co/certs/85fa8edd-482d-478c-8f42-3ae140f61872"
+                    >
+                      <li>
+                        <strong>Git &amp; Github</strong> for Everyone
+                      </li>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://nomadcoders.co/certs/4a2d28a6-14bc-49d0-966c-74c3c5e7e2c2"
+                    >
+                      <li>
+                        <strong>Redux</strong> 101 for Beginners
+                      </li>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://nomadcoders.co/certs/7ee57b63-2484-474f-ad7a-a953d24264cc"
+                    >
+                      <li>
+                        10 Practical <strong>React Hooks</strong>
+                      </li>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://nomadcoders.co/certs/212a5f67-d43d-4949-99a7-7c6b8662208d"
+                    >
+                      <li>
+                        Create a drawing app with <strong>Vanilla JS</strong>
+                      </li>
+                    </a>
                   </ul>
+                  <span>
+                    <strong>Achievement</strong>
+                    <ul className="achievement-ul">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://nomadcoders.co/community/thread/5459"
+                      >
+                        <li>
+                          <strong>A top student</strong> - Out of 1037
+                          applicants, and only 197 graduates, I was chosen as
+                          one of the top 15 students for the Vanilla JS 2wk
+                          completion class!
+                        </li>
+                      </a>
+                    </ul>
+                  </span>
+                </div>
+                <h4>WORK EXPERIENCE</h4>
+                <div className="work-exp-div">
+                  <span>
+                    <strong>CHEF</strong>
+                  </span>
+                  <span>2009 - 2022</span>
+                  <span className="certificate-span">
+                    Certificate III Commercial Cookery &#40;TAFE 2005 -
+                    2009&#41;
+                  </span>
+                  <ul>
+                    <li>
+                      <strong>George's Paragon</strong> - Brisbane
+                    </li>
+                    <li>
+                      <strong>Dundee's</strong> on the Waterfront - Cairns
+                    </li>
+                    <li>
+                      <strong>Fuller Sports</strong> - Edmonton
+                    </li>
+                    <li>
+                      <strong>Pesci's Restaurant</strong> - Cairns
+                    </li>
+                  </ul>
+                  <p>
+                    <strong>Responsibilities:</strong> Pastry section CDP,
+                    Creating new desserts, Pans section, Larder section, Seafood
+                    section, Grill, Food preparation, Receiving of goods, Stock
+                    rotation, Cleaning, Ordering from suppliers, Food
+                    stocktaking
+                  </p>
                 </div>
               </div>
             </div>
