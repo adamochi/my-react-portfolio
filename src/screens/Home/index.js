@@ -93,7 +93,6 @@ const Home = () => {
               <div className="nomad-link-div">
                 <Nomad />
                 <CoursesBtn />
-                {/* <span>completed curriculum link goes here</span> */}
               </div>
             </div>
             <h3>

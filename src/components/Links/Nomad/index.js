@@ -8,7 +8,7 @@ const Nomad = () => {
       rel="noreferrer"
       href="https://nomadcoders.co/users/adamochi"
     >
-      <button className="nomad-btn">nomadcoders.co ↵</button>
+      <button className="nomad-btn">nomadcoders.co</button>
     </a>
   );
 };

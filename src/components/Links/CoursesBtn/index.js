@@ -9,7 +9,7 @@ const CoursesBtn = () => {
   return (
     <>
       <NavLink onClick={scrollToTop} to={"/curriculum"}>
-        <button className="courses-btn">My Completed Studies ↵</button>
+        <button className="courses-btn">My Completed Studies</button>
       </NavLink>
     </>
   );
