@@ -1,20 +1,24 @@
 import React from "react";
 import "./index.scss";
 import me from "assets/images/jeju-resume.png";
+import hat from "../../assets/images/chefhat.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCloudDownload,
+  faDice,
   faEarthOceania,
+  faLaptopCode,
   faPhoneSquareAlt,
+  faRectangleList,
   faSquareEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Resume = () => {
-  // const scrollToTop = () => {
-  //   window.scrollTo(0, 0);
-  // };
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="resume-page container">
@@ -36,7 +40,7 @@ const Resume = () => {
             <div className="contact-panel">
               <h3>Contact</h3>
 
-              <Link to="/contact">
+              <Link onClick={scrollToTop} to="/contact">
                 <div>
                   <FontAwesomeIcon icon={faPhoneSquareAlt} />
                   <span>0409 051 595</span>
@@ -127,6 +131,33 @@ const Resume = () => {
                   <span>80%</span>
                 </div>
               </ul>
+              <h3 className="projects-h3">Projects</h3>
+              <ul className="projects-list">
+                <li>
+                  <FontAwesomeIcon icon={faRectangleList} />
+                  <Link onClick={scrollToTop} to="/todo">
+                    <span>Todo-list app</span>
+                  </Link>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faDice} />
+                  <a href="https://eloquent-kashata-64e9a1.netlify.app/numbergame/index.html">
+                    JS Number Game
+                  </a>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faLaptopCode} />
+                  <a href="https://adamochi.github.io/vanilla-js-2022/">
+                    Momentum App
+                  </a>
+                </li>
+                <li>
+                  <img src={hat} alt="chef hat" />
+                  <Link onClick={scrollToTop} to="/">
+                    <span>3D Chef</span>
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -188,7 +219,7 @@ const Resume = () => {
                   <span>
                     <strong>Courses</strong>
                   </span>
-                  <ul>
+                  <ul className="courses-links-ul">
                     <a
                       target="_blank"
                       rel="noreferrer"

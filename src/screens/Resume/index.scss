@@ -20,7 +20,7 @@
       font-size: 18px;
       padding: 7px 20px;
       border-radius: 5px;
-      background-color: rgba(255, 218, 185, 0.247);
+      background-color: rgba(255, 218, 185, 0.918);
       &:hover {
         transition: 0.1s;
         box-shadow: 0 0 0 3px peachpuff;
@@ -60,7 +60,7 @@
         display: flex;
         flex-direction: column;
         h3 {
-          font-size: 16px;
+          font-size: 2.1em;
           border-bottom: 3px solid white;
         }
         div {
@@ -86,20 +86,57 @@
           }
         }
       }
+      .projects-h3 {
+        width: 85%;
+        font-size: 2.1em;
+        border-bottom: 3px solid white;
+      }
+      .projects-list {
+        margin: 0;
+        width: 85%;
+        li {
+          margin-bottom: 0.5em;
+          transition: 0.1s;
+          &:hover {
+            transition: 0.1s;
+            box-shadow: 0 0 0 2px palevioletred;
+            border-radius: 3px;
+            box-sizing: border-box;
+          }
+          img {
+            transform: translateX(-0.3em);
+          }
+          a {
+            font-family: Roboto;
+            color: white;
+            margin-left: 5px;
+            text-decoration: none;
+            font-size: 1em;
+          }
+        }
+      }
       .skills-visual-resume {
         width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         ul {
           padding: 0;
           li {
             list-style: none;
             letter-spacing: 0.5px;
             font-size: 14px;
+            img {
+              height: 1rem;
+              margin: 0px 5px 0 0;
+              background-color: rgb(105, 130, 201);
+            }
           }
           .range-party {
             display: flex;
             align-items: center;
             input {
-              width: 70%;
+              width: 50%;
             }
             span {
               margin-left: 10px;
@@ -118,7 +155,7 @@
       box-sizing: border-box;
       h1 {
         margin: 70px 0 0 0;
-        font-size: 46px;
+        font-size: 3rem;
         text-align: center;
         font-family: Roboto;
       }
@@ -136,13 +173,26 @@
           padding: 0 40px;
           h4 {
             border-bottom: 4px solid palevioletred;
-            font-size: 24px;
+            // font-size: 24px;
+            font-size: 2rem;
           }
           p {
             font-size: 14px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont,
               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
               "Helvetica Neue", sans-serif;
+          }
+          .courses-links-ul {
+            a {
+              li {
+                &:hover {
+                  transition: 0.1s;
+                  box-shadow: 0 0 0 2px rgb(6, 161, 140);
+                  border-radius: 3px;
+                  box-sizing: border-box;
+                }
+              }
+            }
           }
           ul {
             margin-top: 0;
@@ -164,13 +214,6 @@
               transition: 0.2s;
               text-decoration: none;
               color: black;
-              &:hover {
-                transition: 0.1s;
-                box-shadow: 0 0 0 2px rgb(6, 161, 140);
-                border-radius: 3px;
-                padding: 3px;
-                box-sizing: border-box;
-              }
             }
             .nomad-span {
               margin-bottom: 10px;
