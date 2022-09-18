@@ -16,7 +16,7 @@
     max-width: 900px;
     height: fit-content;
     background-color: var(--resume-paper);
-    box-shadow: 0 0 10px 2px rgba(140, 118, 192, 0.5);
+    box-shadow: 2px 2px 10px 3px rgb(136, 136, 136);
     border-radius: 2px;
     margin-top: -160px;
     padding-bottom: 50px;
@@ -30,9 +30,9 @@
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     background-color: var(--clear-hfour);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 5px 20px;
+    padding: 0.3rem 1.2rem;
     border-radius: 5px;
     margin: 0;
   }
@@ -55,13 +55,13 @@
 
       h1 {
         font-family: "Courier New", Courier, monospace;
-        font-size: 36px;
+        font-size: 2.4rem;
         margin: 0;
-        letter-spacing: 1px;
+        // letter-spacing: 1px;
         cursor: default;
       }
       h5 {
-        font-size: 14px;
+        font-size: 0.9rem;
         margin: 0 0 5px 0;
       }
     }
@@ -83,7 +83,7 @@
   .text-container {
     h1 {
       font-family: "Courier New", Courier, monospace;
-      font-size: 26px;
+      font-size: 1.6rem;
       width: fit-content;
       border-bottom: 4px solid var(--clear-hfour);
       cursor: default;
@@ -101,6 +101,7 @@
       flex-direction: row;
       width: 100%;
       p {
+        // text-align: justify;
         padding: 0 15px;
         font-size: 16px;
         width: 50%;
@@ -114,17 +115,16 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-
     h6 {
       font-size: 16px;
       margin: 10px 0 5px 0;
       border-bottom: 2px solid var(--clear-hfour);
       width: fit-content;
     }
-
     p {
-      margin: 0 0 0 20px;
+      margin: 0 20px 0 20px;
       font-size: 16px;
+      // text-align: justify;
     }
   }
   .text-section-with-border {
@@ -134,7 +134,6 @@
     background-color: var(--clear-hfour);
     border-radius: 10px;
     margin: 20px 0 20px 0;
-
     h3 {
       padding-left: 10px;
       font-family: "Coolvetica";
@@ -150,9 +149,6 @@
         font-size: 14px;
         font-weight: 600;
       }
-      p {
-        width: 90%;
-      }
     }
     .nomad-link-div {
       gap: 5px;
@@ -162,10 +158,10 @@
       justify-content: center;
       padding: 10px;
       box-sizing: border-box;
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 510px) {
         flex-direction: column;
         gap: 10px;
-        align-items: flex-end;
+        align-items: center;
       }
     }
   }
@@ -183,11 +179,10 @@
       width: 100%;
       border-radius: 10px;
     }
-
     span {
       width: fit-content;
       padding: 3px 10px;
-      text-align: center;
+      // text-align: center;
       font-family: monospace, "courier";
       font-size: 20px;
       letter-spacing: -0.5px;
