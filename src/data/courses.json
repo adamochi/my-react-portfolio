@@ -3,53 +3,6 @@
     {
       "react": "faReact",
       "logo": "faReact",
-      "image": "https://i.imgur.com/uEBohZM.png",
-      "images": [
-        "https://i.imgur.com/2kReWam.png",
-        "https://i.imgur.com/21pUJbQ.png"
-      ],
-      "title": "Fullstack Clone - YouTube",
-      "achieved": ["YouTube Backend + Frontend + Distribution"],
-      "url": "https://github.com/adamochi/wetube-challenge-2022",
-      "linktext": "Source",
-      "linktexttwo": "WeTube ⤴",
-      "urltwo": "",
-      "description": [
-        "User Authentication",
-        "Github Login",
-        "User Profile",
-        "Video Upload",
-        "Video Recording",
-        "Search Video",
-        "AJAX Comments",
-        "View Count",
-        "Deployment",
-        "Heroku",
-        "S3 Upload",
-        "MongoDB Atlas",
-        "MVC",
-        "Routing",
-        "Templates",
-        "Models",
-        "Relationships"
-      ],
-      "packages": [
-        "NodeJS",
-        "ES6",
-        "Express",
-        "Babel",
-        "Pug",
-        "Webpack",
-        "SCSS",
-        "MongoDB",
-        "Mongoose",
-        "Multer"
-      ],
-      "languages": ["NodeJS", "ES6", "Pug", "Mongo"]
-    },
-    {
-      "react": "faReact",
-      "logo": "faReact",
       "image": "https://i.imgur.com/bnu83Ct.png",
       "images": [
         "https://i.imgur.com/2kReWam.png",
@@ -140,6 +93,53 @@
         "OpenWeather API"
       ],
       "languages": ["JavaScript", "Open Weather API", "Clock", "Todo List"]
+    },
+    {
+      "react": "faReact",
+      "logo": "faReact",
+      "image": "https://i.imgur.com/uEBohZM.png",
+      "images": [
+        "https://i.imgur.com/2kReWam.png",
+        "https://i.imgur.com/21pUJbQ.png"
+      ],
+      "title": "Fullstack Clone - YouTube",
+      "achieved": ["YouTube Backend + Frontend + Distribution"],
+      "url": "https://github.com/adamochi/wetube-challenge-2022",
+      "linktext": "Source",
+      "linktexttwo": "WeTube ⤴",
+      "urltwo": "https://wetube-challenge-2022.herokuapp.com/",
+      "description": [
+        "User Authentication",
+        "Github Login",
+        "User Profile",
+        "Video Upload",
+        "Video Recording",
+        "Search Video",
+        "AJAX Comments",
+        "View Count",
+        "Deployment",
+        "Heroku",
+        "S3 Upload",
+        "MongoDB Atlas",
+        "MVC",
+        "Routing",
+        "Templates",
+        "Models",
+        "Relationships"
+      ],
+      "packages": [
+        "NodeJS",
+        "ES6",
+        "Express",
+        "Babel",
+        "Pug",
+        "Webpack",
+        "SCSS",
+        "MongoDB",
+        "Mongoose",
+        "Multer"
+      ],
+      "languages": ["NodeJS", "ES6", "Pug", "Mongo"]
     },
     {
       "react": "css",

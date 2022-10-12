@@ -19,32 +19,36 @@
   font: 500 12px/1.3 "Roboto";
   color: rgb(0, 0, 99);
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  justify-content: center;
-  margin: 10px;
-  width: calc(100% - 20px);
-  border-radius: 10px;
+  justify-items: space-evenly;
+  width: fit-content;
+  gap: 20px;
+  margin: 0 auto;
+
+  grid-template-columns: repeat(4, 25%);
   @media screen and (max-width: 1900px) {
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   @media screen and (max-width: 1250px) {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   @media screen and (max-width: 850px) {
-    margin: 0;
-    width: 100%;
-    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
   }
 
-  .course-div:nth-child(1) {
-    grid-row-start: 1;
-    grid-row-end: 3;
+  .course-div:nth-child(4) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
     height: fit-content;
   }
 
   .course-div {
+    width: 350px;
     height: auto;
-    margin: 10px;
+    // margin: 10px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -130,8 +134,8 @@
       padding: 8px 10px;
       box-sizing: border-box;
       width: 100%;
-      color: whitesmoke;
-      font-size: 16px;
+      color: white;
+      font-size: 15px;
       svg {
         margin-right: 10px;
       }
