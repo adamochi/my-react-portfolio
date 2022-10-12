@@ -283,6 +283,7 @@
   .homepage {
     .paper-home {
       max-width: 1500px;
+      margin-top: -100px;
     }
     canvas {
       height: 700px;
@@ -291,23 +292,24 @@
     h4 {
       transform: translateY(-270px);
       font-size: 24px;
+      margin-top: 200px;
     }
     .title-home {
-      max-width: 700px;
-      min-height: 200px;
+      width: fit-content;
+      gap: 100px;
+      height: fit-content;
       margin-bottom: 50px;
       .title {
         h1 {
-          font-size: 50px;
+          font-size: 60px;
         }
         h5 {
           font-size: 20px;
         }
       }
-      // .profile-pic {
-      //   width: 200px;
-      //   height: 200px;
-      // }
+      .profile-pic {
+        transform: scale(150%);
+      }
     }
     .text-container {
       h3 {

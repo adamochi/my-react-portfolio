@@ -21,7 +21,8 @@
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   justify-content: center;
-  width: 100%;
+  margin: 10px;
+  width: calc(100% - 20px);
   border-radius: 10px;
   @media screen and (max-width: 1900px) {
     grid-template-columns: 33% 33% 33%;
@@ -30,12 +31,15 @@
     grid-template-columns: 50% 50%;
   }
   @media screen and (max-width: 850px) {
+    margin: 0;
+    width: 100%;
     grid-template-columns: 100%;
   }
 
   .course-div:nth-child(1) {
     grid-row-start: 1;
     grid-row-end: 3;
+    height: fit-content;
   }
 
   .course-div {
@@ -45,7 +49,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // width: calc(25% - 50px);
     background-color: var(--resume-paper);
     border-radius: 5px 5px 2px 2px;
     .menu-bar-xp {

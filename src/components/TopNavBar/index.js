@@ -17,12 +17,12 @@ import { NavLink, Link } from "react-router-dom";
 
 const TopNavBar = () => {
   const [size, setSize] = useState();
+  const siZerr = () => {
+    const winSize = window.window.innerWidth;
+    return setSize(winSize);
+  };
   useEffect(() => {
-    window.addEventListener("resize", () => setSize(window.window.innerWidth));
-    return () =>
-      window.removeEventListener("resize", () =>
-        setSize(window.window.innerWidth)
-      );
+    window.addEventListener("resize", siZerr);
   }, [size]);
 
   const scrollToTop = () => {
