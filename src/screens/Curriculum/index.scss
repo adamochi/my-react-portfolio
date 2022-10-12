@@ -15,13 +15,16 @@
     }
   }
 }
+// * + * {
+//   background-color: rgba(14, 145, 73, 0.158);
+// }
 .curriculum-page {
   font: 500 12px/1.3 "Roboto";
   color: rgb(0, 0, 99);
   display: grid;
-  justify-items: space-evenly;
-  width: fit-content;
-  gap: 20px;
+  justify-items: center;
+  width: 100%;
+  row-gap: calc(20px + 2vw);
   margin: 0 auto;
 
   grid-template-columns: repeat(4, 25%);
@@ -35,7 +38,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
+  }
+  @media screen and (max-width: 850px) {
+    width: 95%;
   }
 
   .course-div:nth-child(4) {
@@ -46,9 +52,8 @@
   }
 
   .course-div {
-    width: 350px;
+    width: calc(320px + 7vw);
     height: auto;
-    // margin: 10px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -58,7 +63,11 @@
     .menu-bar-xp {
       background-color: var(--window-xp-toolbar);
       width: 98.5%;
-      height: 100px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
       .menu-bar-with-logo {
         width: 100%;
         height: 25px;
@@ -67,7 +76,8 @@
         box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.034);
         .using-div {
           display: flex;
-          height: fit-content;
+          min-height: 100%;
+
           .using {
             border-radius: 3px;
             padding: 5px 5px;
@@ -89,7 +99,7 @@
       }
       .curriculum-links-div {
         display: flex;
-        height: 50%;
+        height: 50px;
         box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.034);
         a {
           display: flex;
@@ -197,6 +207,7 @@
         height: 100px;
         left: 52%;
         @media screen and (max-width: 360px) {
+          width: 40%;
           left: 60%;
         }
         // border-left: 4px solid var(--window-xp-toolbar);
