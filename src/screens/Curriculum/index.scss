@@ -25,14 +25,13 @@
   justify-items: center;
   width: 100%;
   row-gap: calc(20px + 2vw);
-  margin: 0 auto;
-
+  // margin: 0 auto;
   grid-template-columns: repeat(4, 25%);
   @media screen and (max-width: 1900px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
   @media screen and (max-width: 1250px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (max-width: 850px) {
     display: flex;
