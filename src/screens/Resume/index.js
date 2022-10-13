@@ -27,7 +27,7 @@ const Resume = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://drive.google.com/file/d/1GC_FrfULQ3bJd5NFrtpww2ZCy3N80Bc7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1EFtb6my50DEKl1zAosM2OBo1-FT5X1yL/view?usp=sharing"
             >
               <FontAwesomeIcon icon={faCloudDownload} />{" "}
               <span>Download Resume</span>
@@ -77,6 +77,7 @@ const Resume = () => {
                 </div>
               </a>
               <h3>Skills</h3>
+              <span className="confidence">My Confidence %</span>
             </div>
             <div className="skills-visual-resume">
               <ul>
