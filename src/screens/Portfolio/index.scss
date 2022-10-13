@@ -35,32 +35,35 @@
 
       .content {
         position: absolute;
-        width: 90%;
+        bottom: -70px;
+        width: 100%;
         z-index: 3;
         padding: 10px 20px;
         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         background: linear-gradient(
           180deg,
-          rgba(0, 0, 0, 0.4) 0,
+          rgba(0, 0, 0, 0.521) 0,
           rgba(0, 0, 0, 1)
         );
-        bottom: -70px;
       }
 
       .title {
         margin-bottom: 0;
         margin-top: 0;
         color: #fff;
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 500;
         line-height: 24px;
+        font-family: "Roboto";
       }
 
       .description {
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 18px;
+        font-family: "Roboto";
+        font-weight: 400;
         margin-bottom: 5px;
-        color: rgb(35, 226, 169);
+        color: rgb(56, 255, 195);
+        padding: 0 40px 0 0;
       }
 
       .btn {
