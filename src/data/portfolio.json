@@ -5,7 +5,7 @@
       "cover": "https://i.imgur.com/eDNMda6.png",
       "title": "Todo List App",
       "description": "One of my most used apps is this simple CRUD operations app",
-      "url": "/#/todo"
+      "url": "https://adams-app.netlify.app/"
     },
     {
       "react": "react",
