@@ -1,8 +1,8 @@
 @import "./variables.css";
-$primary-color: var(--main-text-colour);
+$primary-color: var(--pacman);
 
 @import "animate.css";
-@import "~loaders.css/src/animations/ball-clip-rotate-multiple.scss";
+@import "~loaders.css/src/animations/pacman.scss";
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -82,8 +82,7 @@ textarea {
   left: 0;
   right: 0;
   margin: auto;
-  top: 0;
-  bottom: 0;
+  top: 40vh;
   width: 1px;
   height: 1px;
   animation: fadeOut 0.5s 0.5s;
@@ -110,6 +109,8 @@ textarea {
   animation: bkgAwesome 60s linear infinite;
   animation-delay: 5s;
   border-radius: 3px;
+
+  --pacman: yellow;
   --page-title-colour: rgb(225, 238, 234);
   --dark-blue-colour: rgb(217, 223, 221);
   --clear-hfour: rgba(243, 233, 214, 0.932);

@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import Loader from "react-loaders";
 import me from "assets/images/jeju-resume.png";
 import hat from "../../assets/images/chefhat.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -351,6 +352,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
+      <Loader type="pacman" />
     </>
   );
 };

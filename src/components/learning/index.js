@@ -49,7 +49,7 @@ const Learning = () => {
         </Suspense>
       </Canvas>
 
-      <Loader type="ball-clip-rotate-multiple" />
+      <Loader type="pacman" />
     </div>
   );
 };

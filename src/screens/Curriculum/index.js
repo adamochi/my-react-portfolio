@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
 import AnimatedLetters from "components/AnimatedLetters";
+import Loader from "react-loaders";
 import {
   faJsSquare,
   faWindows,
@@ -161,6 +162,7 @@ const Curriculum = () => {
           </div>
         ))}
       </div>
+      <Loader type="pacman" />
     </>
   );
 };
