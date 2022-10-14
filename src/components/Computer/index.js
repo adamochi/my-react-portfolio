@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-import Loader from "react-loaders";
 import "./index.scss";
 
 /* 3D stuff */
@@ -12,7 +11,7 @@ const Computer = () => {
     <Canvas camera={{ fov: 45, position: [9.5, 9.5, 20] }}>
       <OrbitControls enableZoom={true} />
       <ambientLight intensity={1.45} />
-      <Suspense fallback={<Loader type="pacman" />}>
+      <Suspense fallback={null}>
         <FinalChef />
       </Suspense>
     </Canvas>
