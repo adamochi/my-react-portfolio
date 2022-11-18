@@ -12,7 +12,9 @@ body {
   display: block;
   height: calc(100% + 100px);
 }
-
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
