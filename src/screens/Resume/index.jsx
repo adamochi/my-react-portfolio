@@ -5,6 +5,7 @@ import me from "assets/images/jeju-resume.png";
 import hat from "../../assets/images/chefhat.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBookOpen,
   faCloudDownload,
   faDice,
   faEarthOceania,
@@ -28,7 +29,7 @@ const Resume = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://drive.google.com/file/d/1EFtb6my50DEKl1zAosM2OBo1-FT5X1yL/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_fEhnCWQuI-Pzcb1lOhHsmUiYAfid9tH/view?usp=sharing"
             >
               <FontAwesomeIcon icon={faCloudDownload} />{" "}
               <span>Download Resume</span>
@@ -135,6 +136,16 @@ const Resume = () => {
               </ul>
               <h3 className="projects-h3">Projects</h3>
               <ul className="projects-list">
+                <li>
+                  <FontAwesomeIcon icon={faBookOpen} />
+                  <a
+                    href="https://bible.newdreamchurch.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>Bible Translation App</span>
+                  </a>
+                </li>
                 <li>
                   <FontAwesomeIcon icon={faRectangleList} />
                   <Link onClick={scrollToTop} to="/todo">
@@ -316,6 +327,69 @@ const Resume = () => {
                   </span>
                 </div>
                 <h4>WORK EXPERIENCE</h4>
+                <div className="work-exp-div">
+                  <div>
+                    <span style={{ fontSize: "32px" }}>Clinials</span>
+                  </div>
+                  <span>
+                    <strong>Web Developer Internship</strong>
+                  </span>
+                  <span style={{ marginBottom: "10px" }}>
+                    Oct 2022 - Jan 2023
+                  </span>
+                  <span className="certificate-span">
+                    During my three-month internship as a web developer with
+                    Clinials, I had the privilege of working with a talented and
+                    compassionate startup team. This opportunity allowed me to
+                    not only improve my coding skills, but also to understand
+                    the planning and strategy that goes into creating effective
+                    solutions.
+                    <br />
+                    <br />I learned the value of writing clean and readable code
+                    through practices such as refactoring and gained hands-on
+                    experience with content management systems including Prismic
+                    and Sanity. In addition, I had the chance to work on
+                    implementing new designs and enhance the usability for
+                    recruiting participants. Overall, this was an incredibly
+                    rewarding and educational experience that has greatly
+                    benefited my growth as a web developer.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Some of the main roles and key take aways from my time at
+                    Clinials include:
+                  </span>
+                  <ul>
+                    <li>
+                      Collaborating with Development team using Bitbucket for
+                      version control
+                    </li>
+                    <li>
+                      Experienced working with Docker for containerization of
+                      applications
+                    </li>
+                    <li>
+                      Improved coding skills through learning best practices
+                      from an experienced team
+                    </li>
+                    <li>
+                      Platform improvements made through design implementation
+                      and usability enhancements
+                    </li>
+                    <li>Learning the importance of clean and readable code</li>
+                    <li>
+                      Using Confluence for project planning and document
+                      collaboration
+                    </li>
+                    <li>Managing tasks and project progress through Jira</li>
+                  </ul>
+                </div>
+
+                <br />
+                <div>
+                  <span style={{ fontSize: "32px" }}>Life before coding</span>
+                </div>
                 <div className="work-exp-div">
                   <span>
                     <strong>CHEF</strong>
