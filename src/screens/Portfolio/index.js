@@ -59,8 +59,10 @@ const Portfolio = () => {
                     alt="portfolio"
                   />
                   <div className="content">
-                    <p className="title">{course.title}</p>
-                    <h4 className="description">{course.description}</h4>
+                    <div>
+                      <p className="title">{course.title}</p>
+                      <h4 className="description">{course.description}</h4>
+                    </div>
                     <button
                       className="btn"
                       onClick={() => window.open(course.url)}
