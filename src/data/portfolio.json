@@ -9,6 +9,13 @@
     },
     {
       "react": "react",
+      "cover": "https://i.imgur.com/bfyCXtF.png",
+      "title": "Bible Translation App",
+      "description": "Search in english or korean! This app allows you to see korean and english translations simultaneously",
+      "url": "https://bible.newdreamchurch.com"
+    },
+    {
+      "react": "react",
       "cover": "https://i.imgur.com/2kReWam.png",
       "title": "JavaScript Number Game",
       "description": "Go head to head with my AI and guess the right number",
