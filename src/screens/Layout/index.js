@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <>
       <TopNavBar />
-      <Suspense fallback={"Loading. . ."}>
+      <Suspense fallback={null}>
         <Outlet />
       </Suspense>
     </>
