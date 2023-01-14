@@ -1,13 +1,16 @@
+import React, { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
+import "App.scss";
+
 import Home from "screens/Home";
 import Layout from "screens/Layout";
-import About from "screens/About";
-import Contact from "screens/Contact";
-import Portfolio from "screens/Portfolio";
-import Resume from "screens/Resume";
-import ToDotest from "screens/todotest";
-import Curriculum from "screens/Curriculum";
-import "App.scss";
+
+const About = lazy(() => import("screens/About"));
+const Contact = lazy(() => import("screens/Contact"));
+const Portfolio = lazy(() => import("screens/Portfolio"));
+const Resume = lazy(() => import("screens/Resume"));
+const ToDotest = lazy(() => import("screens/todotest"));
+const Curriculum = lazy(() => import("screens/Curriculum"));
 
 function App() {
   return (

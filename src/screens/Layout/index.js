@@ -1,12 +1,15 @@
 import { Outlet } from "react-router-dom";
 import "./index.scss";
 import TopNavBar from "../../components/TopNavBar";
+import { Suspense } from "react";
 
 const Layout = () => {
   return (
     <>
       <TopNavBar />
-      <Outlet />
+      <Suspense fallback={"Loading. . ."}>
+        <Outlet />
+      </Suspense>
     </>
   );
 };
