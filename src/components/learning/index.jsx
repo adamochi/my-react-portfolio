@@ -1,18 +1,18 @@
-import React, { Suspense } from "react";
-import "./index.scss";
-import Loader from "react-loaders";
+/* eslint-disable react/no-unknown-property */
+import React, { Suspense } from 'react';
+import './index.scss';
+import Loader from 'react-loaders';
 
 /* 3D stuff */
-import Box from "../Box";
-import Boxtwo from "../Boxtwo";
-import Sphere from "../AnimatedSphere";
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import Box from '../Box';
+import Boxtwo from '../Boxtwo';
+import Sphere from '../AnimatedSphere';
 // import Waterfall from "../WaterfallDraco";
 // import Computer from "../Computer";
 
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-
-const Learning = () => {
+function Learning() {
   return (
     <div className="homepage">
       <h1>Homepage</h1>
@@ -52,6 +52,6 @@ const Learning = () => {
       <Loader type="pacman" />
     </div>
   );
-};
+}
 
 export default Learning;

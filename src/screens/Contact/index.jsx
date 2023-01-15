@@ -1,18 +1,21 @@
-import "./index.scss";
-import React, { useState, useEffect, useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import AnimatedLetters from "../../components/AnimatedLetters";
-import Loader from "react-loaders";
+/* eslint-disable no-alert */
+import './index.scss';
+import React, { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import {
+  MapContainer, TileLayer, Marker, Popup,
+} from 'react-leaflet';
+import Loader from 'react-loaders';
+import AnimatedLetters from '../../components/AnimatedLetters';
 
-const Contact = () => {
+function Contact() {
   const position = [-27.46087, 153.02676];
-  const [letterClass, setLetterClass] = useState("text-animate");
+  const [letterClass, setLetterClass] = useState('text-animate');
   const form = useRef();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass("text-animate-hover");
+      setLetterClass('text-animate-hover');
     }, 3000);
 
     return () => {
@@ -25,19 +28,19 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_if028an",
-        "template_6l04vrq",
+        'service_if028an',
+        'template_6l04vrq',
         form.current,
-        "A2Ov2HBhsCtRdKh3G"
+        'A2Ov2HBhsCtRdKh3G',
       )
       .then(
         () => {
-          alert("Message successfully sent!");
+          alert('Message successfully sent!');
           window.location.reload(false);
         },
         () => {
-          alert("Failed to send the message, please try again");
-        }
+          alert('Failed to send the message, please try again');
+        },
       );
   };
 
@@ -48,7 +51,7 @@ const Contact = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={"Contact Me".split("")}
+              strArray={'Contact Me'.split('')}
               idx={10}
             />
           </h1>
@@ -63,7 +66,9 @@ const Contact = () => {
           <p>
             I am also interested in freelance opportunities - especially
             ambitious or large projects to kickstart my new career.
-            <br /> If you have any other requests or questions, don't hesitate
+            <br />
+            {' '}
+            If you have any other requests or questions, don&apos;t hesitate
             to contact me using the form below!
           </p>
           <form ref={form} onSubmit={sendEmail}>
@@ -90,7 +95,7 @@ const Contact = () => {
                 placeholder="Message"
                 name="message"
                 required
-              ></textarea>
+              />
             </div>
             <div className="send-div">
               <input
@@ -109,7 +114,11 @@ const Contact = () => {
             />
             <Marker position={position}>
               <Popup>
-                Adam lives here, <br /> come over for a cup of coffee :)
+                Adam lives here,
+                {' '}
+                <br />
+                {' '}
+                come over for a cup of coffee :)
               </Popup>
             </Marker>
           </MapContainer>
@@ -118,6 +127,6 @@ const Contact = () => {
       <Loader type="pacman" />
     </>
   );
-};
+}
 
 export default Contact;

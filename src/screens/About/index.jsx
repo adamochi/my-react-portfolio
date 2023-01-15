@@ -1,17 +1,17 @@
-import "./index.scss";
-import Loader from "react-loaders";
-import React, { useEffect, useState } from "react";
-import backgroundImg from "../../assets/images/nexen.png";
-import AnimatedLetters from "../../components/AnimatedLetters";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFloppyDisk, faComputer } from "@fortawesome/free-solid-svg-icons";
+import './index.scss';
+import Loader from 'react-loaders';
+import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFloppyDisk, faComputer } from '@fortawesome/free-solid-svg-icons';
+import backgroundImg from '../../assets/images/nexen.png';
+import AnimatedLetters from '../../components/AnimatedLetters';
 
-const About = () => {
-  const [letterClass, setLetterClass] = useState("text-animate");
+function About() {
+  const [letterClass, setLetterClass] = useState('text-animate');
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass("text-animate-hover");
+      setLetterClass('text-animate-hover');
     }, 3000);
 
     return () => {
@@ -24,7 +24,7 @@ const About = () => {
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={"About".split("")}
+            strArray={'About'.split('')}
             idx={18}
           />
         </h1>
@@ -82,6 +82,6 @@ const About = () => {
       <Loader type="pacman" />
     </>
   );
-};
+}
 
 export default About;

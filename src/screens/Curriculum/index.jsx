@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import "./index.scss";
-import AnimatedLetters from "components/AnimatedLetters";
-import Loader from "react-loaders";
+import React, { useState, useEffect } from 'react';
+import './index.scss';
+import AnimatedLetters from 'components/AnimatedLetters';
+import Loader from 'react-loaders';
 import {
   faJsSquare,
   faWindows,
   faReact,
   faGithub,
   faCss3,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faComputer,
   faArrowAltCircleLeft,
@@ -17,16 +17,17 @@ import {
   faLaptopCode,
   faPlusSquare,
   faTools,
-} from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
-import courseData from "data/courses.json";
+} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import courseData from 'data/courses.json';
+
 const course = courseData.courses;
 
-const Curriculum = () => {
-  const [letterClass, setLetterClass] = useState("text-animate");
+function Curriculum() {
+  const [letterClass, setLetterClass] = useState('text-animate');
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass("text-animate-hover");
+      setLetterClass('text-animate-hover');
     }, 4500);
     return () => {
       clearTimeout(timer);
@@ -37,33 +38,34 @@ const Curriculum = () => {
     <>
       <header className="curriculum-title">
         <h1>
-          <FontAwesomeIcon icon={faLaptopCode} />{" "}
+          <FontAwesomeIcon icon={faLaptopCode} />
+          {' '}
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={"My Completed Studies".split("")}
+            strArray={'My Completed Studies'.split('')}
             idx={15}
           />
         </h1>
       </header>
       <div className="curriculum-page container">
-        {course.map((course, index) => (
-          <div className="course-div" key={index}>
+        {course.map((detail, index) => (
+          <div className="course-div" key={`course${index + 1}`}>
             <div className="window-top-header-bar">
               <div className="window-top-icon">
-                {course.react === "faReact" && (
+                {detail.react === 'faReact' && (
                   <FontAwesomeIcon icon={faReact} />
                 )}
-                {course.react === "js" && <FontAwesomeIcon icon={faJsSquare} />}
-                {course.react === "git" && <FontAwesomeIcon icon={faGithub} />}
-                {course.react === "css" && <FontAwesomeIcon icon={faCss3} />}
-                {course.title}
+                {detail.react === 'js' && <FontAwesomeIcon icon={faJsSquare} />}
+                {detail.react === 'git' && <FontAwesomeIcon icon={faGithub} />}
+                {detail.react === 'css' && <FontAwesomeIcon icon={faCss3} />}
+                {detail.title}
               </div>
               <div className="window-close-div">
                 <div>
-                  <div className="minimise"></div>
+                  <div className="minimise" />
                 </div>
                 <div>
-                  <div></div>
+                  <div />
                 </div>
                 <div className="x-div">X</div>
               </div>
@@ -71,8 +73,8 @@ const Curriculum = () => {
             <div className="menu-bar-xp">
               <div className="menu-bar-with-logo">
                 <div className="using-div">
-                  {course.languages.map((i, idx) => (
-                    <div className="using" key={idx}>
+                  {detail.languages.map((i, idx) => (
+                    <div className="using" key={`lang${idx + 1}`}>
                       {i}
                     </div>
                   ))}
@@ -83,7 +85,7 @@ const Curriculum = () => {
               </div>
               <div className="curriculum-links-div">
                 <div className="back-n-forward">
-                  <Link to={"/"}>
+                  <Link to="/">
                     <FontAwesomeIcon
                       className="back-svg"
                       icon={faArrowAltCircleLeft}
@@ -92,24 +94,28 @@ const Curriculum = () => {
                   </Link>
                 </div>
                 <div className="back-n-forward forward">
-                  <FontAwesomeIcon icon={faArrowAltCircleRight} /> ▾
+                  <FontAwesomeIcon icon={faArrowAltCircleRight} />
+                  {' '}
+                  ▾
                 </div>
                 <a
                   className="xp-a-links"
                   target="_blank"
                   rel="noreferrer"
-                  href={course.url}
+                  href={detail.url}
                 >
-                  🔎 {course.linktext}
+                  🔎
+                  {' '}
+                  {detail.linktext}
                 </a>
-                {course.linktexttwo !== "" && (
+                {detail.linktexttwo !== '' && (
                   <a
                     className="xp-a-links"
                     target="_blank"
                     rel="noreferrer"
-                    href={course.urltwo}
+                    href={detail.urltwo}
                   >
-                    {course.linktexttwo}
+                    {detail.linktexttwo}
                   </a>
                 )}
               </div>
@@ -117,8 +123,8 @@ const Curriculum = () => {
 
             <div className="map-party">
               <div className="my-computer-file-system">
-                <div className="linesss"></div>
-                <div className="divider-linesss"></div>
+                <div className="linesss" />
+                <div className="divider-linesss" />
                 <div className="Components-file-system">
                   <FontAwesomeIcon icon={faComputer} />
                   <h3>Components (course)</h3>
@@ -129,8 +135,8 @@ const Curriculum = () => {
                   <h4> Coding</h4>
                 </div>
                 <ul>
-                  {course.description.map((item, key) => (
-                    <li key={key}>
+                  {detail.description.map((item, key) => (
+                    <li key={`description${key + 1}`}>
                       <FontAwesomeIcon icon={faPlusSquare} />
                       {item}
                     </li>
@@ -142,8 +148,8 @@ const Curriculum = () => {
                   <h4>System Tools:</h4>
                 </div>
                 <ul>
-                  {course.packages.map((item, key) => (
-                    <li key={key}>
+                  {detail.packages.map((item, key) => (
+                    <li key={`package${key + 1}`}>
                       <FontAwesomeIcon icon={faPlusSquare} />
                       {item}
                     </li>
@@ -151,10 +157,13 @@ const Curriculum = () => {
                 </ul>
               </div>
               <div className="files-with-images">
-                {course.achieved.map((item, key) => (
-                  <div key={key}>
-                    <img src={course.image} alt="img" />
-                    <span>{item}.png</span>
+                {detail.achieved.map((item, key) => (
+                  <div key={`achieved${key + 1}`}>
+                    <img src={detail.image} alt="img" />
+                    <span>
+                      {item}
+                      .png
+                    </span>
                   </div>
                 ))}
               </div>
@@ -165,6 +174,6 @@ const Curriculum = () => {
       <Loader type="pacman" />
     </>
   );
-};
+}
 
 export default Curriculum;

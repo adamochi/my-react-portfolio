@@ -1,10 +1,11 @@
-import React from "react";
+/* eslint-disable react/no-unknown-property */
+import React from 'react';
 
-import { useLoader } from "@react-three/fiber";
-import { TextureLoader } from "three";
-import texture from "../assets/images/mossyrock.jpg";
+import { useLoader } from '@react-three/fiber';
+import { TextureLoader } from 'three';
+import texture from '../assets/images/mossyrock.jpg';
 
-const Box = () => {
+function Box() {
   const colorMap = useLoader(TextureLoader, texture);
   return (
     <mesh rotation={[90, 0, 20]}>
@@ -12,6 +13,6 @@ const Box = () => {
       <meshStandardMaterial map={colorMap} />
     </mesh>
   );
-};
+}
 
 export default Box;

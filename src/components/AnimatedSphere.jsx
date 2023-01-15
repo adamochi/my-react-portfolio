@@ -1,7 +1,7 @@
-import React from "react";
-import { Sphere, MeshDistortMaterial } from "@react-three/drei/core";
+import React from 'react';
+import { Sphere, MeshDistortMaterial } from '@react-three/drei/core';
 
-const AnimatedSphere = () => {
+function AnimatedSphere() {
   return (
     <Sphere visible args={[1, 100, 200]} scale={1}>
       <MeshDistortMaterial
@@ -12,6 +12,6 @@ const AnimatedSphere = () => {
       />
     </Sphere>
   );
-};
+}
 
 export default AnimatedSphere;

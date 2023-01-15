@@ -6,13 +6,13 @@ import {
   faFolderOpen,
   faInfinity,
   faPanorama,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import "./index.scss";
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import './index.scss';
 
-const DropdownMenu = () => {
+function DropdownMenu() {
   const [menuMode, setMenuMode] = useState(true);
   const btnRef = useRef();
 
@@ -25,22 +25,20 @@ const DropdownMenu = () => {
         setMenuMode(true);
       }
     };
-    document.body.addEventListener("click", closeDropdown);
+    document.body.addEventListener('click', closeDropdown);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
 
-  const folderClick = (e) => {
+  const folderClick = () => {
     setMenuMode((prev) => !prev);
-    // console.dir(e.target.parentElement);
-    // console.dir(e.target.id);
   };
 
   return (
     <div className="hamburger">
-      <button ref={btnRef} id="burger" onClick={folderClick}>
+      <button type="button" ref={btnRef} id="burger" onClick={folderClick}>
         {menuMode ? (
           <FontAwesomeIcon icon={faFolder} />
         ) : (
@@ -48,7 +46,7 @@ const DropdownMenu = () => {
         )}
       </button>
 
-      <div className={"dropdown-menu-div hidden" + (menuMode ? "" : "hidden")}>
+      <div className={`dropdown-menu-div hidden${menuMode ? '' : 'hidden'}`}>
         <h5>Menu</h5>
         <div className="dropdown-links">
           <Link
@@ -95,6 +93,6 @@ const DropdownMenu = () => {
       </div>
     </div>
   );
-};
+}
 
 export default DropdownMenu;

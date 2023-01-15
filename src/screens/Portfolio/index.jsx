@@ -1,18 +1,19 @@
-import "./index.scss";
-import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComputer } from "@fortawesome/free-solid-svg-icons";
-import Loader from "react-loaders";
-import AnimatedLetters from "../../components/AnimatedLetters";
-import portfolioData from "../../data/portfolio.json";
+import './index.scss';
+import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComputer } from '@fortawesome/free-solid-svg-icons';
+import Loader from 'react-loaders';
+import AnimatedLetters from '../../components/AnimatedLetters';
+import portfolioData from '../../data/portfolio.json';
+
 const portData = portfolioData.portfolio;
 
-const Portfolio = () => {
-  const [letterClass, setLetterClass] = useState("text-animate");
+function Portfolio() {
+  const [letterClass, setLetterClass] = useState('text-animate');
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass("text-animate-hover");
+      setLetterClass('text-animate-hover');
     }, 4000);
 
     return () => {
@@ -26,14 +27,14 @@ const Portfolio = () => {
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={"Works on the Web".split("")}
+            strArray={'Works on the Web'.split('')}
             idx={10}
           />
         </h1>
       </header>
       <div className="portfolio-page container">
         {portData.map((course, index) => (
-          <div className="course-div" key={index}>
+          <div className="course-div" key={`data${index + 1}`}>
             <div className="window-top-header-bar">
               <div className="window-top-icon">
                 <FontAwesomeIcon icon={faComputer} />
@@ -41,10 +42,10 @@ const Portfolio = () => {
               </div>
               <div className="window-close-div">
                 <div>
-                  <div className="minimise"></div>
+                  <div className="minimise" />
                 </div>
                 <div>
-                  <div></div>
+                  <div />
                 </div>
                 <div className="x-div">X</div>
               </div>
@@ -64,6 +65,7 @@ const Portfolio = () => {
                       <h4 className="description">{course.description}</h4>
                     </div>
                     <button
+                      type="button"
                       className="btn"
                       onClick={() => window.open(course.url)}
                     >
@@ -79,6 +81,6 @@ const Portfolio = () => {
       <Loader type="pacman" />
     </>
   );
-};
+}
 
 export default Portfolio;

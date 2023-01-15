@@ -1,14 +1,16 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/no-unknown-property */
 /*
 https://github.com/pmndrs/gltfjsx
 */
 
-import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
+import React, { useRef } from 'react';
+import { useGLTF } from '@react-three/drei';
+import { useFrame } from '@react-three/fiber';
 
 export default function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/final-chef.glb");
+  const { nodes, materials } = useGLTF('/final-chef.glb');
 
   useFrame(() => {
     if (!group.current) return;
@@ -31,7 +33,7 @@ export default function Model({ ...props }) {
       />
       <mesh
         geometry={nodes.Plane.geometry}
-        material={materials["Material.001"]}
+        material={materials['Material.001']}
         position={[-9.35, -2.8, 3.93]}
         scale={[14.13, 1, 9.89]}
       />
@@ -39,4 +41,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/final-chef.glb");
+useGLTF.preload('/final-chef.glb');

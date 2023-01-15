@@ -3,14 +3,14 @@ import {
   faHouseChimneyWindow,
   faKitchenSet,
   faUserAstronaut,
-} from "@fortawesome/free-solid-svg-icons";
-import React from "react";
-import "./index.scss";
-import { NavLink, Link } from "react-router-dom";
+} from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
+import './index.scss';
+import { NavLink, Link } from 'react-router-dom';
 // import logo from "../../assets/images/space.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Navbar = () => {
+function Navbar() {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
@@ -59,6 +59,6 @@ const Navbar = () => {
       </nav>
     </div>
   );
-};
+}
 
 export default Navbar;

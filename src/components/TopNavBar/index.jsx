@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import {
   faEnvelopesBulk,
   faHouseChimneyWindow,
@@ -9,20 +9,20 @@ import {
   faIcons,
   faFileLines,
   faLaptopCode,
-} from "@fortawesome/free-solid-svg-icons";
-import "./index.scss";
-import LightModeButton from "../LightModeButton";
-import DropdownMenu from "../DropdownMenu";
-import { NavLink, Link } from "react-router-dom";
+} from '@fortawesome/free-solid-svg-icons';
+import './index.scss';
+import { NavLink, Link } from 'react-router-dom';
+import LightModeButton from '../LightModeButton';
+import DropdownMenu from '../DropdownMenu';
 
-const TopNavBar = () => {
+function TopNavBar() {
   const [size, setSize] = useState();
   const siZerr = () => {
     const winSize = window.window.innerWidth;
     return setSize(winSize);
   };
   useEffect(() => {
-    window.addEventListener("resize", siZerr);
+    window.addEventListener('resize', siZerr);
   }, [size]);
 
   const scrollToTop = () => {
@@ -118,14 +118,14 @@ const TopNavBar = () => {
         </div>
         <a
           className="top-nav-icon"
-          target={"_blank"}
+          target="_blank"
           rel="noreferrer"
           href="https://github.com/adamochi/my-react-portfolio"
         >
           <FontAwesomeIcon
             className="awesome-icon"
             icon={faGithub}
-            shake={true}
+            shake
           />
           <span>Source</span>
         </a>
@@ -143,6 +143,6 @@ const TopNavBar = () => {
       </div>
     </div>
   );
-};
+}
 
 export default TopNavBar;
