@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from "react";
-import "./index.scss";
-import AnimatedLetters from "components/AnimatedLetters";
-import Loader from "react-loaders";
-import Chef from "assets/images/time.png";
-import profile from "assets/images/jeju180.png";
-import Computer from "components/Computer";
-import ButtonPortfolio from "components/Links/ButtonPortfolio";
-import ButtonAbout from "components/Links/ButtonAbout";
-import Nomad from "components/Links/Nomad";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
-import CoursesBtn from "components/Links/CoursesBtn";
+import React, { useEffect, useState } from 'react';
+import './index.scss';
+import AnimatedLetters from 'components/AnimatedLetters';
+import Loader from 'react-loaders';
+import Chef from 'assets/images/time.png';
+import profile from 'assets/images/jeju180.png';
+import Computer from 'components/Computer';
+import ButtonPortfolio from 'components/Links/ButtonPortfolio';
+import ButtonAbout from 'components/Links/ButtonAbout';
+import Nomad from 'components/Links/Nomad';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStopwatch } from '@fortawesome/free-solid-svg-icons';
+import CoursesBtn from 'components/Links/CoursesBtn';
 
-const Home = () => {
-  const [letterClass, setLetterClass] = useState("text-animate");
+function Home() {
+  const [letterClass, setLetterClass] = useState('text-animate');
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass("text-animate-hover");
+      setLetterClass('text-animate-hover');
     }, 4000);
     return () => {
       clearTimeout(timer);
@@ -38,7 +38,7 @@ const Home = () => {
             <h1>
               <AnimatedLetters
                 letterClass={letterClass}
-                strArray={"Adam Sullivan".split("")}
+                strArray={'Adam Sullivan'.split('')}
                 idx={20}
               />
             </h1>
@@ -53,7 +53,7 @@ const Home = () => {
             <h1>
               <AnimatedLetters
                 letterClass={letterClass}
-                strArray={"The Front End".split("")}
+                strArray={'The Front End'.split('')}
                 idx={25}
               />
             </h1>
@@ -98,7 +98,7 @@ const Home = () => {
             <h3>
               <AnimatedLetters
                 letterClass={letterClass}
-                strArray={"The Back End".split("")}
+                strArray={'The Back End'.split('')}
                 idx={25}
               />
             </h3>
@@ -129,7 +129,9 @@ const Home = () => {
         <div className="time-to-change">
           <img src={Chef} alt="adam chef" loading="lazy" />
           <span>
-            <FontAwesomeIcon icon={faStopwatch} /> It&apos;s time for a career
+            <FontAwesomeIcon icon={faStopwatch} />
+            {' '}
+            It&apos;s time for a career
             change!
           </span>
         </div>
@@ -138,6 +140,6 @@ const Home = () => {
       <Loader type="pacman" />
     </>
   );
-};
+}
 
 export default Home;
